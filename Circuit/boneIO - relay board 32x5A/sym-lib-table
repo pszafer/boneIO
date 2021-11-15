@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name HF46F)(type Legacy)(uri ${KIPRJMOD}/HF46/HF46F.lib)(options "")(descr ""))
-  (lib (name Sensor_Temperature)(type Legacy)(uri ${KIPRJMOD}/Sensor_Temperature/Sensor_Temperature.lib)(options "")(descr ""))
+  (lib (name boneIO)(type Legacy)(uri "C:/GITHUB/boneIO/Circuit/boneIO - library/boneIO.lib")(options "")(descr ""))
 )

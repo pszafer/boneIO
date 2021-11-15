@@ -1,4 +1,3 @@
 (fp_lib_table
-  (lib (name boneIO_LOGO)(type KiCad)(uri ${KIPRJMOD}/boneIO_LOGO)(options "")(descr ""))
-  (lib (name ph80ds-21)(type KiCad)(uri ${KIPRJMOD}/PH80DS-21/ph80ds-21.pretty)(options "")(descr ""))
+  (lib (name boneIO)(type KiCad)(uri "C:/GITHUB/boneIO/Circuit/boneIO - library/boneIO.pretty")(options "")(descr ""))
 )

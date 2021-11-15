@@ -245,13 +245,14 @@ X GND 9 0 -700 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# boneIO---relay-board-rescue_MCP9808_MSOP-Sensor_Temperature-boneIO---relay-board-rescue
+# boneIO_MCP9808_MSOP
 #
-DEF boneIO---relay-board-rescue_MCP9808_MSOP-Sensor_Temperature-boneIO---relay-board-rescue U 0 20 Y Y 1 F N
+DEF boneIO_MCP9808_MSOP U 0 20 Y Y 1 F N
 F0 "U" -250 450 50 H V C CNN
-F1 "boneIO---relay-board-rescue_MCP9808_MSOP-Sensor_Temperature-boneIO---relay-board-rescue" 400 450 50 H V C CNN
+F1 "boneIO_MCP9808_MSOP" 400 450 50 H V C CNN
 F2 "Package_SO:MSOP-8_3x3mm_P0.65mm" 0 0 50 H I C CNN
 F3 "" -250 450 50 H I C CNN
+ALIAS MCP9808_MSOP
 $FPLIST
  MSOP*3x3mm*P0.65mm*
 $ENDFPLIST
@@ -268,11 +269,11 @@ X VDD 8 0 500 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# boneIO---relay-board-rescue_RM85-2011-35-1005-MK-boneIO---relay-board-rescue
+# boneIO_RM85-2011-35-1005
 #
-DEF boneIO---relay-board-rescue_RM85-2011-35-1005-MK-boneIO---relay-board-rescue K 0 30 Y Y 1 F N
+DEF boneIO_RM85-2011-35-1005 K 0 30 Y Y 1 F N
 F0 "K" 1150 300 50 H V L CNN
-F1 "boneIO---relay-board-rescue_RM85-2011-35-1005-MK-boneIO---relay-board-rescue" 1150 200 50 H V L CNN
+F1 "boneIO_RM85-2011-35-1005" 1150 200 50 H V L CNN
 F2 "RM852011351005" 1150 100 50 H I L CNN
 F3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" 1150 0 50 H I L CNN
 F4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" 1150 -100 50 H I L CNN "Description"

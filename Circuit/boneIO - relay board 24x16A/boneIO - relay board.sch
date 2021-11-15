@@ -60,12 +60,12 @@ Wire Wire Line
 NoConn ~ 17950 9900
 NoConn ~ 17950 8600
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K18
+L boneIO:RM85-2011-35-1005 K18
 U 1 1 656F8EFF
 P 18050 9900
 F 0 "K18" H 18700 10165 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 18700 10074 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 19200 10000 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 19200 10000 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 19200 9900 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 19200 9800 50  0001 L CNN "Description"
 F 5 "15.7" H 19200 9700 50  0001 L CNN "Height"
@@ -99,12 +99,12 @@ Wire Wire Line
 NoConn ~ 17950 8150
 NoConn ~ 17950 6850
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K17
+L boneIO:RM85-2011-35-1005 K17
 U 1 1 656F8F21
 P 18050 8150
 F 0 "K17" H 18700 8415 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 18700 8324 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 19200 8250 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 19200 8250 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 19200 8150 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 19200 8050 50  0001 L CNN "Description"
 F 5 "15.7" H 19200 7950 50  0001 L CNN "Height"
@@ -139,12 +139,12 @@ Wire Wire Line
 NoConn ~ 17950 13450
 NoConn ~ 17950 12150
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K20
+L boneIO:RM85-2011-35-1005 K20
 U 1 1 656F8F47
 P 18050 13450
 F 0 "K20" H 18700 13715 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 18700 13624 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 19200 13550 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 19200 13550 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 19200 13450 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 19200 13350 50  0001 L CNN "Description"
 F 5 "15.7" H 19200 13250 50  0001 L CNN "Height"
@@ -182,12 +182,12 @@ Wire Wire Line
 NoConn ~ 17950 11700
 NoConn ~ 17950 10400
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K19
+L boneIO:RM85-2011-35-1005 K19
 U 1 1 656F8F69
 P 18050 11700
 F 0 "K19" H 18700 11965 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 18700 11874 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 19200 11800 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 19200 11800 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 19200 11700 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 19200 11600 50  0001 L CNN "Description"
 F 5 "15.7" H 19200 11500 50  0001 L CNN "Height"
@@ -229,12 +229,12 @@ Wire Wire Line
 NoConn ~ 13400 9900
 NoConn ~ 13400 8600
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K14
+L boneIO:RM85-2011-35-1005 K14
 U 1 1 6557F0EC
 P 13300 9900
 F 0 "K14" H 13950 10165 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 13950 10074 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 14450 10000 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 14450 10000 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 14450 9900 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 14450 9800 50  0001 L CNN "Description"
 F 5 "15.7" H 14450 9700 50  0001 L CNN "Height"
@@ -244,8 +244,6 @@ F 8 "RM85-2011-35-1005" H 14450 9400 50  0001 L CNN "Arrow Part Number"
 	1    13300 9900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	13500 8150 13500 8300
 $Comp
 L Connector:Screw_Terminal_01x04 J8
 U 1 1 6557F0D6
@@ -262,12 +260,12 @@ Wire Wire Line
 NoConn ~ 13400 8150
 NoConn ~ 13400 6850
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K13
+L boneIO:RM85-2011-35-1005 K13
 U 1 1 6557F0CB
 P 13300 8150
 F 0 "K13" H 13950 8415 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 13950 8324 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 14450 8250 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 14450 8250 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 14450 8150 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 14450 8050 50  0001 L CNN "Description"
 F 5 "15.7" H 14450 7950 50  0001 L CNN "Height"
@@ -292,12 +290,12 @@ Wire Wire Line
 NoConn ~ 13400 13450
 NoConn ~ 13400 12150
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K16
+L boneIO:RM85-2011-35-1005 K16
 U 1 1 6557F0A7
 P 13300 13450
 F 0 "K16" H 13950 13715 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 13950 13624 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 14450 13550 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 14450 13550 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 14450 13450 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 14450 13350 50  0001 L CNN "Description"
 F 5 "15.7" H 14450 13250 50  0001 L CNN "Height"
@@ -323,12 +321,12 @@ Wire Wire Line
 NoConn ~ 13400 11700
 NoConn ~ 13400 10400
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K15
+L boneIO:RM85-2011-35-1005 K15
 U 1 1 6557F085
 P 13300 11700
 F 0 "K15" H 13950 11965 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 13950 11874 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 14450 11800 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 14450 11800 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 14450 11700 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 14450 11600 50  0001 L CNN "Description"
 F 5 "15.7" H 14450 11500 50  0001 L CNN "Height"
@@ -355,12 +353,12 @@ Wire Wire Line
 Wire Wire Line
 	10800 13550 10800 13450
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K11
+L boneIO:RM85-2011-35-1005 K11
 U 1 1 6557F056
 P 10800 11700
 F 0 "K11" H 11450 11965 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 11450 11874 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 11950 11800 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 11950 11800 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 11950 11700 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 11950 11600 50  0001 L CNN "Description"
 F 5 "15.7" H 11950 11500 50  0001 L CNN "Height"
@@ -384,12 +382,12 @@ F 3 "~" H 8800 11500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K12
+L boneIO:RM85-2011-35-1005 K12
 U 1 1 6557F034
 P 10800 13450
 F 0 "K12" H 11450 13715 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 11450 13624 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 11950 13550 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 11950 13550 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 11950 13450 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 11950 13350 50  0001 L CNN "Description"
 F 5 "15.7" H 11950 13250 50  0001 L CNN "Height"
@@ -414,12 +412,12 @@ Wire Wire Line
 Wire Wire Line
 	10800 10000 10800 9900
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K9
+L boneIO:RM85-2011-35-1005 K9
 U 1 1 6557F00E
 P 10800 8150
 F 0 "K9" H 11450 8415 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 11450 8324 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 11950 8250 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 11950 8250 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 11950 8150 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 11950 8050 50  0001 L CNN "Description"
 F 5 "15.7" H 11950 7950 50  0001 L CNN "Height"
@@ -445,12 +443,12 @@ F 3 "~" H 8800 7850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K10
+L boneIO:RM85-2011-35-1005 K10
 U 1 1 6557EFEC
 P 10800 9900
 F 0 "K10" H 11450 10165 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 11450 10074 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 11950 10000 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 11950 10000 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 11950 9900 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 11950 9800 50  0001 L CNN "Description"
 F 5 "15.7" H 11950 9700 50  0001 L CNN "Height"
@@ -469,12 +467,12 @@ Wire Wire Line
 NoConn ~ 6200 9900
 NoConn ~ 6200 8600
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K6
+L boneIO:RM85-2011-35-1005 K6
 U 1 1 650CB5D8
 P 6100 9900
 F 0 "K6" H 6750 10165 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 6750 10074 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 7250 10000 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 7250 10000 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 7250 9900 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 7250 9800 50  0001 L CNN "Description"
 F 5 "15.7" H 7250 9700 50  0001 L CNN "Height"
@@ -500,12 +498,12 @@ Wire Wire Line
 NoConn ~ 6200 8150
 NoConn ~ 6200 6850
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K5
+L boneIO:RM85-2011-35-1005 K5
 U 1 1 650CB5FA
 P 6100 8150
 F 0 "K5" H 6750 8415 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 6750 8324 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 7250 8250 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 7250 8250 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 7250 8150 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 7250 8050 50  0001 L CNN "Description"
 F 5 "15.7" H 7250 7950 50  0001 L CNN "Height"
@@ -528,12 +526,12 @@ Wire Wire Line
 Wire Wire Line
 	6100 12150 6100 12050
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K8
+L boneIO:RM85-2011-35-1005 K8
 U 1 1 650CB61E
 P 6100 13450
 F 0 "K8" H 6750 13715 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 6750 13624 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 7250 13550 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 7250 13550 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 7250 13450 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 7250 13350 50  0001 L CNN "Description"
 F 5 "15.7" H 7250 13250 50  0001 L CNN "Height"
@@ -559,12 +557,12 @@ Wire Wire Line
 NoConn ~ 6200 11700
 NoConn ~ 6200 10400
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K7
+L boneIO:RM85-2011-35-1005 K7
 U 1 1 650CB640
 P 6100 11700
 F 0 "K7" H 6750 11965 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 6750 11874 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 7250 11800 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 7250 11800 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 7250 11700 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 7250 11600 50  0001 L CNN "Description"
 F 5 "15.7" H 7250 11500 50  0001 L CNN "Height"
@@ -595,12 +593,12 @@ Wire Wire Line
 Wire Wire Line
 	3600 13550 3600 13450
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K3
+L boneIO:RM85-2011-35-1005 K3
 U 1 1 64E84F3A
 P 3600 11700
 F 0 "K3" H 4250 11965 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 4250 11874 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 4750 11800 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 4750 11800 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 4750 11700 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 4750 11600 50  0001 L CNN "Description"
 F 5 "15.7" H 4750 11500 50  0001 L CNN "Height"
@@ -626,12 +624,12 @@ F 3 "~" H 1600 11400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K4
+L boneIO:RM85-2011-35-1005 K4
 U 1 1 64E84F18
 P 3600 13450
 F 0 "K4" H 4250 13715 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 4250 13624 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 4750 13550 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 4750 13550 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 4750 13450 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 4750 13350 50  0001 L CNN "Description"
 F 5 "15.7" H 4750 13250 50  0001 L CNN "Height"
@@ -654,12 +652,12 @@ Wire Wire Line
 Wire Wire Line
 	3600 10000 3600 9900
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K1
+L boneIO:RM85-2011-35-1005 K1
 U 1 1 6266FFCC
 P 3600 8150
 F 0 "K1" H 4250 8415 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 4250 8324 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 4750 8250 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 4750 8250 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 4750 8150 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 4750 8050 50  0001 L CNN "Description"
 F 5 "15.7" H 4750 7950 50  0001 L CNN "Height"
@@ -684,15 +682,13 @@ F 3 "~" H 1600 7850 50  0001 C CNN
 	1    1600 7850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 6850 3300 6700
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K2
+L boneIO:RM85-2011-35-1005 K2
 U 1 1 6266FFF0
 P 3600 9900
 F 0 "K2" H 4250 10165 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 4250 10074 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 4750 10000 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 4750 10000 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 4750 9900 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 4750 9800 50  0001 L CNN "Description"
 F 5 "15.7" H 4750 9700 50  0001 L CNN "Height"
@@ -784,8 +780,6 @@ F 3 "" H 14300 4500 50  0001 C CNN
 	1    14300 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14300 4350 14300 4500
 Wire Wire Line
 	3600 8250 3800 8250
 Wire Wire Line
@@ -1048,7 +1042,7 @@ Wire Wire Line
 Wire Wire Line
 	10800 10400 10800 10300
 $Comp
-L boneIO---relay-board-rescue:MCP9808_MSOP-Sensor_Temperature-boneIO---relay-board-rescue U1
+L boneIO:MCP9808_MSOP U1
 U 1 1 61B8C06C
 P 3250 4150
 F 0 "U1" H 3694 4196 50  0000 L CNN
@@ -1110,10 +1104,6 @@ F 3 "" H 3850 3350 50  0001 C CNN
 	1    3850 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 3350 3250 3650
-Wire Wire Line
-	3850 3400 3850 3350
 Wire Wire Line
 	3850 3700 3850 4150
 $Comp
@@ -1329,194 +1319,8 @@ Wire Wire Line
 Connection ~ 17350 10250
 Wire Wire Line
 	17350 10250 16850 10250
-Wire Wire Line
-	3300 6850 3300 8150
-Connection ~ 3300 6850
-Wire Wire Line
-	3400 6850 3400 8150
-Connection ~ 3400 8150
-Wire Wire Line
-	3400 8150 3400 8300
-Wire Wire Line
-	3300 8450 3300 8600
-Connection ~ 3300 8600
-Wire Wire Line
-	3300 8600 3300 9900
-Wire Wire Line
-	3400 8600 3400 9900
-Connection ~ 3400 9900
-Wire Wire Line
-	3400 9900 3400 10050
-Wire Wire Line
-	3300 10250 3300 10400
-Connection ~ 3300 10400
-Wire Wire Line
-	3300 10400 3300 11700
-Wire Wire Line
-	3400 10400 3400 11700
-Connection ~ 3400 11700
-Wire Wire Line
-	3400 11700 3400 11850
-Wire Wire Line
-	3300 12000 3300 12150
-Connection ~ 3300 12150
-Wire Wire Line
-	3300 12150 3300 13450
-Wire Wire Line
-	3400 12150 3400 13450
-Connection ~ 3400 13450
-Wire Wire Line
-	3400 13450 3400 13600
 NoConn ~ 6200 12150
 NoConn ~ 6200 13450
-Wire Wire Line
-	6400 12000 6400 12150
-Connection ~ 6400 12150
-Wire Wire Line
-	6400 12150 6400 13450
-Wire Wire Line
-	6300 12150 6300 13450
-Connection ~ 6300 13450
-Wire Wire Line
-	6300 13450 6300 13600
-Wire Wire Line
-	6400 10250 6400 10400
-Connection ~ 6400 10400
-Wire Wire Line
-	6400 10400 6400 11700
-Wire Wire Line
-	6300 10400 6300 11700
-Connection ~ 6300 11700
-Wire Wire Line
-	6300 11700 6300 11850
-Wire Wire Line
-	6400 8450 6400 8600
-Connection ~ 6400 8600
-Wire Wire Line
-	6400 8600 6400 9900
-Wire Wire Line
-	6300 8600 6300 9900
-Connection ~ 6300 9900
-Wire Wire Line
-	6300 9900 6300 10050
-Wire Wire Line
-	6300 6850 6300 8150
-Connection ~ 6300 8150
-Wire Wire Line
-	6300 8150 6300 8300
-Wire Wire Line
-	6400 6700 6400 6850
-Connection ~ 6400 6850
-Wire Wire Line
-	6400 6850 6400 8150
-Wire Wire Line
-	10500 12000 10500 12150
-Connection ~ 10500 12150
-Wire Wire Line
-	10500 12150 10500 13450
-Wire Wire Line
-	10600 12150 10600 13450
-Connection ~ 10600 13450
-Wire Wire Line
-	10600 13450 10600 13600
-Wire Wire Line
-	10500 10250 10500 10400
-Connection ~ 10500 10400
-Wire Wire Line
-	10500 10400 10500 11700
-Wire Wire Line
-	10600 10400 10600 11700
-Connection ~ 10600 11700
-Wire Wire Line
-	10600 11700 10600 11850
-Wire Wire Line
-	10500 8450 10500 8600
-Connection ~ 10500 8600
-Wire Wire Line
-	10500 8600 10500 9900
-Wire Wire Line
-	10600 8600 10600 9900
-Connection ~ 10600 9900
-Wire Wire Line
-	10600 9900 10600 10050
-Wire Wire Line
-	10500 6700 10500 6850
-Connection ~ 10500 6850
-Wire Wire Line
-	10500 6850 10500 8150
-Wire Wire Line
-	10600 6850 10600 8150
-Connection ~ 10600 8150
-Wire Wire Line
-	10600 8150 10600 8300
-Wire Wire Line
-	13600 6700 13600 6850
-Connection ~ 13600 6850
-Wire Wire Line
-	13600 6850 13600 8150
-Wire Wire Line
-	13500 6850 13500 8150
-Connection ~ 13500 8150
-Wire Wire Line
-	13600 8450 13600 8600
-Connection ~ 13600 8600
-Wire Wire Line
-	13600 8600 13600 9900
-Wire Wire Line
-	13500 8600 13500 9900
-Connection ~ 13500 9900
-Wire Wire Line
-	13500 9900 13500 10050
-Wire Wire Line
-	13600 10250 13600 10400
-Connection ~ 13600 10400
-Wire Wire Line
-	13600 10400 13600 11700
-Wire Wire Line
-	13500 10400 13500 11700
-Connection ~ 13500 11700
-Wire Wire Line
-	13500 11700 13500 11850
-Wire Wire Line
-	13600 12000 13600 12150
-Connection ~ 13600 12150
-Wire Wire Line
-	13600 12150 13600 13450
-Wire Wire Line
-	13500 12150 13500 13450
-Connection ~ 13500 13450
-Wire Wire Line
-	13500 13450 13500 13600
-Wire Wire Line
-	17750 12000 17750 12150
-Connection ~ 17750 12150
-Wire Wire Line
-	17750 12150 17750 13450
-Wire Wire Line
-	17850 12150 17850 13450
-Connection ~ 17850 13450
-Wire Wire Line
-	17850 13450 17850 13600
-Wire Wire Line
-	17750 8450 17750 8600
-Connection ~ 17750 8600
-Wire Wire Line
-	17750 8600 17750 9900
-Wire Wire Line
-	17850 8600 17850 9900
-Connection ~ 17850 9900
-Wire Wire Line
-	17850 9900 17850 10050
-Wire Wire Line
-	17850 6850 17850 8150
-Connection ~ 17850 8150
-Wire Wire Line
-	17850 8150 17850 8300
-Wire Wire Line
-	17750 6700 17750 6850
-Connection ~ 17750 6850
-Wire Wire Line
-	17750 6850 17750 8150
 Wire Wire Line
 	2850 4450 2550 4450
 Wire Wire Line
@@ -1530,13 +1334,13 @@ Wire Wire Line
 $Comp
 L Switch:SW_DIP_x03 SW1
 U 1 1 619BF441
-P 1650 4250
-F 0 "SW1" H 1650 4717 50  0000 C CNN
-F 1 "SW_DIP_x03" H 1650 4626 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 1650 4250 50  0001 C CNN
-F 3 "~" H 1650 4250 50  0001 C CNN
-	1    1650 4250
-	1    0    0    1   
+P 1650 4450
+F 0 "SW1" H 1650 4917 50  0000 C CNN
+F 1 "SW_DIP_x03" H 1650 4826 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 1650 4450 50  0001 C CNN
+F 3 "~" H 1650 4450 50  0001 C CNN
+	1    1650 4450
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2550 4450 1950 4450
@@ -1569,9 +1373,6 @@ Wire Wire Line
 	1200 4350 1200 4250
 Wire Wire Line
 	1350 4250 1200 4250
-Connection ~ 1200 4250
-Wire Wire Line
-	1200 4250 1200 4050
 $Comp
 L Transistor_Array:ULN2803A U5
 U 1 1 6557F0FA
@@ -1978,9 +1779,6 @@ Text GLabel 21000 3200 0    50   Input ~ 0
 SCL
 Wire Wire Line
 	20500 2500 20500 3050
-Connection ~ 21700 2500
-Wire Wire Line
-	21700 2500 21700 2250
 NoConn ~ 21000 3700
 NoConn ~ 21000 3800
 $Comp
@@ -2174,12 +1972,12 @@ Wire Wire Line
 Wire Wire Line
 	21200 13550 21200 13450
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K23
+L boneIO:RM85-2011-35-1005 K23
 U 1 1 61994846
 P 21200 11700
 F 0 "K23" H 21850 11965 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 21850 11874 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 22350 11800 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 22350 11800 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 22350 11700 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 22350 11600 50  0001 L CNN "Description"
 F 5 "15.7" H 22350 11500 50  0001 L CNN "Height"
@@ -2205,12 +2003,12 @@ F 3 "~" H 19200 11400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K24
+L boneIO:RM85-2011-35-1005 K24
 U 1 1 6199485A
 P 21200 13450
 F 0 "K24" H 21850 13715 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 21850 13624 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 22350 13550 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 22350 13550 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 22350 13450 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 22350 13350 50  0001 L CNN "Description"
 F 5 "15.7" H 22350 13250 50  0001 L CNN "Height"
@@ -2233,12 +2031,12 @@ Wire Wire Line
 Wire Wire Line
 	21200 10000 21200 9900
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K21
+L boneIO:RM85-2011-35-1005 K21
 U 1 1 6199486C
 P 21200 8150
 F 0 "K21" H 21850 8415 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 21850 8324 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 22350 8250 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 22350 8250 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 22350 8150 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 22350 8050 50  0001 L CNN "Description"
 F 5 "15.7" H 22350 7950 50  0001 L CNN "Height"
@@ -2263,15 +2061,13 @@ F 3 "~" H 19200 7850 50  0001 C CNN
 	1    19200 7850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	20900 6850 20900 6700
 $Comp
-L boneIO---relay-board-rescue:RM85-2011-35-1005-MK-boneIO---relay-board-rescue K22
+L boneIO:RM85-2011-35-1005 K22
 U 1 1 61994881
 P 21200 9900
 F 0 "K22" H 21850 10165 50  0000 C CNN
 F 1 "RM85-2011-35-1005" H 21850 10074 50  0000 C CNN
-F 2 "boneIO - RM85:RM852011351005_1" H 22350 10000 50  0001 L CNN
+F 2 "boneIO:RM852011351005_1" H 22350 10000 50  0001 L CNN
 F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 22350 9900 50  0001 L CNN
 F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 22350 9800 50  0001 L CNN "Description"
 F 5 "15.7" H 22350 9700 50  0001 L CNN "Height"
@@ -2301,44 +2097,6 @@ Text GLabel 21400 11800 2    50   Input ~ 0
 RELAY23
 Text GLabel 21400 13550 2    50   Input ~ 0
 RELAY24
-Wire Wire Line
-	20900 6850 20900 8150
-Connection ~ 20900 6850
-Wire Wire Line
-	21000 6850 21000 8150
-Connection ~ 21000 8150
-Wire Wire Line
-	21000 8150 21000 8300
-Wire Wire Line
-	20900 8450 20900 8600
-Connection ~ 20900 8600
-Wire Wire Line
-	20900 8600 20900 9900
-Wire Wire Line
-	21000 8600 21000 9900
-Connection ~ 21000 9900
-Wire Wire Line
-	21000 9900 21000 10050
-Wire Wire Line
-	20900 10250 20900 10400
-Connection ~ 20900 10400
-Wire Wire Line
-	20900 10400 20900 11700
-Wire Wire Line
-	21000 10400 21000 11700
-Connection ~ 21000 11700
-Wire Wire Line
-	21000 11700 21000 11850
-Wire Wire Line
-	20900 12000 20900 12150
-Connection ~ 20900 12150
-Wire Wire Line
-	20900 12150 20900 13450
-Wire Wire Line
-	21000 12150 21000 13450
-Connection ~ 21000 13450
-Wire Wire Line
-	21000 13450 21000 13600
 Text GLabel 22400 4000 2    50   Input ~ 0
 K21
 $Comp
@@ -2873,7 +2631,7 @@ U 1 1 61AD4E35
 P 6350 3350
 F 0 "J3" H 6400 3667 50  0000 C CNN
 F 1 "Conn_02x04_Odd_Even" H 6400 3576 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 6350 3350 50  0001 C CNN
+F 2 "boneIO:PinHeader_2x04_P2.54mm_Vertical" H 6350 3350 50  0001 C CNN
 F 3 "~" H 6350 3350 50  0001 C CNN
 	1    6350 3350
 	1    0    0    -1  
@@ -2929,4 +2687,254 @@ Text Notes 18650 2300 0    197  ~ 39
 MCP23017
 Text Notes 8400 1200 0    197  ~ 39
 boneIO - relay board 24x16A v0.2
+Wire Wire Line
+	3250 3350 3250 3650
+NoConn ~ 18850 3700
+NoConn ~ 18850 3800
+NoConn ~ 22400 4300
+NoConn ~ 22400 4400
+NoConn ~ 22400 4500
+NoConn ~ 22400 4600
+NoConn ~ 22400 4700
+NoConn ~ 22400 4200
+Wire Wire Line
+	14300 4350 14300 4500
+Wire Wire Line
+	3850 3350 3850 3400
+Wire Wire Line
+	1200 4050 1200 4250
+Connection ~ 1200 4250
+Wire Wire Line
+	21700 2250 21700 2500
+Connection ~ 21700 2500
+Wire Wire Line
+	13500 6850 13500 8150
+Wire Wire Line
+	3300 6700 3300 6850
+Wire Wire Line
+	3300 8450 3300 8600
+Wire Wire Line
+	3300 10250 3300 10400
+Wire Wire Line
+	3400 10400 3400 11700
+Wire Wire Line
+	3300 12000 3300 12150
+Wire Wire Line
+	3400 12150 3400 13450
+Wire Wire Line
+	6400 12000 6400 12150
+Wire Wire Line
+	6300 12150 6300 13450
+Wire Wire Line
+	6400 10250 6400 10400
+Wire Wire Line
+	6300 10400 6300 11700
+Wire Wire Line
+	6400 8450 6400 8600
+Wire Wire Line
+	6300 8600 6300 9900
+Wire Wire Line
+	6300 6850 6300 8150
+Wire Wire Line
+	6400 6700 6400 6850
+Wire Wire Line
+	10500 12000 10500 12150
+Wire Wire Line
+	10600 12150 10600 13450
+Wire Wire Line
+	10500 10250 10500 10400
+Wire Wire Line
+	10600 10400 10600 11700
+Wire Wire Line
+	10500 8450 10500 8600
+Wire Wire Line
+	10600 8600 10600 9900
+Wire Wire Line
+	10500 6700 10500 6850
+Wire Wire Line
+	10600 6850 10600 8150
+Wire Wire Line
+	13600 6700 13600 6850
+Wire Wire Line
+	13600 8450 13600 8600
+Wire Wire Line
+	13500 8600 13500 9900
+Wire Wire Line
+	13600 10250 13600 10400
+Wire Wire Line
+	13500 10400 13500 11700
+Wire Wire Line
+	13600 12000 13600 12150
+Wire Wire Line
+	13500 12150 13500 13450
+Wire Wire Line
+	17750 12000 17750 12150
+Wire Wire Line
+	17850 12150 17850 13450
+Wire Wire Line
+	17750 8450 17750 8600
+Wire Wire Line
+	17850 8600 17850 9900
+Wire Wire Line
+	17850 6850 17850 8150
+Wire Wire Line
+	17750 6700 17750 6850
+Wire Wire Line
+	20900 6700 20900 6850
+Wire Wire Line
+	21000 6850 21000 8150
+Wire Wire Line
+	20900 8450 20900 8600
+Wire Wire Line
+	21000 8600 21000 9900
+Wire Wire Line
+	20900 10250 20900 10400
+Wire Wire Line
+	21000 10400 21000 11700
+Wire Wire Line
+	20900 12000 20900 12150
+Wire Wire Line
+	21000 12150 21000 13450
+Connection ~ 21000 11700
+Wire Wire Line
+	21000 11700 21000 11850
+Connection ~ 20900 10400
+Wire Wire Line
+	20900 10400 20900 11700
+Connection ~ 20900 12150
+Wire Wire Line
+	20900 12150 20900 13450
+Connection ~ 21000 13450
+Wire Wire Line
+	21000 13450 21000 13600
+Connection ~ 17850 13450
+Wire Wire Line
+	17850 13450 17850 13600
+Connection ~ 17750 12150
+Wire Wire Line
+	17750 12150 17750 13450
+Connection ~ 20900 6850
+Wire Wire Line
+	20900 6850 20900 8150
+Connection ~ 21000 8150
+Wire Wire Line
+	21000 8150 21000 8300
+Connection ~ 17750 6850
+Wire Wire Line
+	17750 6850 17750 8150
+Connection ~ 17850 8150
+Wire Wire Line
+	17850 8150 17850 8300
+Connection ~ 17850 9900
+Wire Wire Line
+	17850 9900 17850 10050
+Connection ~ 17750 8600
+Wire Wire Line
+	17750 8600 17750 9900
+Connection ~ 13600 6850
+Wire Wire Line
+	13600 6850 13600 8150
+Connection ~ 13500 8150
+Wire Wire Line
+	13500 8150 13500 8300
+Connection ~ 10500 6850
+Wire Wire Line
+	10500 6850 10500 8150
+Connection ~ 10600 8150
+Wire Wire Line
+	10600 8150 10600 8300
+Connection ~ 10500 8600
+Wire Wire Line
+	10500 8600 10500 9900
+Connection ~ 10600 9900
+Wire Wire Line
+	10600 9900 10600 10050
+Connection ~ 13500 9900
+Wire Wire Line
+	13500 9900 13500 10050
+Connection ~ 13600 8600
+Wire Wire Line
+	13600 8600 13600 9900
+Connection ~ 13600 10400
+Wire Wire Line
+	13600 10400 13600 11700
+Connection ~ 13500 11700
+Wire Wire Line
+	13500 11700 13500 11850
+Connection ~ 10500 10400
+Wire Wire Line
+	10500 10400 10500 11700
+Connection ~ 10600 11700
+Wire Wire Line
+	10600 11700 10600 11850
+Connection ~ 10500 12150
+Wire Wire Line
+	10500 12150 10500 13450
+Connection ~ 10600 13450
+Wire Wire Line
+	10600 13450 10600 13600
+Connection ~ 13500 13450
+Wire Wire Line
+	13500 13450 13500 13600
+Connection ~ 13600 12150
+Wire Wire Line
+	13600 12150 13600 13450
+Connection ~ 6300 13450
+Wire Wire Line
+	6300 13450 6300 13600
+Connection ~ 6400 12150
+Wire Wire Line
+	6400 12150 6400 13450
+Connection ~ 6400 10400
+Wire Wire Line
+	6400 10400 6400 11700
+Connection ~ 6300 11700
+Wire Wire Line
+	6300 11700 6300 11850
+Connection ~ 6300 9900
+Wire Wire Line
+	6300 9900 6300 10050
+Connection ~ 6400 8600
+Wire Wire Line
+	6400 8600 6400 9900
+Connection ~ 6300 8150
+Wire Wire Line
+	6300 8150 6300 8300
+Connection ~ 6400 6850
+Wire Wire Line
+	6400 6850 6400 8150
+Connection ~ 3300 12150
+Wire Wire Line
+	3300 12150 3300 13450
+Connection ~ 3400 13450
+Wire Wire Line
+	3400 13450 3400 13600
+Connection ~ 3400 11700
+Wire Wire Line
+	3400 11700 3400 11850
+Connection ~ 3300 10400
+Wire Wire Line
+	3300 10400 3300 11700
+Wire Wire Line
+	3300 8150 3300 6850
+Connection ~ 3300 6850
+Wire Wire Line
+	3400 8300 3400 8150
+Wire Wire Line
+	3400 8150 3400 6850
+Connection ~ 3400 8150
+Wire Wire Line
+	3300 8600 3300 9900
+Connection ~ 3300 8600
+Wire Wire Line
+	3400 10050 3400 9900
+Wire Wire Line
+	3400 9900 3400 8600
+Connection ~ 3400 9900
+Connection ~ 20900 8600
+Wire Wire Line
+	20900 8600 20900 9900
+Connection ~ 21000 9900
+Wire Wire Line
+	21000 9900 21000 10050
 $EndSCHEMATC
