@@ -1,0 +1,27 @@
+mqtt:
+  host: mqtt.hass
+  username: mqtt
+  password: pass
+  topic_prefix: boneiohome
+  ha_discovery:
+    enabled: yes
+
+gpio_input:
+  - id: "one"
+    pin: P8_12
+  - id: "two"
+    pin: P8_7
+    actions:
+      single:
+        action: output
+        pin: myinput
+
+output:
+  - id: myinput
+    kind: gpio
+    pin: P9_17
+    
+# i2c:
+#   - id: myb
+#     sda: "P9_18"
+#     scl: "P9_17"

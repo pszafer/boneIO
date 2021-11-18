@@ -1,0 +1,153 @@
+mqtt:
+  type: dict
+  required: True
+  meta:
+    label: Mqtt section
+  schema:
+    host:
+      required: True
+      type: string
+      meta:
+        label: Mqtt broker hostname or IP address
+    username:
+      required: True
+      type: string
+      meta:
+        label: Username to connect ot mqtt broker
+    password:
+      required: False
+      type: string
+      meta:
+        label: Password to mqtt
+    port:
+      required: True
+      type: integer
+      default: 1883
+      meta:
+        label: Port to connect to mqtt broker
+    topic_prefix:
+      type: string
+      default: boneIO
+      required: True
+      meta:
+        label: Prefix topic for boneIO to use
+    ha_discovery:
+      type: dict
+      meta:
+        label: Ha discovery sub section
+      default: {}
+      schema:
+        enabled:
+          type: boolean
+          default: True
+          meta:
+            label: Enable HA discovery.
+        topic_prefix:
+          type: string
+          default: homeassistant
+          meta:
+            label: Prefix topic of HA discovery.
+i2c:
+  type: list
+  required: False
+  meta:
+    label: I2C Pin config
+  schema:
+    type: dict
+    schema:
+      id:
+        type: string
+        required: False
+        meta:
+          label: Id of I2C to use in pin config
+      sda:
+        type: string
+        required: True
+        meta:
+          label: GPIO of I2C SDA 
+      scl:
+        type: string
+        required: True
+        meta:
+          label: GPIO of I2C SCL
+
+output:
+  type: list
+  meta:
+    label: List of output relays
+  schema:
+    type: dict
+    schema:
+      id:
+        type: string
+        required: False
+        meta:
+          label: Id to send to use in HA and in GPIO Input. Default to `kind_pin`
+      kind:
+        type: string
+        allowed: ['gpio', 'i2c']
+        meta:
+          label: Either GPIO or i2c.
+      pin:
+        type: string
+        required: True
+        meta:
+          label: PIN to use.
+
+gpio_input:
+  type: list
+  meta:
+    label: GPIO inputs section
+  schema:
+    type: dict
+    schema:
+      id:
+        type: string
+        required: False
+        meta:
+          label: Id to use in HA if needed. Default to pin number.
+      pin:
+        type: string
+        required: True
+        meta:
+          label: PIN to use.
+      actions:
+        required: False
+        type: dict
+        schema:
+          single:
+            required: False
+            type: dict
+            schema:
+              action:
+                type: string
+                allowed: ['mqtt', 'output']
+                default: output
+              pin:
+                type: string
+              message:
+                type: string
+          double:
+            required: False
+            type: dict
+            schema:
+              action:
+                type: string
+                allowed: ['mqtt', 'output']
+                default: output
+              pin:
+                type: string
+              message:
+                type: string
+          long:
+            required: False
+            type: dict
+            schema:
+              action:
+                type: string
+                allowed: ['mqtt', 'output']
+                default: output
+              pin:
+                type: string
+              message:
+                type: string
