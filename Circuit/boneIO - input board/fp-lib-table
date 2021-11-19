@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name boneIO)(type Github)(uri https://github.com/maciejkrasuski/boneIO/tree/main/Circuit/boneIO%20-%20library/boneIO.pretty)(options "")(descr ""))
+  (lib (name "boneIO - input board")(type KiCad)(uri "${KIPRJMOD}/3D_model/boneIO - input board.pretty")(options "")(descr ""))
 )
