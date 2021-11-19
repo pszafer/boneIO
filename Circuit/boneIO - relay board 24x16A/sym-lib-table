@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name pwr_BeagleBone)(type Legacy)(uri ${KIPRJMOD}/pwr_BeagleBone.lib)(options "")(descr ""))
-  (lib (name boneIO---relay-board-rescue)(type Legacy)(uri "${KIPRJMOD}/boneIO - relay board-rescue.lib")(options "")(descr ""))
-)

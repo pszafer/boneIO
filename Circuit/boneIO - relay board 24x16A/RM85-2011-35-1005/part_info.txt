@@ -1,9 +1,0 @@
-Manufacturer=Relpol
-PartNumber=RM85-2011-35-1005
-PartCategory=Relay or Contactor
-PackageCategory=Other
-PinCount=8
-Version=1.7
-Released=2020-09-02 18:26:23
-Downloaded=2020-09-07 10:27:01
-3D=Y
