@@ -67,7 +67,7 @@ HF46F RELAY
 Wire Wire Line
 	17625 2625 17625 2725
 $Comp
-L boneIO:MCP9808_MSOP U7
+L boneIO---relay-board-32x5A-rescue:MCP9808_MSOP-boneIO U7
 U 1 1 61B8C06C
 P 21000 2925
 F 0 "U7" H 21444 2971 50  0000 L CNN
@@ -463,7 +463,7 @@ Connection ~ 20550 3025
 Wire Wire Line
 	20550 3025 20600 3025
 $Comp
-L boneIO:HF46F K1
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K1
 U 1 1 61B88957
 P 3400 7800
 F 0 "K1" H 3800 8065 50  0000 C CNN
@@ -477,7 +477,7 @@ F 6 "HF46F" H 4050 7400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K2
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K2
 U 1 1 61B8A916
 P 3400 8850
 F 0 "K2" H 3800 9115 50  0000 C CNN
@@ -1024,7 +1024,7 @@ F 3 "~" H 2300 10850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K3
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K3
 U 1 1 62B1A65F
 P 3400 10150
 F 0 "K3" H 3800 10415 50  0000 C CNN
@@ -1038,7 +1038,7 @@ F 6 "HF46F" H 4050 9750 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K4
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K4
 U 1 1 62B1A668
 P 3400 11200
 F 0 "K4" H 3800 11465 50  0000 C CNN
@@ -1095,7 +1095,7 @@ F 3 "~" H 2300 13200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K5
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K5
 U 1 1 62B2A576
 P 3400 12500
 F 0 "K5" H 3800 12765 50  0000 C CNN
@@ -1109,7 +1109,7 @@ F 6 "HF46F" H 4050 12100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K6
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K6
 U 1 1 62B2A57F
 P 3400 13550
 F 0 "K6" H 3800 13815 50  0000 C CNN
@@ -1166,7 +1166,7 @@ F 3 "~" H 5900 8500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K7
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K7
 U 1 1 62C5A60C
 P 7000 7800
 F 0 "K7" H 7400 8065 50  0000 C CNN
@@ -1180,7 +1180,7 @@ F 6 "HF46F" H 7650 7400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K8
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K8
 U 1 1 62C5A615
 P 7000 8850
 F 0 "K8" H 7400 9115 50  0000 C CNN
@@ -1237,7 +1237,7 @@ F 3 "~" H 5900 10850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K9
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K9
 U 1 1 62C5A63D
 P 7000 10150
 F 0 "K9" H 7400 10415 50  0000 C CNN
@@ -1251,7 +1251,7 @@ F 6 "HF46F" H 7650 9750 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K10
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K10
 U 1 1 62C5A646
 P 7000 11200
 F 0 "K10" H 7400 11465 50  0000 C CNN
@@ -1308,7 +1308,7 @@ F 3 "~" H 5900 13200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K11
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K11
 U 1 1 62C5A66C
 P 7000 12500
 F 0 "K11" H 7400 12765 50  0000 C CNN
@@ -1322,7 +1322,7 @@ F 6 "HF46F" H 7650 12100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K12
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K12
 U 1 1 62C5A675
 P 7000 13550
 F 0 "K12" H 7400 13815 50  0000 C CNN
@@ -1379,7 +1379,7 @@ F 3 "~" H 9650 8500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K13
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K13
 U 1 1 62C73758
 P 10750 7800
 F 0 "K13" H 11150 8065 50  0000 C CNN
@@ -1393,7 +1393,7 @@ F 6 "HF46F" H 11400 7400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K14
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K14
 U 1 1 62C73761
 P 10750 8850
 F 0 "K14" H 11150 9115 50  0000 C CNN
@@ -1450,7 +1450,7 @@ F 3 "~" H 9650 10850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K15
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K15
 U 1 1 62C73789
 P 10750 10150
 F 0 "K15" H 11150 10415 50  0000 C CNN
@@ -1464,7 +1464,7 @@ F 6 "HF46F" H 11400 9750 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K16
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K16
 U 1 1 62C73792
 P 10750 11200
 F 0 "K16" H 11150 11465 50  0000 C CNN
@@ -1510,7 +1510,7 @@ Wire Wire Line
 Wire Wire Line
 	10250 11400 10750 11400
 $Comp
-L boneIO:HF46F K17
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K17
 U 1 1 62CC3428
 P 14100 7800
 F 0 "K17" H 14500 8065 50  0000 C CNN
@@ -1524,7 +1524,7 @@ F 6 "HF46F" H 14750 7400 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K18
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K18
 U 1 1 62CC3431
 P 14100 8850
 F 0 "K18" H 14500 9115 50  0000 C CNN
@@ -1581,7 +1581,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 7600 14100 7600
 $Comp
-L boneIO:HF46F K19
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K19
 U 1 1 6326F0BD
 P 14100 10150
 F 0 "K19" H 14500 10415 50  0000 C CNN
@@ -1595,7 +1595,7 @@ F 6 "HF46F" H 14750 9750 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K20
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K20
 U 1 1 6326F0C6
 P 14100 11200
 F 0 "K20" H 14500 11465 50  0000 C CNN
@@ -1652,7 +1652,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 9950 14100 9950
 $Comp
-L boneIO:HF46F K21
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K21
 U 1 1 6328F764
 P 14100 12650
 F 0 "K21" H 14500 12915 50  0000 C CNN
@@ -1666,7 +1666,7 @@ F 6 "HF46F" H 14750 12250 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K22
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K22
 U 1 1 6328F76D
 P 14100 13700
 F 0 "K22" H 14500 13965 50  0000 C CNN
@@ -1723,7 +1723,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 12450 14100 12450
 $Comp
-L boneIO:HF46F K23
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K23
 U 1 1 632BAFD0
 P 17550 7750
 F 0 "K23" H 17950 8015 50  0000 C CNN
@@ -1737,7 +1737,7 @@ F 6 "HF46F" H 18200 7350 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K24
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K24
 U 1 1 632BAFD9
 P 17550 8800
 F 0 "K24" H 17950 9065 50  0000 C CNN
@@ -1794,7 +1794,7 @@ Wire Wire Line
 Wire Wire Line
 	18050 7550 17550 7550
 $Comp
-L boneIO:HF46F K25
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K25
 U 1 1 632BAFFF
 P 17550 10100
 F 0 "K25" H 17950 10365 50  0000 C CNN
@@ -1808,7 +1808,7 @@ F 6 "HF46F" H 18200 9700 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K26
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K26
 U 1 1 632BB008
 P 17550 11150
 F 0 "K26" H 17950 11415 50  0000 C CNN
@@ -1865,7 +1865,7 @@ Wire Wire Line
 Wire Wire Line
 	18050 9900 17550 9900
 $Comp
-L boneIO:HF46F K27
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K27
 U 1 1 632BB02E
 P 17550 12600
 F 0 "K27" H 17950 12865 50  0000 C CNN
@@ -1879,7 +1879,7 @@ F 6 "HF46F" H 18200 12200 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K28
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K28
 U 1 1 632BB037
 P 17550 13650
 F 0 "K28" H 17950 13915 50  0000 C CNN
@@ -1936,7 +1936,7 @@ Wire Wire Line
 Wire Wire Line
 	18050 12400 17550 12400
 $Comp
-L boneIO:HF46F K29
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K29
 U 1 1 632EF485
 P 20750 7750
 F 0 "K29" H 21150 8015 50  0000 C CNN
@@ -1950,7 +1950,7 @@ F 6 "HF46F" H 21400 7350 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K30
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K30
 U 1 1 632EF48E
 P 20750 8800
 F 0 "K30" H 21150 9065 50  0000 C CNN
@@ -2004,7 +2004,7 @@ Wire Wire Line
 Wire Wire Line
 	21250 7550 20750 7550
 $Comp
-L boneIO:HF46F K31
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K31
 U 1 1 632EF4B4
 P 20750 10100
 F 0 "K31" H 21150 10365 50  0000 C CNN
@@ -2018,7 +2018,7 @@ F 6 "HF46F" H 21400 9700 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K32
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K32
 U 1 1 632EF4BD
 P 20750 11150
 F 0 "K32" H 21150 11415 50  0000 C CNN

@@ -241,11 +241,11 @@ X GND 9 0 -700 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# boneIO_HF46F
+# boneIO---relay-board-32x5A-rescue_HF46F-boneIO
 #
-DEF boneIO_HF46F K 0 30 Y Y 1 F N
+DEF boneIO---relay-board-32x5A-rescue_HF46F-boneIO K 0 30 Y Y 1 F N
 F0 "K" 650 300 50 H V L CNN
-F1 "boneIO_HF46F" 650 200 50 H V L CNN
+F1 "boneIO---relay-board-32x5A-rescue_HF46F-boneIO" 650 200 50 H V L CNN
 F2 "HF46F" 650 100 50 H I L CNN
 F3 "" 650 0 50 H I L CNN
 F4 "Sub-miniature intermediate power relay" 650 -100 50 H I L CNN "Description"
@@ -261,14 +261,13 @@ X 4 4 0 -200 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# boneIO_MCP9808_MSOP
+# boneIO---relay-board-32x5A-rescue_MCP9808_MSOP-boneIO
 #
-DEF boneIO_MCP9808_MSOP U 0 20 Y Y 1 F N
+DEF boneIO---relay-board-32x5A-rescue_MCP9808_MSOP-boneIO U 0 20 Y Y 1 F N
 F0 "U" -250 450 50 H V C CNN
-F1 "boneIO_MCP9808_MSOP" 400 450 50 H V C CNN
+F1 "boneIO---relay-board-32x5A-rescue_MCP9808_MSOP-boneIO" 400 450 50 H V C CNN
 F2 "Package_SO:MSOP-8_3x3mm_P0.65mm" 0 0 50 H I C CNN
 F3 "" -250 450 50 H I C CNN
-ALIAS MCP9808_MSOP
 $FPLIST
  MSOP*3x3mm*P0.65mm*
 $ENDFPLIST
