@@ -67,7 +67,7 @@ HF46F RELAY
 Wire Wire Line
 	17625 2625 17625 2725
 $Comp
-L boneIO:MCP9808_MSOP U7
+L boneIO---relay-board-32x5A-rescue:MCP9808_MSOP-boneIO U7
 U 1 1 61B8C06C
 P 21000 2925
 F 0 "U7" H 21444 2971 50  0000 L CNN
@@ -208,38 +208,13 @@ RELAY29
 Text GLabel 13400 4600 2    50   Input ~ 0
 RELAY30
 Wire Wire Line
-	4475 2950 5025 2950
-Wire Wire Line
 	5025 2950 5025 4100
-Wire Wire Line
-	4475 3050 4975 3050
 Wire Wire Line
 	4975 3050 4975 4200
 Wire Wire Line
-	4475 3150 4925 3150
-Wire Wire Line
 	4925 3150 4925 4300
 Wire Wire Line
-	4475 3250 4875 3250
-Wire Wire Line
-	4475 3350 4825 3350
-Wire Wire Line
 	4825 3350 4825 4500
-Wire Wire Line
-	4475 3450 4775 3450
-$Comp
-L power:GND #PWR06
-U 1 1 618692E6
-P 3775 4150
-F 0 "#PWR06" H 3775 3900 50  0001 C CNN
-F 1 "GND" H 3780 3977 50  0000 C CNN
-F 2 "" H 3775 4150 50  0001 C CNN
-F 3 "" H 3775 4150 50  0001 C CNN
-	1    3775 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3775 3950 3775 4150
 $Comp
 L power:+3V3 #PWR07
 U 1 1 6188B748
@@ -252,13 +227,7 @@ F 3 "" H 4325 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3775 1750 4325 1750
-Wire Wire Line
 	4325 1750 4325 1650
-Text GLabel 3075 2050 0    50   Input ~ 0
-SDA
-Text GLabel 3075 2150 0    50   Input ~ 0
-SCL
 $Comp
 L Interface_Expansion:MCP23017_SS U4
 U 1 1 618E0AF8
@@ -389,52 +358,6 @@ Wire Wire Line
 	11300 1750 11150 1750
 Connection ~ 11150 1750
 $Comp
-L Switch:SW_DIP_x03 SW1
-U 1 1 6198123F
-P 1750 3650
-F 0 "SW1" H 1750 4117 50  0000 C CNN
-F 1 "SW_DIP_x03" H 1750 4026 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 1750 3650 50  0001 C CNN
-F 3 "~" H 1750 3650 50  0001 C CNN
-	1    1750 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR01
-U 1 1 619A9DA0
-P 1250 3200
-F 0 "#PWR01" H 1250 3050 50  0001 C CNN
-F 1 "+3V3" H 1265 3373 50  0000 C CNN
-F 2 "" H 1250 3200 50  0001 C CNN
-F 3 "" H 1250 3200 50  0001 C CNN
-	1    1250 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 3200 1250 3450
-Wire Wire Line
-	1250 3650 1450 3650
-Wire Wire Line
-	1450 3550 1250 3550
-Connection ~ 1250 3550
-Wire Wire Line
-	1250 3550 1250 3650
-Wire Wire Line
-	1450 3450 1250 3450
-Connection ~ 1250 3450
-Wire Wire Line
-	1250 3450 1250 3550
-Wire Wire Line
-	2050 3550 2450 3550
-Wire Wire Line
-	2050 3650 2200 3650
-Wire Wire Line
-	2200 3750 2200 3650
-Connection ~ 2200 3650
-Wire Wire Line
-	2450 3750 2450 3550
-Connection ~ 2450 3550
-$Comp
 L Switch:SW_DIP_x03 SW2
 U 1 1 61A59AD9
 P 8525 3650
@@ -482,8 +405,6 @@ Wire Wire Line
 Connection ~ 9225 3550
 Wire Notes Line
 	22500 5850 950  5850
-Wire Notes Line
-	950  900  950  13650
 $Comp
 L Switch:SW_DIP_x03 SW3
 U 1 1 61B4F659
@@ -542,7 +463,7 @@ Connection ~ 20550 3025
 Wire Wire Line
 	20550 3025 20600 3025
 $Comp
-L boneIO:HF46F K1
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K1
 U 1 1 61B88957
 P 3400 7800
 F 0 "K1" H 3800 8065 50  0000 C CNN
@@ -556,7 +477,7 @@ F 6 "HF46F" H 4050 7400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K2
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K2
 U 1 1 61B8A916
 P 3400 8850
 F 0 "K2" H 3800 9115 50  0000 C CNN
@@ -646,34 +567,6 @@ Wire Wire Line
 Wire Wire Line
 	16825 2725 17625 2725
 Connection ~ 17625 2725
-$Comp
-L Device:R R4
-U 1 1 618178A5
-P 2825 2950
-F 0 "R4" V 2925 2900 50  0000 L CNN
-F 1 "4.7k" V 3025 2875 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2755 2950 50  0001 C CNN
-F 3 "~" H 2825 2950 50  0001 C CNN
-	1    2825 2950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2975 2950 3075 2950
-$Comp
-L power:+3.3V #PWR04
-U 1 1 618958C7
-P 2500 2800
-F 0 "#PWR04" H 2500 2650 50  0001 C CNN
-F 1 "+3.3V" H 2515 2973 50  0000 C CNN
-F 2 "" H 2500 2800 50  0001 C CNN
-F 3 "" H 2500 2800 50  0001 C CNN
-	1    2500 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 2800 2500 2950
-Wire Wire Line
-	2500 2950 2675 2950
 $Comp
 L Device:R R8
 U 1 1 618EB56D
@@ -854,22 +747,6 @@ Wire Wire Line
 Wire Wire Line
 	11500 4800 12600 4800
 Wire Wire Line
-	4475 2050 5675 2050
-Wire Wire Line
-	5675 2150 4475 2150
-Wire Wire Line
-	4475 2250 5675 2250
-Wire Wire Line
-	5675 2350 4475 2350
-Wire Wire Line
-	4475 2450 5675 2450
-Wire Wire Line
-	5675 2550 4475 2550
-Wire Wire Line
-	4475 2650 5675 2650
-Wire Wire Line
-	5675 2750 4475 2750
-Wire Wire Line
 	5025 4100 5675 4100
 Wire Wire Line
 	4975 4200 5675 4200
@@ -938,87 +815,6 @@ F 3 "" H 6075 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4875 3250 4875 4400
-$Comp
-L power:GND #PWR05
-U 1 1 6259534B
-P 2700 4100
-F 0 "#PWR05" H 2700 3850 50  0001 C CNN
-F 1 "GND" H 2705 3927 50  0000 C CNN
-F 2 "" H 2700 4100 50  0001 C CNN
-F 3 "" H 2700 4100 50  0001 C CNN
-	1    2700 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 62569A48
-P 2200 4100
-F 0 "#PWR02" H 2200 3850 50  0001 C CNN
-F 1 "GND" H 2205 3927 50  0000 C CNN
-F 2 "" H 2200 4100 50  0001 C CNN
-F 3 "" H 2200 4100 50  0001 C CNN
-	1    2200 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 624E3CEE
-P 2450 4100
-F 0 "#PWR03" H 2450 3850 50  0001 C CNN
-F 1 "GND" H 2455 3927 50  0000 C CNN
-F 2 "" H 2450 4100 50  0001 C CNN
-F 3 "" H 2450 4100 50  0001 C CNN
-	1    2450 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 4100 2200 4050
-$Comp
-L Device:R R1
-U 1 1 619D4350
-P 2200 3900
-F 0 "R1" H 2270 3946 50  0000 L CNN
-F 1 "10k" H 2270 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 3900 50  0001 C CNN
-F 3 "~" H 2200 3900 50  0001 C CNN
-	1    2200 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 4100 2450 4050
-$Comp
-L Device:R R2
-U 1 1 619D4343
-P 2450 3900
-F 0 "R2" H 2520 3946 50  0000 L CNN
-F 1 "10k" H 2520 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2380 3900 50  0001 C CNN
-F 3 "~" H 2450 3900 50  0001 C CNN
-	1    2450 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 619D4336
-P 2700 3900
-F 0 "R3" H 2770 3946 50  0000 L CNN
-F 1 "10k" H 2770 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2630 3900 50  0001 C CNN
-F 3 "~" H 2700 3900 50  0001 C CNN
-	1    2700 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Interface_Expansion:MCP23017_SS U1
-U 1 1 617B7CC0
-P 3775 2850
-F 0 "U1" H 3775 4131 50  0000 C CNN
-F 1 "MCP23017_SS" H 3775 4040 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 3975 1850 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3975 1750 50  0001 L CNN
-	1    3775 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 6261BF2F
@@ -1228,7 +1024,7 @@ F 3 "~" H 2300 10850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K3
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K3
 U 1 1 62B1A65F
 P 3400 10150
 F 0 "K3" H 3800 10415 50  0000 C CNN
@@ -1242,7 +1038,7 @@ F 6 "HF46F" H 4050 9750 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K4
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K4
 U 1 1 62B1A668
 P 3400 11200
 F 0 "K4" H 3800 11465 50  0000 C CNN
@@ -1299,7 +1095,7 @@ F 3 "~" H 2300 13200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K5
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K5
 U 1 1 62B2A576
 P 3400 12500
 F 0 "K5" H 3800 12765 50  0000 C CNN
@@ -1313,7 +1109,7 @@ F 6 "HF46F" H 4050 12100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K6
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K6
 U 1 1 62B2A57F
 P 3400 13550
 F 0 "K6" H 3800 13815 50  0000 C CNN
@@ -1370,7 +1166,7 @@ F 3 "~" H 5900 8500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K7
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K7
 U 1 1 62C5A60C
 P 7000 7800
 F 0 "K7" H 7400 8065 50  0000 C CNN
@@ -1384,7 +1180,7 @@ F 6 "HF46F" H 7650 7400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K8
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K8
 U 1 1 62C5A615
 P 7000 8850
 F 0 "K8" H 7400 9115 50  0000 C CNN
@@ -1441,7 +1237,7 @@ F 3 "~" H 5900 10850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K9
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K9
 U 1 1 62C5A63D
 P 7000 10150
 F 0 "K9" H 7400 10415 50  0000 C CNN
@@ -1455,7 +1251,7 @@ F 6 "HF46F" H 7650 9750 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K10
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K10
 U 1 1 62C5A646
 P 7000 11200
 F 0 "K10" H 7400 11465 50  0000 C CNN
@@ -1512,7 +1308,7 @@ F 3 "~" H 5900 13200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K11
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K11
 U 1 1 62C5A66C
 P 7000 12500
 F 0 "K11" H 7400 12765 50  0000 C CNN
@@ -1526,7 +1322,7 @@ F 6 "HF46F" H 7650 12100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K12
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K12
 U 1 1 62C5A675
 P 7000 13550
 F 0 "K12" H 7400 13815 50  0000 C CNN
@@ -1583,7 +1379,7 @@ F 3 "~" H 9650 8500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K13
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K13
 U 1 1 62C73758
 P 10750 7800
 F 0 "K13" H 11150 8065 50  0000 C CNN
@@ -1597,7 +1393,7 @@ F 6 "HF46F" H 11400 7400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K14
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K14
 U 1 1 62C73761
 P 10750 8850
 F 0 "K14" H 11150 9115 50  0000 C CNN
@@ -1654,7 +1450,7 @@ F 3 "~" H 9650 10850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K15
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K15
 U 1 1 62C73789
 P 10750 10150
 F 0 "K15" H 11150 10415 50  0000 C CNN
@@ -1668,7 +1464,7 @@ F 6 "HF46F" H 11400 9750 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L boneIO:HF46F K16
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K16
 U 1 1 62C73792
 P 10750 11200
 F 0 "K16" H 11150 11465 50  0000 C CNN
@@ -1714,7 +1510,7 @@ Wire Wire Line
 Wire Wire Line
 	10250 11400 10750 11400
 $Comp
-L boneIO:HF46F K17
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K17
 U 1 1 62CC3428
 P 14100 7800
 F 0 "K17" H 14500 8065 50  0000 C CNN
@@ -1728,7 +1524,7 @@ F 6 "HF46F" H 14750 7400 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K18
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K18
 U 1 1 62CC3431
 P 14100 8850
 F 0 "K18" H 14500 9115 50  0000 C CNN
@@ -1785,7 +1581,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 7600 14100 7600
 $Comp
-L boneIO:HF46F K19
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K19
 U 1 1 6326F0BD
 P 14100 10150
 F 0 "K19" H 14500 10415 50  0000 C CNN
@@ -1799,7 +1595,7 @@ F 6 "HF46F" H 14750 9750 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K20
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K20
 U 1 1 6326F0C6
 P 14100 11200
 F 0 "K20" H 14500 11465 50  0000 C CNN
@@ -1856,7 +1652,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 9950 14100 9950
 $Comp
-L boneIO:HF46F K21
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K21
 U 1 1 6328F764
 P 14100 12650
 F 0 "K21" H 14500 12915 50  0000 C CNN
@@ -1870,7 +1666,7 @@ F 6 "HF46F" H 14750 12250 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K22
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K22
 U 1 1 6328F76D
 P 14100 13700
 F 0 "K22" H 14500 13965 50  0000 C CNN
@@ -1927,7 +1723,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 12450 14100 12450
 $Comp
-L boneIO:HF46F K23
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K23
 U 1 1 632BAFD0
 P 17550 7750
 F 0 "K23" H 17950 8015 50  0000 C CNN
@@ -1941,7 +1737,7 @@ F 6 "HF46F" H 18200 7350 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K24
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K24
 U 1 1 632BAFD9
 P 17550 8800
 F 0 "K24" H 17950 9065 50  0000 C CNN
@@ -1998,7 +1794,7 @@ Wire Wire Line
 Wire Wire Line
 	18050 7550 17550 7550
 $Comp
-L boneIO:HF46F K25
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K25
 U 1 1 632BAFFF
 P 17550 10100
 F 0 "K25" H 17950 10365 50  0000 C CNN
@@ -2012,7 +1808,7 @@ F 6 "HF46F" H 18200 9700 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K26
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K26
 U 1 1 632BB008
 P 17550 11150
 F 0 "K26" H 17950 11415 50  0000 C CNN
@@ -2069,7 +1865,7 @@ Wire Wire Line
 Wire Wire Line
 	18050 9900 17550 9900
 $Comp
-L boneIO:HF46F K27
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K27
 U 1 1 632BB02E
 P 17550 12600
 F 0 "K27" H 17950 12865 50  0000 C CNN
@@ -2083,7 +1879,7 @@ F 6 "HF46F" H 18200 12200 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K28
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K28
 U 1 1 632BB037
 P 17550 13650
 F 0 "K28" H 17950 13915 50  0000 C CNN
@@ -2140,7 +1936,7 @@ Wire Wire Line
 Wire Wire Line
 	18050 12400 17550 12400
 $Comp
-L boneIO:HF46F K29
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K29
 U 1 1 632EF485
 P 20750 7750
 F 0 "K29" H 21150 8015 50  0000 C CNN
@@ -2154,7 +1950,7 @@ F 6 "HF46F" H 21400 7350 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K30
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K30
 U 1 1 632EF48E
 P 20750 8800
 F 0 "K30" H 21150 9065 50  0000 C CNN
@@ -2208,7 +2004,7 @@ Wire Wire Line
 Wire Wire Line
 	21250 7550 20750 7550
 $Comp
-L boneIO:HF46F K31
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K31
 U 1 1 632EF4B4
 P 20750 10100
 F 0 "K31" H 21150 10365 50  0000 C CNN
@@ -2222,7 +2018,7 @@ F 6 "HF46F" H 21400 9700 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:HF46F K32
+L boneIO---relay-board-32x5A-rescue:HF46F-boneIO K32
 U 1 1 632EF4BD
 P 20750 11150
 F 0 "K32" H 21150 11415 50  0000 C CNN
@@ -2343,8 +2139,6 @@ RELAY31
 Text GLabel 20750 11150 2    50   Input ~ 0
 RELAY32
 Wire Wire Line
-	4475 3550 4675 3550
-Wire Wire Line
 	4675 3550 4675 4700
 Wire Wire Line
 	4675 4700 5675 4700
@@ -2352,8 +2146,6 @@ Wire Wire Line
 	5675 4800 4575 4800
 Wire Wire Line
 	4575 4800 4575 3650
-Wire Wire Line
-	4575 3650 4475 3650
 Wire Wire Line
 	17625 2725 17625 2825
 Wire Wire Line
@@ -2695,17 +2487,6 @@ Connection ~ 6725 1950
 Wire Wire Line
 	6725 1950 6925 1950
 Wire Wire Line
-	2050 3450 2700 3450
-Wire Wire Line
-	2450 3550 3075 3550
-Wire Wire Line
-	2200 3650 3075 3650
-Wire Wire Line
-	2700 3750 2700 3450
-Connection ~ 2700 3450
-Wire Wire Line
-	2700 3450 3075 3450
-Wire Wire Line
 	8825 3450 9475 3450
 Wire Wire Line
 	9225 3550 9900 3550
@@ -2718,6 +2499,349 @@ Wire Wire Line
 Connection ~ 9475 3450
 Wire Wire Line
 	9475 3450 9900 3450
+NoConn ~ 9900 2650
+NoConn ~ 9900 2750
+$Comp
+L Interface_Expansion:MCP23017_SS U1
+U 1 1 61B58A9D
+P 3750 2850
+F 0 "U1" H 3750 4131 50  0000 C CNN
+F 1 "MCP23017_SS" H 3750 4040 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 3950 1850 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3950 1750 50  0001 L CNN
+	1    3750 2850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	950  900  950  13650
 Wire Wire Line
-	2700 4050 2700 4100
+	1200 3200 1200 3450
+Connection ~ 1200 3550
+Connection ~ 1200 3450
+Wire Wire Line
+	1200 3550 1200 3650
+Wire Wire Line
+	1200 3450 1200 3550
+$Comp
+L Switch:SW_DIP_x03 SW1
+U 1 1 6198123F
+P 1700 3650
+F 0 "SW1" H 1700 4117 50  0000 C CNN
+F 1 "SW_DIP_x03" H 1700 4026 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 1700 3650 50  0001 C CNN
+F 3 "~" H 1700 3650 50  0001 C CNN
+	1    1700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR01
+U 1 1 619A9DA0
+P 1200 3200
+F 0 "#PWR01" H 1200 3050 50  0001 C CNN
+F 1 "+3V3" H 1215 3373 50  0000 C CNN
+F 2 "" H 1200 3200 50  0001 C CNN
+F 3 "" H 1200 3200 50  0001 C CNN
+	1    1200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 3650 1400 3650
+Wire Wire Line
+	1400 3550 1200 3550
+Wire Wire Line
+	1400 3450 1200 3450
+Wire Wire Line
+	2000 3550 2400 3550
+Wire Wire Line
+	2000 3650 2150 3650
+Wire Wire Line
+	2150 3750 2150 3650
+Connection ~ 2150 3650
+Wire Wire Line
+	2400 3750 2400 3550
+Connection ~ 2400 3550
+$Comp
+L Device:R R4
+U 1 1 618178A5
+P 2775 2950
+F 0 "R4" V 2875 2900 50  0000 L CNN
+F 1 "4.7k" V 2975 2875 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2705 2950 50  0001 C CNN
+F 3 "~" H 2775 2950 50  0001 C CNN
+	1    2775 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR04
+U 1 1 618958C7
+P 2450 2800
+F 0 "#PWR04" H 2450 2650 50  0001 C CNN
+F 1 "+3.3V" H 2465 2973 50  0000 C CNN
+F 2 "" H 2450 2800 50  0001 C CNN
+F 3 "" H 2450 2800 50  0001 C CNN
+	1    2450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2800 2450 2950
+Wire Wire Line
+	2450 2950 2625 2950
+$Comp
+L power:GND #PWR05
+U 1 1 6259534B
+P 2650 4100
+F 0 "#PWR05" H 2650 3850 50  0001 C CNN
+F 1 "GND" H 2655 3927 50  0000 C CNN
+F 2 "" H 2650 4100 50  0001 C CNN
+F 3 "" H 2650 4100 50  0001 C CNN
+	1    2650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 62569A48
+P 2150 4100
+F 0 "#PWR02" H 2150 3850 50  0001 C CNN
+F 1 "GND" H 2155 3927 50  0000 C CNN
+F 2 "" H 2150 4100 50  0001 C CNN
+F 3 "" H 2150 4100 50  0001 C CNN
+	1    2150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 624E3CEE
+P 2400 4100
+F 0 "#PWR03" H 2400 3850 50  0001 C CNN
+F 1 "GND" H 2405 3927 50  0000 C CNN
+F 2 "" H 2400 4100 50  0001 C CNN
+F 3 "" H 2400 4100 50  0001 C CNN
+	1    2400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4100 2150 4050
+$Comp
+L Device:R R1
+U 1 1 619D4350
+P 2150 3900
+F 0 "R1" H 2220 3946 50  0000 L CNN
+F 1 "10k" H 2220 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 3900 50  0001 C CNN
+F 3 "~" H 2150 3900 50  0001 C CNN
+	1    2150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4100 2400 4050
+$Comp
+L Device:R R2
+U 1 1 619D4343
+P 2400 3900
+F 0 "R2" H 2470 3946 50  0000 L CNN
+F 1 "10k" H 2470 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 3900 50  0001 C CNN
+F 3 "~" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 619D4336
+P 2650 3900
+F 0 "R3" H 2720 3946 50  0000 L CNN
+F 1 "10k" H 2720 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2580 3900 50  0001 C CNN
+F 3 "~" H 2650 3900 50  0001 C CNN
+	1    2650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3450 2650 3450
+Wire Wire Line
+	2650 3750 2650 3450
+Connection ~ 2650 3450
+Wire Wire Line
+	2650 4050 2650 4100
+Wire Wire Line
+	4450 3650 4575 3650
+Wire Wire Line
+	4450 3550 4675 3550
+Wire Wire Line
+	4450 3450 4775 3450
+Wire Wire Line
+	4450 3350 4825 3350
+Wire Wire Line
+	4450 3250 4875 3250
+Wire Wire Line
+	4450 3150 4925 3150
+Wire Wire Line
+	4450 3050 4975 3050
+Wire Wire Line
+	4450 2950 5025 2950
+Wire Wire Line
+	4450 2750 5675 2750
+Wire Wire Line
+	4450 2650 5675 2650
+Wire Wire Line
+	4450 2550 5675 2550
+Wire Wire Line
+	4450 2450 5675 2450
+Wire Wire Line
+	4450 2350 5675 2350
+Wire Wire Line
+	4450 2250 5675 2250
+Wire Wire Line
+	4450 2150 5675 2150
+Wire Wire Line
+	4450 2050 5675 2050
+Wire Wire Line
+	3750 1750 4325 1750
+$Comp
+L power:GND #PWR0101
+U 1 1 6208C044
+P 3750 4150
+F 0 "#PWR0101" H 3750 3900 50  0001 C CNN
+F 1 "GND" H 3755 3977 50  0000 C CNN
+F 2 "" H 3750 4150 50  0001 C CNN
+F 3 "" H 3750 4150 50  0001 C CNN
+	1    3750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4150 3750 3950
+Wire Wire Line
+	2150 3650 3050 3650
+Wire Wire Line
+	2400 3550 3050 3550
+Wire Wire Line
+	2650 3450 3050 3450
+Wire Wire Line
+	2925 2950 3050 2950
+Text GLabel 3050 2050 0    50   Input ~ 0
+SDA
+Text GLabel 3050 2150 0    50   Input ~ 0
+SCL
+NoConn ~ 3050 2650
+NoConn ~ 3050 2750
+$Comp
+L power:VCC #PWR0102
+U 1 1 622D10D1
+P 1300 6200
+F 0 "#PWR0102" H 1300 6050 50  0001 C CNN
+F 1 "VCC" H 1315 6373 50  0000 C CNN
+F 2 "" H 1300 6200 50  0001 C CNN
+F 3 "" H 1300 6200 50  0001 C CNN
+	1    1300 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 62305BDB
+P 1300 6350
+F 0 "#FLG0101" H 1300 6425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 6523 50  0000 C CNN
+F 2 "" H 1300 6350 50  0001 C CNN
+F 3 "~" H 1300 6350 50  0001 C CNN
+	1    1300 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 6350 1300 6200
+$Comp
+L power:+5V #PWR0103
+U 1 1 624D77FD
+P 1800 6200
+F 0 "#PWR0103" H 1800 6050 50  0001 C CNN
+F 1 "+5V" H 1815 6373 50  0000 C CNN
+F 2 "" H 1800 6200 50  0001 C CNN
+F 3 "" H 1800 6200 50  0001 C CNN
+	1    1800 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0104
+U 1 1 624D8904
+P 2050 6200
+F 0 "#PWR0104" H 2050 6050 50  0001 C CNN
+F 1 "+24V" H 2065 6373 50  0000 C CNN
+F 2 "" H 2050 6200 50  0001 C CNN
+F 3 "" H 2050 6200 50  0001 C CNN
+	1    2050 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 62573ADC
+P 1800 6350
+F 0 "#FLG0102" H 1800 6425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 6523 50  0000 C CNN
+F 2 "" H 1800 6350 50  0001 C CNN
+F 3 "~" H 1800 6350 50  0001 C CNN
+	1    1800 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 6350 1800 6200
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 625DB650
+P 2050 6350
+F 0 "#FLG0103" H 2050 6425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2050 6523 50  0000 C CNN
+F 2 "" H 2050 6350 50  0001 C CNN
+F 3 "~" H 2050 6350 50  0001 C CNN
+	1    2050 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 6350 2050 6200
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 626440BF
+P 1550 6200
+F 0 "#PWR0105" H 1550 6050 50  0001 C CNN
+F 1 "+3.3V" H 1565 6373 50  0000 C CNN
+F 2 "" H 1550 6200 50  0001 C CNN
+F 3 "" H 1550 6200 50  0001 C CNN
+	1    1550 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 626448B0
+P 1550 6350
+F 0 "#FLG0104" H 1550 6425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 6523 50  0000 C CNN
+F 2 "" H 1550 6350 50  0001 C CNN
+F 3 "~" H 1550 6350 50  0001 C CNN
+	1    1550 6350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 6350 1550 6200
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 62715F93
+P 2400 6200
+F 0 "#FLG0105" H 2400 6275 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 6373 50  0000 C CNN
+F 2 "" H 2400 6200 50  0001 C CNN
+F 3 "~" H 2400 6200 50  0001 C CNN
+	1    2400 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6200 2400 6350
+$Comp
+L power:GND #PWR0106
+U 1 1 6277EE77
+P 2400 6350
+F 0 "#PWR0106" H 2400 6100 50  0001 C CNN
+F 1 "GND" H 2405 6177 50  0000 C CNN
+F 2 "" H 2400 6350 50  0001 C CNN
+F 3 "" H 2400 6350 50  0001 C CNN
+	1    2400 6350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
