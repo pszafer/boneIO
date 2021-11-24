@@ -13,2928 +13,3125 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	2200 11600 2200 12000
-Wire Wire Line
-	3300 12000 2200 12000
-Wire Wire Line
-	2300 11500 2300 13600
-Wire Wire Line
-	2300 13600 3400 13600
-Wire Wire Line
-	2400 11850 2400 11300
-Wire Wire Line
-	3400 11850 2400 11850
-Wire Wire Line
-	1800 11400 2950 11400
-Wire Wire Line
-	2950 10250 3300 10250
-Wire Wire Line
-	2950 11400 2950 10250
-Wire Wire Line
-	2200 8450 2200 8050
-Wire Wire Line
-	3300 8450 2200 8450
-Wire Wire Line
-	2300 7950 2300 10050
-Wire Wire Line
-	2300 10050 3400 10050
-Wire Wire Line
-	1800 7750 2800 7750
-Wire Wire Line
-	2800 8300 3400 8300
-Wire Wire Line
-	2800 7750 2800 8300
-Wire Wire Line
-	2900 6700 3300 6700
-Wire Wire Line
-	2900 7850 2900 6700
-Wire Wire Line
-	1800 7850 2900 7850
-Wire Wire Line
-	17750 8450 16750 8450
-Wire Wire Line
-	16750 8450 16750 7950
-Wire Wire Line
-	18050 8600 18050 8500
-NoConn ~ 17950 9900
-NoConn ~ 17950 8600
-$Comp
-L boneIO:RM85-2011-35-1005 K18
-U 1 1 656F8EFF
-P 18050 9900
-F 0 "K18" H 18700 10165 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 18700 10074 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 19200 10000 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 19200 9900 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 19200 9800 50  0001 L CNN "Description"
-F 5 "15.7" H 19200 9700 50  0001 L CNN "Height"
-F 6 "Relpol" H 19200 9600 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 19200 9500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 19200 9400 50  0001 L CNN "Arrow Part Number"
-	1    18050 9900
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	16850 6700 16850 7750
-Wire Wire Line
-	17750 6700 16850 6700
-Wire Wire Line
-	16850 8300 16850 7850
-Wire Wire Line
-	17850 8300 16850 8300
 $Comp
 L Connector:Screw_Terminal_01x04 J10
-U 1 1 656F8F11
-P 16050 7950
-F 0 "J10" H 15968 7525 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 15968 7616 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 16050 7950 50  0001 C CNN
-F 3 "~" H 16050 7950 50  0001 C CNN
-	1    16050 7950
+U 1 1 61BE04EF
+P 15900 7900
+F 0 "J10" H 15818 7475 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 15818 7566 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 15900 7900 50  0001 C CNN
+F 3 "~" H 15900 7900 50  0001 C CNN
+	1    15900 7900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	18050 6850 18050 6750
-NoConn ~ 17950 8150
-NoConn ~ 17950 6850
-$Comp
-L boneIO:RM85-2011-35-1005 K17
-U 1 1 656F8F21
-P 18050 8150
-F 0 "K17" H 18700 8415 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 18700 8324 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 19200 8250 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 19200 8150 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 19200 8050 50  0001 L CNN "Description"
-F 5 "15.7" H 19200 7950 50  0001 L CNN "Height"
-F 6 "Relpol" H 19200 7850 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 19200 7750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 19200 7650 50  0001 L CNN "Arrow Part Number"
-	1    18050 8150
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	18050 10000 18050 9900
-Wire Wire Line
-	18050 8250 18050 8150
-Wire Wire Line
-	16850 7750 16250 7750
-Wire Wire Line
-	16850 7850 16250 7850
-Wire Wire Line
-	16750 7950 16250 7950
-Wire Wire Line
-	16650 8050 16250 8050
-Wire Wire Line
-	16650 10050 16650 8050
-Wire Wire Line
-	17850 10050 16650 10050
-Wire Wire Line
-	17750 12000 16750 12000
-Wire Wire Line
-	16750 12000 16750 11500
-Wire Wire Line
-	18050 12150 18050 12050
-NoConn ~ 17950 13450
-NoConn ~ 17950 12150
-$Comp
-L boneIO:RM85-2011-35-1005 K20
-U 1 1 656F8F47
-P 18050 13450
-F 0 "K20" H 18700 13715 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 18700 13624 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 19200 13550 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 19200 13450 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 19200 13350 50  0001 L CNN "Description"
-F 5 "15.7" H 19200 13250 50  0001 L CNN "Height"
-F 6 "Relpol" H 19200 13150 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 19200 13050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 19200 12950 50  0001 L CNN "Arrow Part Number"
-	1    18050 13450
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	16850 10250 16850 11300
-Wire Wire Line
-	17750 10250 17350 10250
-Wire Wire Line
-	17750 10400 17750 10250
-Wire Wire Line
-	16850 11850 16850 11400
-Wire Wire Line
-	17850 11850 17500 11850
-Wire Wire Line
-	17850 11700 17850 11850
 $Comp
 L Connector:Screw_Terminal_01x04 J11
 U 1 1 656F8F59
-P 16050 11500
-F 0 "J11" H 15968 11075 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 15968 11166 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 16050 11500 50  0001 C CNN
-F 3 "~" H 16050 11500 50  0001 C CNN
-	1    16050 11500
+P 15900 11450
+F 0 "J11" H 15818 11025 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 15818 11116 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 15900 11450 50  0001 C CNN
+F 3 "~" H 15900 11450 50  0001 C CNN
+	1    15900 11450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	18050 10400 18050 10300
-NoConn ~ 17950 11700
-NoConn ~ 17950 10400
-$Comp
-L boneIO:RM85-2011-35-1005 K19
-U 1 1 656F8F69
-P 18050 11700
-F 0 "K19" H 18700 11965 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 18700 11874 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 19200 11800 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 19200 11700 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 19200 11600 50  0001 L CNN "Description"
-F 5 "15.7" H 19200 11500 50  0001 L CNN "Height"
-F 6 "Relpol" H 19200 11400 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 19200 11300 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 19200 11200 50  0001 L CNN "Arrow Part Number"
-	1    18050 11700
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	18050 13550 18050 13450
-Wire Wire Line
-	18050 11800 18050 11700
-Wire Wire Line
-	16850 11300 16250 11300
-Wire Wire Line
-	16850 11400 16250 11400
-Wire Wire Line
-	16750 11500 16250 11500
-Wire Wire Line
-	16650 11600 16250 11600
-Wire Wire Line
-	16650 13600 16650 11600
-Wire Wire Line
-	17850 13600 16650 13600
 $Comp
 L Transistor_Array:ULN2803A U6
 U 1 1 656F900D
-P 14300 3650
-F 0 "U6" H 14300 4217 50  0000 C CNN
-F 1 "ULN2803A" H 14300 4126 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 14350 3000 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 14400 3450 50  0001 C CNN
-	1    14300 3650
+P 14150 3600
+F 0 "U6" H 14150 4167 50  0000 C CNN
+F 1 "ULN2803A" H 14150 4076 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 14200 2950 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 14250 3400 50  0001 C CNN
+	1    14150 3600
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13300 8600 13300 8500
-NoConn ~ 13400 9900
-NoConn ~ 13400 8600
-$Comp
-L boneIO:RM85-2011-35-1005 K14
-U 1 1 6557F0EC
-P 13300 9900
-F 0 "K14" H 13950 10165 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 13950 10074 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 14450 10000 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 14450 9900 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 14450 9800 50  0001 L CNN "Description"
-F 5 "15.7" H 14450 9700 50  0001 L CNN "Height"
-F 6 "Relpol" H 14450 9600 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 14450 9500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 14450 9400 50  0001 L CNN "Arrow Part Number"
-	1    13300 9900
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J8
-U 1 1 6557F0D6
-P 15300 7850
-F 0 "J8" H 15218 7425 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 15218 7516 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 15300 7850 50  0001 C CNN
-F 3 "~" H 15300 7850 50  0001 C CNN
-	1    15300 7850
+U 1 1 61BE04EB
+P 15150 7800
+F 0 "J8" H 15068 7375 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 15068 7466 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 15150 7800 50  0001 C CNN
+F 3 "~" H 15150 7800 50  0001 C CNN
+	1    15150 7800
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13300 6850 13300 6750
-NoConn ~ 13400 8150
-NoConn ~ 13400 6850
-$Comp
-L boneIO:RM85-2011-35-1005 K13
-U 1 1 6557F0CB
-P 13300 8150
-F 0 "K13" H 13950 8415 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 13950 8324 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 14450 8250 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 14450 8150 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 14450 8050 50  0001 L CNN "Description"
-F 5 "15.7" H 14450 7950 50  0001 L CNN "Height"
-F 6 "Relpol" H 14450 7850 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 14450 7750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 14450 7650 50  0001 L CNN "Arrow Part Number"
-	1    13300 8150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	13300 10000 13300 9900
-Wire Wire Line
-	13300 8250 13300 8150
-Wire Wire Line
-	14500 7850 15100 7850
-Wire Wire Line
-	14600 7950 15100 7950
-Wire Wire Line
-	14700 8050 15100 8050
-Wire Wire Line
-	13300 12150 13300 12050
-NoConn ~ 13400 13450
-NoConn ~ 13400 12150
-$Comp
-L boneIO:RM85-2011-35-1005 K16
-U 1 1 6557F0A7
-P 13300 13450
-F 0 "K16" H 13950 13715 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 13950 13624 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 14450 13550 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 14450 13450 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 14450 13350 50  0001 L CNN "Description"
-F 5 "15.7" H 14450 13250 50  0001 L CNN "Height"
-F 6 "Relpol" H 14450 13150 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 14450 13050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 14450 12950 50  0001 L CNN "Arrow Part Number"
-	1    13300 13450
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J9
-U 1 1 6557F090
-P 15300 11400
-F 0 "J9" H 15218 10975 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 15218 11066 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 15300 11400 50  0001 C CNN
-F 3 "~" H 15300 11400 50  0001 C CNN
-	1    15300 11400
+U 1 1 61BE04E8
+P 15150 11350
+F 0 "J9" H 15068 10925 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 15068 11016 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 15150 11350 50  0001 C CNN
+F 3 "~" H 15150 11350 50  0001 C CNN
+	1    15150 11350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13300 10400 13300 10300
-NoConn ~ 13400 11700
-NoConn ~ 13400 10400
-$Comp
-L boneIO:RM85-2011-35-1005 K15
-U 1 1 6557F085
-P 13300 11700
-F 0 "K15" H 13950 11965 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 13950 11874 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 14450 11800 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 14450 11700 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 14450 11600 50  0001 L CNN "Description"
-F 5 "15.7" H 14450 11500 50  0001 L CNN "Height"
-F 6 "Relpol" H 14450 11400 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 14450 11300 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 14450 11200 50  0001 L CNN "Arrow Part Number"
-	1    13300 11700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	13300 13550 13300 13450
-Wire Wire Line
-	13300 11800 13300 11700
-Wire Wire Line
-	14500 11300 15100 11300
-Wire Wire Line
-	14600 11500 15100 11500
-Wire Wire Line
-	14700 11600 15100 11600
-Wire Wire Line
-	9600 11400 9000 11400
-Wire Wire Line
-	10800 11800 10800 11700
-Wire Wire Line
-	10800 13550 10800 13450
-$Comp
-L boneIO:RM85-2011-35-1005 K11
-U 1 1 6557F056
-P 10800 11700
-F 0 "K11" H 11450 11965 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 11450 11874 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 11950 11800 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 11950 11700 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 11950 11600 50  0001 L CNN "Description"
-F 5 "15.7" H 11950 11500 50  0001 L CNN "Height"
-F 6 "Relpol" H 11950 11400 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 11950 11300 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 11950 11200 50  0001 L CNN "Arrow Part Number"
-	1    10800 11700
-	0    1    -1   0   
-$EndComp
-NoConn ~ 10700 10400
-NoConn ~ 10700 11700
 $Comp
 L Connector:Screw_Terminal_01x04 J7
 U 1 1 6557F046
-P 8800 11500
-F 0 "J7" H 8718 11075 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 8718 11166 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 8800 11500 50  0001 C CNN
-F 3 "~" H 8800 11500 50  0001 C CNN
-	1    8800 11500
+P 8650 11450
+F 0 "J7" H 8568 11025 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 8568 11116 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 8650 11450 50  0001 C CNN
+F 3 "~" H 8650 11450 50  0001 C CNN
+	1    8650 11450
 	-1   0    0    1   
 $EndComp
 $Comp
-L boneIO:RM85-2011-35-1005 K12
-U 1 1 6557F034
-P 10800 13450
-F 0 "K12" H 11450 13715 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 11450 13624 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 11950 13550 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 11950 13450 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 11950 13350 50  0001 L CNN "Description"
-F 5 "15.7" H 11950 13250 50  0001 L CNN "Height"
-F 6 "Relpol" H 11950 13150 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 11950 13050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 11950 12950 50  0001 L CNN "Arrow Part Number"
-	1    10800 13450
-	0    1    -1   0   
-$EndComp
-NoConn ~ 10700 12150
-NoConn ~ 10700 13450
-Wire Wire Line
-	10800 12150 10800 12050
-Wire Wire Line
-	9400 8050 9000 8050
-Wire Wire Line
-	9500 7950 9000 7950
-Wire Wire Line
-	9600 7750 9000 7750
-Wire Wire Line
-	10800 8250 10800 8150
-Wire Wire Line
-	10800 10000 10800 9900
-$Comp
-L boneIO:RM85-2011-35-1005 K9
-U 1 1 6557F00E
-P 10800 8150
-F 0 "K9" H 11450 8415 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 11450 8324 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 11950 8250 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 11950 8150 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 11950 8050 50  0001 L CNN "Description"
-F 5 "15.7" H 11950 7950 50  0001 L CNN "Height"
-F 6 "Relpol" H 11950 7850 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 11950 7750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 11950 7650 50  0001 L CNN "Arrow Part Number"
-	1    10800 8150
-	0    1    -1   0   
-$EndComp
-NoConn ~ 10700 6850
-NoConn ~ 10700 8150
-Wire Wire Line
-	10800 6850 10800 6750
-$Comp
 L Connector:Screw_Terminal_01x04 J6
 U 1 1 6557EFFE
-P 8800 7850
-F 0 "J6" H 8718 7425 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 8718 7516 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 8800 7850 50  0001 C CNN
-F 3 "~" H 8800 7850 50  0001 C CNN
-	1    8800 7850
+P 8650 7800
+F 0 "J6" H 8568 7375 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 8568 7466 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 8650 7800 50  0001 C CNN
+F 3 "~" H 8650 7800 50  0001 C CNN
+	1    8650 7800
 	-1   0    0    -1  
-$EndComp
-$Comp
-L boneIO:RM85-2011-35-1005 K10
-U 1 1 6557EFEC
-P 10800 9900
-F 0 "K10" H 11450 10165 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 11450 10074 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 11950 10000 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 11950 9900 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 11950 9800 50  0001 L CNN "Description"
-F 5 "15.7" H 11950 9700 50  0001 L CNN "Height"
-F 6 "Relpol" H 11950 9600 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 11950 9500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 11950 9400 50  0001 L CNN "Arrow Part Number"
-	1    10800 9900
-	0    1    -1   0   
-$EndComp
-NoConn ~ 10700 8600
-NoConn ~ 10700 9900
-Wire Wire Line
-	10800 8600 10800 8500
-Wire Wire Line
-	6100 8600 6100 8500
-NoConn ~ 6200 9900
-NoConn ~ 6200 8600
-$Comp
-L boneIO:RM85-2011-35-1005 K6
-U 1 1 650CB5D8
-P 6100 9900
-F 0 "K6" H 6750 10165 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 6750 10074 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 7250 10000 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 7250 9900 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 7250 9800 50  0001 L CNN "Description"
-F 5 "15.7" H 7250 9700 50  0001 L CNN "Height"
-F 6 "Relpol" H 7250 9600 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 7250 9500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 7250 9400 50  0001 L CNN "Arrow Part Number"
-	1    6100 9900
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J4
 U 1 1 650CB5EA
-P 8100 7850
-F 0 "J4" H 8018 7425 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 8018 7516 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 8100 7850 50  0001 C CNN
-F 3 "~" H 8100 7850 50  0001 C CNN
-	1    8100 7850
+P 7950 7800
+F 0 "J4" H 7868 7375 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 7868 7466 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 7950 7800 50  0001 C CNN
+F 3 "~" H 7950 7800 50  0001 C CNN
+	1    7950 7800
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 6850 6100 6750
-NoConn ~ 6200 8150
-NoConn ~ 6200 6850
-$Comp
-L boneIO:RM85-2011-35-1005 K5
-U 1 1 650CB5FA
-P 6100 8150
-F 0 "K5" H 6750 8415 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 6750 8324 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 7250 8250 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 7250 8150 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 7250 8050 50  0001 L CNN "Description"
-F 5 "15.7" H 7250 7950 50  0001 L CNN "Height"
-F 6 "Relpol" H 7250 7850 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 7250 7750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 7250 7650 50  0001 L CNN "Arrow Part Number"
-	1    6100 8150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6100 10000 6100 9900
-Wire Wire Line
-	6100 8250 6100 8150
-Wire Wire Line
-	7300 7850 7900 7850
-Wire Wire Line
-	7400 7950 7900 7950
-Wire Wire Line
-	7500 8050 7900 8050
-Wire Wire Line
-	6100 12150 6100 12050
-$Comp
-L boneIO:RM85-2011-35-1005 K8
-U 1 1 650CB61E
-P 6100 13450
-F 0 "K8" H 6750 13715 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 6750 13624 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 7250 13550 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 7250 13450 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 7250 13350 50  0001 L CNN "Description"
-F 5 "15.7" H 7250 13250 50  0001 L CNN "Height"
-F 6 "Relpol" H 7250 13150 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 7250 13050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 7250 12950 50  0001 L CNN "Arrow Part Number"
-	1    6100 13450
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J5
 U 1 1 650CB630
-P 8100 11400
-F 0 "J5" H 8018 10975 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 8018 11066 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 8100 11400 50  0001 C CNN
-F 3 "~" H 8100 11400 50  0001 C CNN
-	1    8100 11400
+P 7950 11350
+F 0 "J5" H 7868 10925 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 7868 11016 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 7950 11350 50  0001 C CNN
+F 3 "~" H 7950 11350 50  0001 C CNN
+	1    7950 11350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 10400 6100 10300
-NoConn ~ 6200 11700
-NoConn ~ 6200 10400
-$Comp
-L boneIO:RM85-2011-35-1005 K7
-U 1 1 650CB640
-P 6100 11700
-F 0 "K7" H 6750 11965 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 6750 11874 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 7250 11800 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 7250 11700 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 7250 11600 50  0001 L CNN "Description"
-F 5 "15.7" H 7250 11500 50  0001 L CNN "Height"
-F 6 "Relpol" H 7250 11400 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 7250 11300 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 7250 11200 50  0001 L CNN "Arrow Part Number"
-	1    6100 11700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6100 13550 6100 13450
-Wire Wire Line
-	6100 11800 6100 11700
-Wire Wire Line
-	7300 11400 7900 11400
-Wire Wire Line
-	7400 11500 7900 11500
-Wire Wire Line
-	7500 11600 7900 11600
-Wire Wire Line
-	2200 11600 1800 11600
-Wire Wire Line
-	2300 11500 1800 11500
-Wire Wire Line
-	2400 11300 1800 11300
-Wire Wire Line
-	3600 11800 3600 11700
-Wire Wire Line
-	3600 13550 3600 13450
-$Comp
-L boneIO:RM85-2011-35-1005 K3
-U 1 1 64E84F3A
-P 3600 11700
-F 0 "K3" H 4250 11965 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 4250 11874 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 4750 11800 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 4750 11700 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 4750 11600 50  0001 L CNN "Description"
-F 5 "15.7" H 4750 11500 50  0001 L CNN "Height"
-F 6 "Relpol" H 4750 11400 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 4750 11300 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 4750 11200 50  0001 L CNN "Arrow Part Number"
-	1    3600 11700
-	0    1    -1   0   
-$EndComp
-NoConn ~ 3500 10400
-NoConn ~ 3500 11700
-Wire Wire Line
-	3600 10400 3600 10300
 $Comp
 L Connector:Screw_Terminal_01x04 J2
 U 1 1 64E84F2A
-P 1600 11400
-F 0 "J2" H 1518 10975 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 1518 11066 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 1600 11400 50  0001 C CNN
-F 3 "~" H 1600 11400 50  0001 C CNN
-	1    1600 11400
+P 1450 11350
+F 0 "J2" H 1368 10925 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 1368 11016 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 1450 11350 50  0001 C CNN
+F 3 "~" H 1450 11350 50  0001 C CNN
+	1    1450 11350
 	-1   0    0    -1  
 $EndComp
-$Comp
-L boneIO:RM85-2011-35-1005 K4
-U 1 1 64E84F18
-P 3600 13450
-F 0 "K4" H 4250 13715 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 4250 13624 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 4750 13550 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 4750 13450 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 4750 13350 50  0001 L CNN "Description"
-F 5 "15.7" H 4750 13250 50  0001 L CNN "Height"
-F 6 "Relpol" H 4750 13150 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 4750 13050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 4750 12950 50  0001 L CNN "Arrow Part Number"
-	1    3600 13450
-	0    1    -1   0   
-$EndComp
-NoConn ~ 3500 12150
-NoConn ~ 3500 13450
-Wire Wire Line
-	3600 12150 3600 12050
-Wire Wire Line
-	2200 8050 1800 8050
-Wire Wire Line
-	2300 7950 1800 7950
-Wire Wire Line
-	3600 8250 3600 8150
-Wire Wire Line
-	3600 10000 3600 9900
-$Comp
-L boneIO:RM85-2011-35-1005 K1
-U 1 1 6266FFCC
-P 3600 8150
-F 0 "K1" H 4250 8415 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 4250 8324 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 4750 8250 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 4750 8150 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 4750 8050 50  0001 L CNN "Description"
-F 5 "15.7" H 4750 7950 50  0001 L CNN "Height"
-F 6 "Relpol" H 4750 7850 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 4750 7750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 4750 7650 50  0001 L CNN "Arrow Part Number"
-	1    3600 8150
-	0    1    -1   0   
-$EndComp
-NoConn ~ 3500 6850
-NoConn ~ 3500 8150
-Wire Wire Line
-	3600 6850 3600 6750
 $Comp
 L Connector:Screw_Terminal_01x04 J1
 U 1 1 6266FFD7
-P 1600 7850
-F 0 "J1" H 1518 7425 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 1518 7516 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 1600 7850 50  0001 C CNN
-F 3 "~" H 1600 7850 50  0001 C CNN
-	1    1600 7850
+P 1450 7800
+F 0 "J1" H 1368 7375 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 1368 7466 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 1450 7800 50  0001 C CNN
+F 3 "~" H 1450 7800 50  0001 C CNN
+	1    1450 7800
 	-1   0    0    -1  
 $EndComp
 $Comp
-L boneIO:RM85-2011-35-1005 K2
-U 1 1 6266FFF0
-P 3600 9900
-F 0 "K2" H 4250 10165 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 4250 10074 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 4750 10000 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 4750 9900 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 4750 9800 50  0001 L CNN "Description"
-F 5 "15.7" H 4750 9700 50  0001 L CNN "Height"
-F 6 "Relpol" H 4750 9600 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 4750 9500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 4750 9400 50  0001 L CNN "Arrow Part Number"
-	1    3600 9900
-	0    1    -1   0   
-$EndComp
-NoConn ~ 3500 8600
-NoConn ~ 3500 9900
-Wire Wire Line
-	3600 8600 3600 8500
-Wire Wire Line
-	7400 13600 6300 13600
-Wire Wire Line
-	7400 11500 7400 13600
-Wire Wire Line
-	6400 12000 7500 12000
-Wire Wire Line
-	7500 12000 7500 11600
-Wire Wire Line
-	7200 11300 7200 11850
-Wire Wire Line
-	7200 11850 6300 11850
-Wire Wire Line
-	7200 11300 7900 11300
-Wire Wire Line
-	7300 11400 7300 10250
-Wire Wire Line
-	7300 10250 6400 10250
-Wire Wire Line
-	6300 10050 7400 10050
-Wire Wire Line
-	7400 7950 7400 10050
-Wire Wire Line
-	6400 8450 7500 8450
-Wire Wire Line
-	7500 8050 7500 8450
-Wire Wire Line
-	7150 7750 7150 8300
-Wire Wire Line
-	7150 8300 6300 8300
-Wire Wire Line
-	7150 7750 7900 7750
-Wire Wire Line
-	7300 7850 7300 6700
-Wire Wire Line
-	7300 6700 6400 6700
-Wire Wire Line
-	9700 7850 9700 6700
-Wire Wire Line
-	9700 6700 10500 6700
-Wire Wire Line
-	9000 7850 9700 7850
-Wire Wire Line
-	9600 7750 9600 8300
-Wire Wire Line
-	9600 8300 10600 8300
-Wire Wire Line
-	9500 10050 10600 10050
-Wire Wire Line
-	9500 7950 9500 10050
-Wire Wire Line
-	10500 8450 9400 8450
-Wire Wire Line
-	9400 8450 9400 8050
-$Comp
 L power:GND #PWR043
 U 1 1 691065EF
-P 9650 4500
-F 0 "#PWR043" H 9650 4250 50  0001 C CNN
-F 1 "GND" H 9655 4327 50  0000 C CNN
-F 2 "" H 9650 4500 50  0001 C CNN
-F 3 "" H 9650 4500 50  0001 C CNN
-	1    9650 4500
+P 9500 4450
+F 0 "#PWR043" H 9500 4200 50  0001 C CNN
+F 1 "GND" H 9505 4277 50  0000 C CNN
+F 2 "" H 9500 4450 50  0001 C CNN
+F 3 "" H 9500 4450 50  0001 C CNN
+	1    9500 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 4350 9650 4500
+	9500 4300 9500 4450
 $Comp
 L power:GND #PWR053
 U 1 1 6915DFE8
-P 14300 4500
-F 0 "#PWR053" H 14300 4250 50  0001 C CNN
-F 1 "GND" H 14305 4327 50  0000 C CNN
-F 2 "" H 14300 4500 50  0001 C CNN
-F 3 "" H 14300 4500 50  0001 C CNN
-	1    14300 4500
+P 14150 4450
+F 0 "#PWR053" H 14150 4200 50  0001 C CNN
+F 1 "GND" H 14155 4277 50  0000 C CNN
+F 2 "" H 14150 4450 50  0001 C CNN
+F 3 "" H 14150 4450 50  0001 C CNN
+	1    14150 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3600 8250 3800 8250
-Wire Wire Line
-	3600 10000 3800 10000
-Wire Wire Line
-	3600 11800 3800 11800
-Wire Wire Line
-	3600 13550 3800 13550
-Text GLabel 9050 3450 0    50   Input ~ 0
+Text GLabel 8900 3400 0    50   Input ~ 0
 K1
-Text GLabel 9050 3550 0    50   Input ~ 0
+Text GLabel 8900 3500 0    50   Input ~ 0
 K2
-Text GLabel 9050 3650 0    50   Input ~ 0
+Text GLabel 8900 3600 0    50   Input ~ 0
 K3
-Text GLabel 9050 3750 0    50   Input ~ 0
+Text GLabel 8900 3700 0    50   Input ~ 0
 K4
-Text GLabel 3800 8250 2    50   Input ~ 0
-RELAY1
-Text GLabel 3800 10000 2    50   Input ~ 0
-RELAY2
-Text GLabel 3800 11800 2    50   Input ~ 0
-RELAY3
 $Comp
 L Transistor_Array:ULN2803A U4
-U 1 1 6384F332
-P 9650 3650
-F 0 "U4" H 9650 4217 50  0000 C CNN
-F 1 "ULN2803A" H 9650 4126 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 9700 3000 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 9750 3450 50  0001 C CNN
-	1    9650 3650
+U 1 1 61BE04E1
+P 9500 3600
+F 0 "U4" H 9500 4167 50  0000 C CNN
+F 1 "ULN2803A" H 9500 4076 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 9550 2950 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 9600 3400 50  0001 C CNN
+	1    9500 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 13550 2    50   Input ~ 0
-RELAY4
 Wire Wire Line
-	10050 3450 10400 3450
+	9900 3400 10250 3400
 Wire Wire Line
-	10050 3550 10400 3550
+	9900 3500 10250 3500
 Wire Wire Line
-	10050 3650 10400 3650
+	9900 3600 10250 3600
 Wire Wire Line
-	10050 3750 10400 3750
-Text GLabel 11200 4150 0    50   Input ~ 0
+	9900 3700 10250 3700
+Text GLabel 11050 4100 0    50   Input ~ 0
 K11
-Text GLabel 11200 4050 0    50   Input ~ 0
+Text GLabel 11050 4000 0    50   Input ~ 0
 K12
-Text GLabel 11200 3950 0    50   Input ~ 0
+Text GLabel 11050 3900 0    50   Input ~ 0
 K13
-Text GLabel 11200 3850 0    50   Input ~ 0
+Text GLabel 11050 3800 0    50   Input ~ 0
 K14
 Wire Wire Line
-	10400 3850 10050 3850
+	10250 3800 9900 3800
 Wire Wire Line
-	10400 3950 10050 3950
-Text GLabel 10400 3550 2    50   Input ~ 0
+	10250 3900 9900 3900
+Text GLabel 10250 3500 2    50   Input ~ 0
 RELAY11
-Text GLabel 10400 3450 2    50   Input ~ 0
+Text GLabel 10250 3400 2    50   Input ~ 0
 RELAY12
-Text GLabel 10400 4150 2    50   Input ~ 0
+Text GLabel 10250 4100 2    50   Input ~ 0
 RELAY13
-Text GLabel 10400 4050 2    50   Input ~ 0
+Text GLabel 10250 4000 2    50   Input ~ 0
 RELAY14
-Text GLabel 11000 11800 2    50   Input ~ 0
-RELAY11
-Text GLabel 11000 13550 2    50   Input ~ 0
-RELAY12
-Text GLabel 13100 13550 0    50   Input ~ 0
-RELAY13
-Text GLabel 13100 11800 0    50   Input ~ 0
-RELAY14
-Wire Wire Line
-	10800 11800 11000 11800
-Wire Wire Line
-	10800 13550 11000 13550
-Wire Wire Line
-	13300 13550 13100 13550
-Wire Wire Line
-	13300 11800 13100 11800
-Text GLabel 13650 3750 0    50   Input ~ 0
+Text GLabel 13500 3700 0    50   Input ~ 0
 K7
-Text GLabel 13650 3650 0    50   Input ~ 0
+Text GLabel 13500 3600 0    50   Input ~ 0
 K8
-Text GLabel 13650 3550 0    50   Input ~ 0
+Text GLabel 13500 3500 0    50   Input ~ 0
 K9
-Text GLabel 13650 3450 0    50   Input ~ 0
+Text GLabel 13500 3400 0    50   Input ~ 0
 K10
-Text GLabel 13650 4150 0    50   Input ~ 0
+Text GLabel 13500 4100 0    50   Input ~ 0
 K17
-Text GLabel 13650 4050 0    50   Input ~ 0
+Text GLabel 13500 4000 0    50   Input ~ 0
 K18
-Text GLabel 13650 3950 0    50   Input ~ 0
+Text GLabel 13500 3900 0    50   Input ~ 0
 K19
-Text GLabel 13650 3850 0    50   Input ~ 0
+Text GLabel 13500 3800 0    50   Input ~ 0
 K20
 Wire Wire Line
-	15050 3450 14700 3450
+	14900 3400 14550 3400
 Wire Wire Line
-	15050 3550 14700 3550
+	14900 3500 14550 3500
 Wire Wire Line
-	15050 3650 14700 3650
+	14900 3600 14550 3600
 Wire Wire Line
-	15050 3750 14700 3750
+	14900 3700 14550 3700
 Wire Wire Line
-	15050 3850 14700 3850
+	14900 3800 14550 3800
 Wire Wire Line
-	15050 3950 14700 3950
+	14900 3900 14550 3900
 Wire Wire Line
-	15050 4050 14700 4050
+	14900 4000 14550 4000
 Wire Wire Line
-	15050 4150 14700 4150
+	14900 4100 14550 4100
 Wire Wire Line
-	10300 3350 10300 3050
+	10150 3300 10150 3000
 Wire Wire Line
-	10050 3350 10300 3350
+	9900 3300 10150 3300
 Wire Wire Line
-	14950 3350 14950 3050
+	14800 3300 14800 3000
 Wire Wire Line
-	14700 3350 14950 3350
-Text GLabel 12600 3550 2    50   Input ~ 0
+	14550 3300 14800 3300
+Text GLabel 12450 3500 2    50   Input ~ 0
 RELAY7
-Text GLabel 12600 3650 2    50   Input ~ 0
+Text GLabel 12450 3600 2    50   Input ~ 0
 RELAY8
-Text GLabel 15050 3450 2    50   Input ~ 0
+Text GLabel 14900 3400 2    50   Input ~ 0
 RELAY9
-Text GLabel 15050 3550 2    50   Input ~ 0
+Text GLabel 14900 3500 2    50   Input ~ 0
 RELAY10
-Text GLabel 10400 3750 2    50   Input ~ 0
+Text GLabel 10250 3700 2    50   Input ~ 0
 RELAY17
-Text GLabel 10400 3650 2    50   Input ~ 0
+Text GLabel 10250 3600 2    50   Input ~ 0
 RELAY18
-Text GLabel 15050 4050 2    50   Input ~ 0
+Text GLabel 14900 4000 2    50   Input ~ 0
 RELAY19
-Text GLabel 15050 4150 2    50   Input ~ 0
+Text GLabel 14900 4100 2    50   Input ~ 0
 RELAY20
-Text GLabel 9050 3850 0    50   Input ~ 0
+Text GLabel 8900 3800 0    50   Input ~ 0
 K5
-Text GLabel 9050 3950 0    50   Input ~ 0
+Text GLabel 8900 3900 0    50   Input ~ 0
 K6
-Text GLabel 11200 3650 0    50   Input ~ 0
+Text GLabel 11050 3600 0    50   Input ~ 0
 K16
-Text GLabel 11200 3750 0    50   Input ~ 0
+Text GLabel 11050 3700 0    50   Input ~ 0
 K15
-Text GLabel 10400 3950 2    50   Input ~ 0
+Text GLabel 10250 3900 2    50   Input ~ 0
 RELAY15
-Text GLabel 10400 3850 2    50   Input ~ 0
+Text GLabel 10250 3800 2    50   Input ~ 0
 RELAY16
-Text GLabel 5900 8250 0    50   Input ~ 0
-RELAY5
-Text GLabel 5900 10000 0    50   Input ~ 0
-RELAY6
-Wire Wire Line
-	5900 8250 6100 8250
-Wire Wire Line
-	5900 10000 6100 10000
-Text GLabel 5900 11800 0    50   Input ~ 0
-RELAY7
-Text GLabel 5900 13550 0    50   Input ~ 0
-RELAY8
-Text GLabel 11000 8250 2    50   Input ~ 0
-RELAY9
-Text GLabel 11000 10000 2    50   Input ~ 0
-RELAY10
-Wire Wire Line
-	5900 11800 6100 11800
-Wire Wire Line
-	5900 13550 6100 13550
-Wire Wire Line
-	10800 10000 11000 10000
-Wire Wire Line
-	10800 8250 11000 8250
-Text GLabel 13100 10000 0    50   Input ~ 0
-RELAY15
-Text GLabel 13100 8250 0    50   Input ~ 0
-RELAY16
-Wire Wire Line
-	13100 8250 13300 8250
-Wire Wire Line
-	13100 10000 13300 10000
-Text GLabel 18250 8250 2    50   Input ~ 0
-RELAY17
-Text GLabel 18250 10000 2    50   Input ~ 0
-RELAY18
-Text GLabel 18250 11800 2    50   Input ~ 0
-RELAY19
-Text GLabel 18250 13550 2    50   Input ~ 0
-RELAY20
-Wire Wire Line
-	18050 8250 18250 8250
-Wire Wire Line
-	18250 10000 18050 10000
-Wire Wire Line
-	18050 11800 18250 11800
-Wire Wire Line
-	18050 13550 18250 13550
-Text Notes 6100 2400 0    197  ~ 39
+Text Notes 5050 2150 0    197  ~ 39
 PINOUT
-Text Notes 11500 2350 0    197  ~ 39
+Text Notes 11350 2300 0    197  ~ 39
 ULN2803A
-Text Notes 11600 6600 0    197  ~ 39
+Text Notes 11450 6550 0    197  ~ 39
 RELAY
-Wire Wire Line
-	9600 11850 9600 11400
-Wire Wire Line
-	9600 11300 9000 11300
-Wire Wire Line
-	9400 11600 9000 11600
-Wire Wire Line
-	9500 11500 9000 11500
-Wire Wire Line
-	9500 12000 9500 11500
-Wire Wire Line
-	10600 13600 9400 13600
-Wire Wire Line
-	9400 13600 9400 11600
-Wire Wire Line
-	10500 12000 9500 12000
-Wire Wire Line
-	10600 11850 9600 11850
-Wire Wire Line
-	9600 10250 9600 11300
-Wire Wire Line
-	10500 10250 9600 10250
-Wire Wire Line
-	14600 13600 13500 13600
-Wire Wire Line
-	14600 11500 14600 13600
-Wire Wire Line
-	13600 12000 14700 12000
-Wire Wire Line
-	14700 11600 14700 12000
-Wire Wire Line
-	14400 11400 14400 10250
-Wire Wire Line
-	14400 10250 13600 10250
-Wire Wire Line
-	14400 11400 15100 11400
-Wire Wire Line
-	14500 11300 14500 11850
-Wire Wire Line
-	14500 11850 13500 11850
-Wire Wire Line
-	13500 10050 14600 10050
-Wire Wire Line
-	14600 7950 14600 10050
-Wire Wire Line
-	14700 8050 14700 8450
-Wire Wire Line
-	14700 8450 13600 8450
-Wire Wire Line
-	14400 7750 14400 8300
-Wire Wire Line
-	14400 8300 13500 8300
-Wire Wire Line
-	14400 7750 15100 7750
-Wire Wire Line
-	14500 7850 14500 6700
-Wire Wire Line
-	14500 6700 13600 6700
-Wire Wire Line
-	10800 10400 10800 10300
-$Comp
-L boneIO:MCP9808_MSOP U1
-U 1 1 61B8C06C
-P 3250 4150
-F 0 "U1" H 3694 4196 50  0000 L CNN
-F 1 "MCP9808_MSOP" H 3694 4105 50  0000 L CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 3250 4150 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22203b.pdf" H 3000 4600 50  0001 C CNN
-	1    3250 4150
-	1    0    0    -1  
-$EndComp
-Text GLabel 2250 3850 0    50   Input ~ 0
+Text GLabel 2100 3800 0    50   Input ~ 0
 SDA
-Text GLabel 2250 3950 0    50   Input ~ 0
+Text GLabel 2100 3900 0    50   Input ~ 0
 SCL
 $Comp
 L power:+3V3 #PWR011
 U 1 1 61CA08D5
-P 3250 3350
-F 0 "#PWR011" H 3250 3200 50  0001 C CNN
-F 1 "+3V3" H 3265 3523 50  0000 C CNN
-F 2 "" H 3250 3350 50  0001 C CNN
-F 3 "" H 3250 3350 50  0001 C CNN
-	1    3250 3350
+P 3100 3300
+F 0 "#PWR011" H 3100 3150 50  0001 C CNN
+F 1 "+3V3" H 3115 3473 50  0000 C CNN
+F 2 "" H 3100 3300 50  0001 C CNN
+F 3 "" H 3100 3300 50  0001 C CNN
+	1    3100 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR012
-U 1 1 61D4A536
-P 3250 4750
-F 0 "#PWR012" H 3250 4500 50  0001 C CNN
-F 1 "GND" H 3255 4577 50  0000 C CNN
-F 2 "" H 3250 4750 50  0001 C CNN
-F 3 "" H 3250 4750 50  0001 C CNN
-	1    3250 4750
+U 1 1 61BE04A3
+P 3100 4700
+F 0 "#PWR012" H 3100 4450 50  0001 C CNN
+F 1 "GND" H 3105 4527 50  0000 C CNN
+F 2 "" H 3100 4700 50  0001 C CNN
+F 3 "" H 3100 4700 50  0001 C CNN
+	1    3100 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 4650 3250 4750
+	3100 4600 3100 4700
 $Comp
 L Device:R R6
 U 1 1 61D83774
-P 3850 3550
-F 0 "R6" H 3920 3596 50  0000 L CNN
-F 1 "4.7k" H 3920 3505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 3550 50  0001 C CNN
-F 3 "~" H 3850 3550 50  0001 C CNN
-	1    3850 3550
+P 3700 3500
+F 0 "R6" H 3770 3546 50  0000 L CNN
+F 1 "4.7k" H 3770 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3630 3500 50  0001 C CNN
+F 3 "~" H 3700 3500 50  0001 C CNN
+	1    3700 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 4150 3850 4150
+	3500 4100 3700 4100
 $Comp
 L power:+3V3 #PWR013
 U 1 1 61DBD734
-P 3850 3350
-F 0 "#PWR013" H 3850 3200 50  0001 C CNN
-F 1 "+3V3" H 3865 3523 50  0000 C CNN
-F 2 "" H 3850 3350 50  0001 C CNN
-F 3 "" H 3850 3350 50  0001 C CNN
-	1    3850 3350
+P 3700 3300
+F 0 "#PWR013" H 3700 3150 50  0001 C CNN
+F 1 "+3V3" H 3715 3473 50  0000 C CNN
+F 2 "" H 3700 3300 50  0001 C CNN
+F 3 "" H 3700 3300 50  0001 C CNN
+	1    3700 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 3700 3850 4150
+	3700 3650 3700 4100
 $Comp
 L Device:R R1
 U 1 1 61F1C0C6
-P 2150 4750
-F 0 "R1" H 2220 4796 50  0000 L CNN
-F 1 "10k" H 2220 4705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 4750 50  0001 C CNN
-F 3 "~" H 2150 4750 50  0001 C CNN
-	1    2150 4750
+P 2000 4700
+F 0 "R1" H 2070 4746 50  0000 L CNN
+F 1 "10k" H 2070 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 4700 50  0001 C CNN
+F 3 "~" H 2000 4700 50  0001 C CNN
+	1    2000 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R3
-U 1 1 61F1C0CC
-P 2350 4750
-F 0 "R3" H 2420 4796 50  0000 L CNN
-F 1 "10k" H 2420 4705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 4750 50  0001 C CNN
-F 3 "~" H 2350 4750 50  0001 C CNN
-	1    2350 4750
+U 1 1 61BE04AB
+P 2200 4700
+F 0 "R3" H 2270 4746 50  0000 L CNN
+F 1 "10k" H 2270 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 4700 50  0001 C CNN
+F 3 "~" H 2200 4700 50  0001 C CNN
+	1    2200 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R4
-U 1 1 61F1C0D2
-P 2550 4750
-F 0 "R4" H 2620 4796 50  0000 L CNN
-F 1 "10k" H 2620 4705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 4750 50  0001 C CNN
-F 3 "~" H 2550 4750 50  0001 C CNN
-	1    2550 4750
+U 1 1 61BE04AC
+P 2400 4700
+F 0 "R4" H 2470 4746 50  0000 L CNN
+F 1 "10k" H 2470 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 4700 50  0001 C CNN
+F 3 "~" H 2400 4700 50  0001 C CNN
+	1    2400 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 4350 2350 4350
+	2700 4300 2200 4300
 $Comp
 L power:GND #PWR02
 U 1 1 620D69FE
-P 2150 5000
-F 0 "#PWR02" H 2150 4750 50  0001 C CNN
-F 1 "GND" H 2155 4827 50  0000 C CNN
-F 2 "" H 2150 5000 50  0001 C CNN
-F 3 "" H 2150 5000 50  0001 C CNN
-	1    2150 5000
+P 2000 4950
+F 0 "#PWR02" H 2000 4700 50  0001 C CNN
+F 1 "GND" H 2005 4777 50  0000 C CNN
+F 2 "" H 2000 4950 50  0001 C CNN
+F 3 "" H 2000 4950 50  0001 C CNN
+	1    2000 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 4900 2150 5000
+	2000 4850 2000 4950
 $Comp
 L power:GND #PWR04
 U 1 1 620F7BA9
-P 2350 5000
-F 0 "#PWR04" H 2350 4750 50  0001 C CNN
-F 1 "GND" H 2355 4827 50  0000 C CNN
-F 2 "" H 2350 5000 50  0001 C CNN
-F 3 "" H 2350 5000 50  0001 C CNN
-	1    2350 5000
+P 2200 4950
+F 0 "#PWR04" H 2200 4700 50  0001 C CNN
+F 1 "GND" H 2205 4777 50  0000 C CNN
+F 2 "" H 2200 4950 50  0001 C CNN
+F 3 "" H 2200 4950 50  0001 C CNN
+	1    2200 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 4900 2350 5000
+	2200 4850 2200 4950
 $Comp
 L power:GND #PWR09
-U 1 1 62118E53
-P 2550 5000
-F 0 "#PWR09" H 2550 4750 50  0001 C CNN
-F 1 "GND" H 2555 4827 50  0000 C CNN
-F 2 "" H 2550 5000 50  0001 C CNN
-F 3 "" H 2550 5000 50  0001 C CNN
-	1    2550 5000
+U 1 1 61BE04B4
+P 2400 4950
+F 0 "#PWR09" H 2400 4700 50  0001 C CNN
+F 1 "GND" H 2405 4777 50  0000 C CNN
+F 2 "" H 2400 4950 50  0001 C CNN
+F 3 "" H 2400 4950 50  0001 C CNN
+	1    2400 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 4900 2550 5000
+	2400 4850 2400 4950
 Wire Notes Line
-	4750 6050 4750 1600
-Text Notes 2200 2750 0    197  ~ 39
+	4600 6000 4600 1550
+Text Notes 2050 2700 0    197  ~ 39
 MCP9808\n\n
-Text GLabel 12600 3450 2    50   Input ~ 0
+Text GLabel 12450 3400 2    50   Input ~ 0
 RELAY6
-Text GLabel 12600 4150 2    50   Input ~ 0
+Text GLabel 12450 4100 2    50   Input ~ 0
 RELAY5
-Text GLabel 12600 4050 2    50   Input ~ 0
+Text GLabel 12450 4000 2    50   Input ~ 0
 RELAY4
-Text GLabel 12600 3950 2    50   Input ~ 0
+Text GLabel 12450 3900 2    50   Input ~ 0
 RELAY3
-Text GLabel 12600 3850 2    50   Input ~ 0
+Text GLabel 12450 3800 2    50   Input ~ 0
 RELAY2
-Text GLabel 12600 3750 2    50   Input ~ 0
+Text GLabel 12450 3700 2    50   Input ~ 0
 RELAY1
 $Comp
 L power:GND #PWR050
-U 1 1 69140973
-P 11850 4600
-F 0 "#PWR050" H 11850 4350 50  0001 C CNN
-F 1 "GND" H 11855 4427 50  0000 C CNN
-F 2 "" H 11850 4600 50  0001 C CNN
-F 3 "" H 11850 4600 50  0001 C CNN
-	1    11850 4600
+U 1 1 61BE04F6
+P 11700 4550
+F 0 "#PWR050" H 11700 4300 50  0001 C CNN
+F 1 "GND" H 11705 4377 50  0000 C CNN
+F 2 "" H 11700 4550 50  0001 C CNN
+F 3 "" H 11700 4550 50  0001 C CNN
+	1    11700 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12600 3650 12250 3650
+	12450 3600 12100 3600
 Wire Wire Line
-	12600 3750 12250 3750
+	12450 3700 12100 3700
 Wire Wire Line
-	12500 3350 12500 3050
+	12350 3300 12350 3000
 Wire Wire Line
-	12250 3350 12500 3350
+	12100 3300 12350 3300
 Wire Wire Line
-	12250 3850 12600 3850
+	12100 3800 12450 3800
 Wire Wire Line
-	12250 3950 12600 3950
+	12100 3900 12450 3900
 Wire Wire Line
-	12250 4050 12600 4050
+	12100 4000 12450 4000
 Wire Wire Line
-	12250 4150 12600 4150
+	12100 4100 12450 4100
 Wire Wire Line
-	11850 4350 11850 4600
+	11700 4300 11700 4550
 $Comp
 L Device:C C1
-U 1 1 616F379C
-P 4550 4200
-F 0 "C1" H 4665 4246 50  0000 L CNN
-F 1 "100n" H 4665 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4588 4050 50  0001 C CNN
-F 3 "~" H 4550 4200 50  0001 C CNN
-	1    4550 4200
+U 1 1 61BE0481
+P 4400 4150
+F 0 "C1" H 4515 4196 50  0000 L CNN
+F 1 "100n" H 4515 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 4000 50  0001 C CNN
+F 3 "~" H 4400 4150 50  0001 C CNN
+	1    4400 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR015
-U 1 1 616F4AFF
-P 4550 4000
-F 0 "#PWR015" H 4550 3850 50  0001 C CNN
-F 1 "+3V3" H 4565 4173 50  0000 C CNN
-F 2 "" H 4550 4000 50  0001 C CNN
-F 3 "" H 4550 4000 50  0001 C CNN
-	1    4550 4000
+U 1 1 61BE0482
+P 4400 3950
+F 0 "#PWR015" H 4400 3800 50  0001 C CNN
+F 1 "+3V3" H 4415 4123 50  0000 C CNN
+F 2 "" H 4400 3950 50  0001 C CNN
+F 3 "" H 4400 3950 50  0001 C CNN
+	1    4400 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 4050 4550 4000
+	4400 4000 4400 3950
 $Comp
 L power:GND #PWR016
-U 1 1 6174A82A
-P 4550 4500
-F 0 "#PWR016" H 4550 4250 50  0001 C CNN
-F 1 "GND" H 4555 4327 50  0000 C CNN
-F 2 "" H 4550 4500 50  0001 C CNN
-F 3 "" H 4550 4500 50  0001 C CNN
-	1    4550 4500
+U 1 1 61BE0483
+P 4400 4450
+F 0 "#PWR016" H 4400 4200 50  0001 C CNN
+F 1 "GND" H 4405 4277 50  0000 C CNN
+F 2 "" H 4400 4450 50  0001 C CNN
+F 3 "" H 4400 4450 50  0001 C CNN
+	1    4400 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 4500 4550 4350
+	4400 4450 4400 4300
 $Comp
 L power:GND #PWR049
 U 1 1 6182B54C
-P 10300 4700
-F 0 "#PWR049" H 10300 4450 50  0001 C CNN
-F 1 "GND" H 10305 4527 50  0000 C CNN
-F 2 "" H 10300 4700 50  0001 C CNN
-F 3 "" H 10300 4700 50  0001 C CNN
-	1    10300 4700
+P 10150 4650
+F 0 "#PWR049" H 10150 4400 50  0001 C CNN
+F 1 "GND" H 10155 4477 50  0000 C CNN
+F 2 "" H 10150 4650 50  0001 C CNN
+F 3 "" H 10150 4650 50  0001 C CNN
+	1    10150 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 4700 10300 4550
+	10150 4650 10150 4500
 $Comp
 L power:GND #PWR052
-U 1 1 61906A98
-P 12500 4700
-F 0 "#PWR052" H 12500 4450 50  0001 C CNN
-F 1 "GND" H 12505 4527 50  0000 C CNN
-F 2 "" H 12500 4700 50  0001 C CNN
-F 3 "" H 12500 4700 50  0001 C CNN
-	1    12500 4700
+U 1 1 61BE0487
+P 12350 4650
+F 0 "#PWR052" H 12350 4400 50  0001 C CNN
+F 1 "GND" H 12355 4477 50  0000 C CNN
+F 2 "" H 12350 4650 50  0001 C CNN
+F 3 "" H 12350 4650 50  0001 C CNN
+	1    12350 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12500 4700 12500 4550
+	12350 4650 12350 4500
 $Comp
 L power:GND #PWR059
 U 1 1 61933760
-P 14950 4700
-F 0 "#PWR059" H 14950 4450 50  0001 C CNN
-F 1 "GND" H 14955 4527 50  0000 C CNN
-F 2 "" H 14950 4700 50  0001 C CNN
-F 3 "" H 14950 4700 50  0001 C CNN
-	1    14950 4700
+P 14800 4650
+F 0 "#PWR059" H 14800 4400 50  0001 C CNN
+F 1 "GND" H 14805 4477 50  0000 C CNN
+F 2 "" H 14800 4650 50  0001 C CNN
+F 3 "" H 14800 4650 50  0001 C CNN
+	1    14800 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14950 4700 14950 4550
+	14800 4650 14800 4500
 Wire Wire Line
-	17850 10400 17850 10350
+	2700 4400 2400 4400
 Wire Wire Line
-	17850 10350 17500 10350
+	2400 4400 2400 4550
 Wire Wire Line
-	17500 10350 17500 11850
-Connection ~ 17500 11850
+	2200 4550 2200 4300
 Wire Wire Line
-	17500 11850 16850 11850
+	2000 4550 2000 4200
 Wire Wire Line
-	17750 11700 17750 11750
-Wire Wire Line
-	17750 11750 17350 11750
-Wire Wire Line
-	17350 11750 17350 10250
-Connection ~ 17350 10250
-Wire Wire Line
-	17350 10250 16850 10250
-NoConn ~ 6200 12150
-NoConn ~ 6200 13450
-Wire Wire Line
-	2850 4450 2550 4450
-Wire Wire Line
-	2550 4450 2550 4600
-Wire Wire Line
-	2350 4600 2350 4350
-Wire Wire Line
-	2150 4600 2150 4250
-Wire Wire Line
-	2150 4250 2850 4250
+	2000 4200 2700 4200
 $Comp
 L Switch:SW_DIP_x03 SW1
 U 1 1 619BF441
-P 1650 4450
-F 0 "SW1" H 1650 4917 50  0000 C CNN
-F 1 "SW_DIP_x03" H 1650 4826 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 1650 4450 50  0001 C CNN
-F 3 "~" H 1650 4450 50  0001 C CNN
-	1    1650 4450
+P 1500 4400
+F 0 "SW1" H 1500 4867 50  0000 C CNN
+F 1 "SW_DIP_x03" H 1500 4776 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 1500 4400 50  0001 C CNN
+F 3 "~" H 1500 4400 50  0001 C CNN
+	1    1500 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 4450 1950 4450
-Connection ~ 2550 4450
+	2400 4400 1800 4400
+Connection ~ 2400 4400
 Wire Wire Line
-	2350 4350 1950 4350
-Connection ~ 2350 4350
+	2200 4300 1800 4300
+Connection ~ 2200 4300
 Wire Wire Line
-	2150 4250 1950 4250
-Connection ~ 2150 4250
+	2000 4200 1800 4200
+Connection ~ 2000 4200
 $Comp
 L power:+3V3 #PWR01
-U 1 1 61A8E882
-P 1200 4050
-F 0 "#PWR01" H 1200 3900 50  0001 C CNN
-F 1 "+3V3" H 1215 4223 50  0000 C CNN
-F 2 "" H 1200 4050 50  0001 C CNN
-F 3 "" H 1200 4050 50  0001 C CNN
-	1    1200 4050
+U 1 1 61BE0492
+P 1050 4000
+F 0 "#PWR01" H 1050 3850 50  0001 C CNN
+F 1 "+3V3" H 1065 4173 50  0000 C CNN
+F 2 "" H 1050 4000 50  0001 C CNN
+F 3 "" H 1050 4000 50  0001 C CNN
+	1    1050 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 4450 1200 4450
+	1200 4400 1050 4400
 Wire Wire Line
-	1200 4450 1200 4350
+	1050 4400 1050 4300
 Wire Wire Line
-	1350 4350 1200 4350
-Connection ~ 1200 4350
+	1200 4300 1050 4300
+Connection ~ 1050 4300
 Wire Wire Line
-	1200 4350 1200 4250
+	1050 4300 1050 4200
 Wire Wire Line
-	1350 4250 1200 4250
+	1200 4200 1050 4200
 $Comp
 L Transistor_Array:ULN2803A U5
-U 1 1 6557F0FA
-P 11850 3650
-F 0 "U5" H 11850 4217 50  0000 C CNN
-F 1 "ULN2803A" H 11850 4126 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 11900 3000 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 11950 3450 50  0001 C CNN
-	1    11850 3650
+U 1 1 61BE04ED
+P 11700 3600
+F 0 "U5" H 11700 4167 50  0000 C CNN
+F 1 "ULN2803A" H 11700 4076 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 11750 2950 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 11800 3400 50  0001 C CNN
+	1    11700 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 620E8F8E
-P 10300 4400
-F 0 "C4" H 10415 4446 50  0000 L CNN
-F 1 "100n" H 10415 4355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10338 4250 50  0001 C CNN
-F 3 "~" H 10300 4400 50  0001 C CNN
-	1    10300 4400
+P 10150 4350
+F 0 "C4" H 10265 4396 50  0000 L CNN
+F 1 "100n" H 10265 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10188 4200 50  0001 C CNN
+F 3 "~" H 10150 4350 50  0001 C CNN
+	1    10150 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 62114583
-P 12500 4400
-F 0 "C5" H 12615 4446 50  0000 L CNN
-F 1 "100n" H 12615 4355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12538 4250 50  0001 C CNN
-F 3 "~" H 12500 4400 50  0001 C CNN
-	1    12500 4400
+P 12350 4350
+F 0 "C5" H 12465 4396 50  0000 L CNN
+F 1 "100n" H 12465 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12388 4200 50  0001 C CNN
+F 3 "~" H 12350 4350 50  0001 C CNN
+	1    12350 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C6
 U 1 1 6213FB80
-P 14950 4400
-F 0 "C6" H 15065 4446 50  0000 L CNN
-F 1 "100n" H 15065 4355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 14988 4250 50  0001 C CNN
-F 3 "~" H 14950 4400 50  0001 C CNN
-	1    14950 4400
+P 14800 4350
+F 0 "C6" H 14915 4396 50  0000 L CNN
+F 1 "100n" H 14915 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14838 4200 50  0001 C CNN
+F 3 "~" H 14800 4350 50  0001 C CNN
+	1    14800 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12500 4250 12500 3350
-Connection ~ 12500 3350
+	12350 4200 12350 3300
+Connection ~ 12350 3300
 Wire Wire Line
-	14950 4250 14950 3350
-Connection ~ 14950 3350
+	14800 4200 14800 3300
+Connection ~ 14800 3300
 Wire Wire Line
-	9050 3450 9250 3450
+	8900 3400 9100 3400
 Wire Wire Line
-	9050 3550 9250 3550
+	8900 3500 9100 3500
 Wire Wire Line
-	9050 3650 9250 3650
+	8900 3600 9100 3600
 Wire Wire Line
-	9050 3750 9250 3750
+	8900 3700 9100 3700
 Wire Wire Line
-	9050 3850 9250 3850
+	8900 3800 9100 3800
 Wire Wire Line
-	9050 3950 9250 3950
+	8900 3900 9100 3900
 Wire Wire Line
-	11200 3650 11450 3650
+	11050 3600 11300 3600
 Wire Wire Line
-	11200 3750 11450 3750
+	11050 3700 11300 3700
 Wire Wire Line
-	11200 3850 11450 3850
+	11050 3800 11300 3800
 Wire Wire Line
-	11200 3950 11450 3950
+	11050 3900 11300 3900
 Wire Wire Line
-	11200 4050 11450 4050
+	11050 4000 11300 4000
 Wire Wire Line
-	11200 4150 11450 4150
+	11050 4100 11300 4100
 Wire Wire Line
-	13650 3450 13900 3450
+	13500 3400 13750 3400
 Wire Wire Line
-	13650 3550 13900 3550
+	13500 3500 13750 3500
 Wire Wire Line
-	13650 3650 13900 3650
+	13500 3600 13750 3600
 Wire Wire Line
-	13650 3750 13900 3750
+	13500 3700 13750 3700
 Wire Wire Line
-	13650 3850 13900 3850
+	13500 3800 13750 3800
 Wire Wire Line
-	13650 3950 13900 3950
+	13500 3900 13750 3900
 Wire Wire Line
-	13650 4050 13900 4050
+	13500 4000 13750 4000
 Wire Wire Line
-	13650 4150 13900 4150
+	13500 4100 13750 4100
 $Comp
 L Interface_Expansion:MCP23017_SS U2
-U 1 1 628304D3
-P 18150 3900
-F 0 "U2" H 18150 5181 50  0000 C CNN
-F 1 "MCP23017_SS" H 18150 5090 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 18350 2900 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 18350 2800 50  0001 L CNN
-	1    18150 3900
+U 1 1 61BE04C5
+P 18000 3850
+F 0 "U2" H 18000 5131 50  0000 C CNN
+F 1 "MCP23017_SS" H 18000 5040 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 18200 2850 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 18200 2750 50  0001 L CNN
+	1    18000 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR023
-U 1 1 62834B2A
-P 16950 3500
-F 0 "#PWR023" H 16950 3250 50  0001 C CNN
-F 1 "GND" H 16955 3327 50  0000 C CNN
-F 2 "" H 16950 3500 50  0001 C CNN
-F 3 "" H 16950 3500 50  0001 C CNN
-	1    16950 3500
+U 1 1 61BE04C6
+P 16800 3450
+F 0 "#PWR023" H 16800 3200 50  0001 C CNN
+F 1 "GND" H 16805 3277 50  0000 C CNN
+F 2 "" H 16800 3450 50  0001 C CNN
+F 3 "" H 16800 3450 50  0001 C CNN
+	1    16800 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	16950 3500 16950 3350
+	16800 3450 16800 3300
 $Comp
 L Device:C C2
-U 1 1 62834B31
-P 16950 3200
-F 0 "C2" H 17065 3246 50  0000 L CNN
-F 1 "100n" H 17065 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 16988 3050 50  0001 C CNN
-F 3 "~" H 16950 3200 50  0001 C CNN
-	1    16950 3200
+U 1 1 61BE04C7
+P 16800 3150
+F 0 "C2" H 16915 3196 50  0000 L CNN
+F 1 "100n" H 16915 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16838 3000 50  0001 C CNN
+F 3 "~" H 16800 3150 50  0001 C CNN
+	1    16800 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	18150 2800 18150 2500
+	18000 2750 18000 2450
 Wire Wire Line
-	18150 2500 16950 2500
+	18000 2450 16800 2450
 $Comp
 L power:+3.3V #PWR027
 U 1 1 6287FDC4
-P 18150 2250
-F 0 "#PWR027" H 18150 2100 50  0001 C CNN
-F 1 "+3.3V" H 18165 2423 50  0000 C CNN
-F 2 "" H 18150 2250 50  0001 C CNN
-F 3 "" H 18150 2250 50  0001 C CNN
-	1    18150 2250
+P 18000 2200
+F 0 "#PWR027" H 18000 2050 50  0001 C CNN
+F 1 "+3.3V" H 18015 2373 50  0000 C CNN
+F 2 "" H 18000 2200 50  0001 C CNN
+F 3 "" H 18000 2200 50  0001 C CNN
+	1    18000 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 17450 3100 0    50   Input ~ 0
+Text GLabel 17300 3050 0    50   Input ~ 0
 SDA
-Text GLabel 17450 3200 0    50   Input ~ 0
+Text GLabel 17300 3150 0    50   Input ~ 0
 SCL
 Wire Wire Line
-	16950 2500 16950 3050
-Connection ~ 18150 2500
+	16800 2450 16800 3000
+Connection ~ 18000 2450
 Wire Wire Line
-	18150 2500 18150 2250
-NoConn ~ 17450 3700
-NoConn ~ 17450 3800
+	18000 2450 18000 2200
+NoConn ~ 17300 3650
+NoConn ~ 17300 3750
 $Comp
 L Device:R R7
-U 1 1 6298B5F5
-P 16650 3200
-F 0 "R7" H 16720 3246 50  0000 L CNN
-F 1 "4.7k" H 16720 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 16580 3200 50  0001 C CNN
-F 3 "~" H 16650 3200 50  0001 C CNN
-	1    16650 3200
+U 1 1 61BE04C9
+P 16500 3150
+F 0 "R7" H 16570 3196 50  0000 L CNN
+F 1 "4.7k" H 16570 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 16430 3150 50  0001 C CNN
+F 3 "~" H 16500 3150 50  0001 C CNN
+	1    16500 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR021
-U 1 1 6298B5FC
-P 16650 3000
-F 0 "#PWR021" H 16650 2850 50  0001 C CNN
-F 1 "+3V3" H 16665 3173 50  0000 C CNN
-F 2 "" H 16650 3000 50  0001 C CNN
-F 3 "" H 16650 3000 50  0001 C CNN
-	1    16650 3000
+U 1 1 61BE04CA
+P 16500 2950
+F 0 "#PWR021" H 16500 2800 50  0001 C CNN
+F 1 "+3V3" H 16515 3123 50  0000 C CNN
+F 2 "" H 16500 2950 50  0001 C CNN
+F 3 "" H 16500 2950 50  0001 C CNN
+	1    16500 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	16650 3000 16650 3050
+	16500 2950 16500 3000
 Wire Wire Line
-	17450 4000 16650 4000
+	17300 3950 16500 3950
 Wire Wire Line
-	16650 3350 16650 4000
+	16500 3300 16500 3950
 $Comp
 L Device:R R8
-U 1 1 62A01315
-P 16750 5000
-F 0 "R8" H 16820 5046 50  0000 L CNN
-F 1 "10k" H 16820 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 16680 5000 50  0001 C CNN
-F 3 "~" H 16750 5000 50  0001 C CNN
-	1    16750 5000
+U 1 1 61BE04CB
+P 16600 4950
+F 0 "R8" H 16670 4996 50  0000 L CNN
+F 1 "10k" H 16670 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 16530 4950 50  0001 C CNN
+F 3 "~" H 16600 4950 50  0001 C CNN
+	1    16600 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R9
-U 1 1 62A0131B
-P 16950 5000
-F 0 "R9" H 17020 5046 50  0000 L CNN
-F 1 "10k" H 17020 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 16880 5000 50  0001 C CNN
-F 3 "~" H 16950 5000 50  0001 C CNN
-	1    16950 5000
+U 1 1 61BE04CC
+P 16800 4950
+F 0 "R9" H 16870 4996 50  0000 L CNN
+F 1 "10k" H 16870 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 16730 4950 50  0001 C CNN
+F 3 "~" H 16800 4950 50  0001 C CNN
+	1    16800 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R10
-U 1 1 62A01321
-P 17150 5000
-F 0 "R10" H 17220 5046 50  0000 L CNN
-F 1 "10k" H 17220 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 17080 5000 50  0001 C CNN
-F 3 "~" H 17150 5000 50  0001 C CNN
-	1    17150 5000
+U 1 1 61BE04CD
+P 17000 4950
+F 0 "R10" H 17070 4996 50  0000 L CNN
+F 1 "10k" H 17070 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 16930 4950 50  0001 C CNN
+F 3 "~" H 17000 4950 50  0001 C CNN
+	1    17000 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	17450 4600 16950 4600
+	17300 4550 16800 4550
 $Comp
 L power:GND #PWR022
 U 1 1 62A0132A
-P 16750 5250
-F 0 "#PWR022" H 16750 5000 50  0001 C CNN
-F 1 "GND" H 16755 5077 50  0000 C CNN
-F 2 "" H 16750 5250 50  0001 C CNN
-F 3 "" H 16750 5250 50  0001 C CNN
-	1    16750 5250
+P 16600 5200
+F 0 "#PWR022" H 16600 4950 50  0001 C CNN
+F 1 "GND" H 16605 5027 50  0000 C CNN
+F 2 "" H 16600 5200 50  0001 C CNN
+F 3 "" H 16600 5200 50  0001 C CNN
+	1    16600 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	16750 5150 16750 5250
+	16600 5100 16600 5200
 $Comp
 L power:GND #PWR024
 U 1 1 62A01331
-P 16950 5250
-F 0 "#PWR024" H 16950 5000 50  0001 C CNN
-F 1 "GND" H 16955 5077 50  0000 C CNN
-F 2 "" H 16950 5250 50  0001 C CNN
-F 3 "" H 16950 5250 50  0001 C CNN
-	1    16950 5250
+P 16800 5200
+F 0 "#PWR024" H 16800 4950 50  0001 C CNN
+F 1 "GND" H 16805 5027 50  0000 C CNN
+F 2 "" H 16800 5200 50  0001 C CNN
+F 3 "" H 16800 5200 50  0001 C CNN
+	1    16800 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	16950 5150 16950 5250
+	16800 5100 16800 5200
 $Comp
 L power:GND #PWR025
-U 1 1 62A01338
-P 17150 5250
-F 0 "#PWR025" H 17150 5000 50  0001 C CNN
-F 1 "GND" H 17155 5077 50  0000 C CNN
-F 2 "" H 17150 5250 50  0001 C CNN
-F 3 "" H 17150 5250 50  0001 C CNN
-	1    17150 5250
+U 1 1 61BE04D0
+P 17000 5200
+F 0 "#PWR025" H 17000 4950 50  0001 C CNN
+F 1 "GND" H 17005 5027 50  0000 C CNN
+F 2 "" H 17000 5200 50  0001 C CNN
+F 3 "" H 17000 5200 50  0001 C CNN
+	1    17000 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	17150 5150 17150 5250
+	17000 5100 17000 5200
 Wire Wire Line
-	17450 4700 17150 4700
+	17300 4650 17000 4650
 Wire Wire Line
-	17150 4700 17150 4850
+	17000 4650 17000 4800
 Wire Wire Line
-	16950 4850 16950 4600
+	16800 4800 16800 4550
 Wire Wire Line
-	16750 4850 16750 4500
+	16600 4800 16600 4450
 Wire Wire Line
-	16750 4500 17450 4500
+	16600 4450 17300 4450
 $Comp
 L Switch:SW_DIP_x03 SW2
-U 1 1 62A01344
-P 16250 4700
-F 0 "SW2" H 16250 5167 50  0000 C CNN
-F 1 "SW_DIP_x03" H 16250 5076 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 16250 4700 50  0001 C CNN
-F 3 "~" H 16250 4700 50  0001 C CNN
-	1    16250 4700
+U 1 1 61BE04D1
+P 16100 4650
+F 0 "SW2" H 16100 5117 50  0000 C CNN
+F 1 "SW_DIP_x03" H 16100 5026 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 16100 4650 50  0001 C CNN
+F 3 "~" H 16100 4650 50  0001 C CNN
+	1    16100 4650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	17150 4700 16550 4700
-Connection ~ 17150 4700
+	17000 4650 16400 4650
+Connection ~ 17000 4650
 Wire Wire Line
-	16950 4600 16550 4600
-Connection ~ 16950 4600
+	16800 4550 16400 4550
+Connection ~ 16800 4550
 Wire Wire Line
-	16750 4500 16550 4500
-Connection ~ 16750 4500
+	16600 4450 16400 4450
+Connection ~ 16600 4450
 $Comp
 L power:+3V3 #PWR014
-U 1 1 62A01350
-P 15800 4300
-F 0 "#PWR014" H 15800 4150 50  0001 C CNN
-F 1 "+3V3" H 15815 4473 50  0000 C CNN
-F 2 "" H 15800 4300 50  0001 C CNN
-F 3 "" H 15800 4300 50  0001 C CNN
-	1    15800 4300
+U 1 1 61BE04D2
+P 15650 4250
+F 0 "#PWR014" H 15650 4100 50  0001 C CNN
+F 1 "+3V3" H 15665 4423 50  0000 C CNN
+F 2 "" H 15650 4250 50  0001 C CNN
+F 3 "" H 15650 4250 50  0001 C CNN
+	1    15650 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15950 4700 15800 4700
+	15800 4650 15650 4650
 Wire Wire Line
-	15800 4700 15800 4600
+	15650 4650 15650 4550
 Wire Wire Line
-	15950 4600 15800 4600
-Connection ~ 15800 4600
+	15800 4550 15650 4550
+Connection ~ 15650 4550
 Wire Wire Line
-	15800 4600 15800 4500
+	15650 4550 15650 4450
 Wire Wire Line
-	15950 4500 15800 4500
-Connection ~ 15800 4500
+	15800 4450 15650 4450
+Connection ~ 15650 4450
 Wire Wire Line
-	15800 4500 15800 4300
+	15650 4450 15650 4250
 $Comp
 L power:GND #PWR028
-U 1 1 62A859E3
-P 18150 5150
-F 0 "#PWR028" H 18150 4900 50  0001 C CNN
-F 1 "GND" H 18155 4977 50  0000 C CNN
-F 2 "" H 18150 5150 50  0001 C CNN
-F 3 "" H 18150 5150 50  0001 C CNN
-	1    18150 5150
+U 1 1 61BE04D3
+P 18000 5100
+F 0 "#PWR028" H 18000 4850 50  0001 C CNN
+F 1 "GND" H 18005 4927 50  0000 C CNN
+F 2 "" H 18000 5100 50  0001 C CNN
+F 3 "" H 18000 5100 50  0001 C CNN
+	1    18000 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	18150 5150 18150 5000
-Text GLabel 18850 3100 2    50   Input ~ 0
+	18000 5100 18000 4950
+Text GLabel 18700 3050 2    50   Input ~ 0
 K1
-Text GLabel 18850 3200 2    50   Input ~ 0
+Text GLabel 18700 3150 2    50   Input ~ 0
 K2
-Text GLabel 18850 3300 2    50   Input ~ 0
+Text GLabel 18700 3250 2    50   Input ~ 0
 K3
-Text GLabel 18850 3400 2    50   Input ~ 0
+Text GLabel 18700 3350 2    50   Input ~ 0
 K4
-Text GLabel 18850 3500 2    50   Input ~ 0
+Text GLabel 18700 3450 2    50   Input ~ 0
 K5
-Text GLabel 18850 3600 2    50   Input ~ 0
+Text GLabel 18700 3550 2    50   Input ~ 0
 K6
-Text GLabel 18850 4200 2    50   Input ~ 0
+Text GLabel 18700 4150 2    50   Input ~ 0
 K11
-Text GLabel 18850 4300 2    50   Input ~ 0
+Text GLabel 18700 4250 2    50   Input ~ 0
 K12
-Text GLabel 18850 4400 2    50   Input ~ 0
+Text GLabel 18700 4350 2    50   Input ~ 0
 K13
-Text GLabel 18850 4500 2    50   Input ~ 0
+Text GLabel 18700 4450 2    50   Input ~ 0
 K14
-Text GLabel 18850 4700 2    50   Input ~ 0
+Text GLabel 18700 4650 2    50   Input ~ 0
 K16
-Text GLabel 18850 4600 2    50   Input ~ 0
+Text GLabel 18700 4550 2    50   Input ~ 0
 K15
-Text GLabel 22400 3400 2    50   Input ~ 0
+Text GLabel 22250 3350 2    50   Input ~ 0
 K7
-Text GLabel 22400 3300 2    50   Input ~ 0
+Text GLabel 22250 3250 2    50   Input ~ 0
 K8
-Text GLabel 22400 3200 2    50   Input ~ 0
+Text GLabel 22250 3150 2    50   Input ~ 0
 K9
-Text GLabel 22400 3100 2    50   Input ~ 0
+Text GLabel 22250 3050 2    50   Input ~ 0
 K10
-Text GLabel 22400 3800 2    50   Input ~ 0
+Text GLabel 22250 3750 2    50   Input ~ 0
 K17
-Text GLabel 22400 3700 2    50   Input ~ 0
+Text GLabel 22250 3650 2    50   Input ~ 0
 K18
-Text GLabel 22400 3600 2    50   Input ~ 0
+Text GLabel 22250 3550 2    50   Input ~ 0
 K19
-Text GLabel 22400 3500 2    50   Input ~ 0
+Text GLabel 22250 3450 2    50   Input ~ 0
 K20
 $Comp
 L power:GND #PWR034
 U 1 1 62CEE4BD
-P 20500 3500
-F 0 "#PWR034" H 20500 3250 50  0001 C CNN
-F 1 "GND" H 20505 3327 50  0000 C CNN
-F 2 "" H 20500 3500 50  0001 C CNN
-F 3 "" H 20500 3500 50  0001 C CNN
-	1    20500 3500
+P 20350 3450
+F 0 "#PWR034" H 20350 3200 50  0001 C CNN
+F 1 "GND" H 20355 3277 50  0000 C CNN
+F 2 "" H 20350 3450 50  0001 C CNN
+F 3 "" H 20350 3450 50  0001 C CNN
+	1    20350 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	20500 3500 20500 3350
+	20350 3450 20350 3300
 $Comp
 L Device:C C3
-U 1 1 62CEE4C4
-P 20500 3200
-F 0 "C3" H 20615 3246 50  0000 L CNN
-F 1 "100n" H 20615 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 20538 3050 50  0001 C CNN
-F 3 "~" H 20500 3200 50  0001 C CNN
-	1    20500 3200
+U 1 1 61BE04D6
+P 20350 3150
+F 0 "C3" H 20465 3196 50  0000 L CNN
+F 1 "100n" H 20465 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 20388 3000 50  0001 C CNN
+F 3 "~" H 20350 3150 50  0001 C CNN
+	1    20350 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	21700 2800 21700 2500
+	21550 2750 21550 2450
 Wire Wire Line
-	21700 2500 20500 2500
+	21550 2450 20350 2450
 $Comp
 L power:+3.3V #PWR041
 U 1 1 62CEE4CC
-P 21700 2250
-F 0 "#PWR041" H 21700 2100 50  0001 C CNN
-F 1 "+3.3V" H 21715 2423 50  0000 C CNN
-F 2 "" H 21700 2250 50  0001 C CNN
-F 3 "" H 21700 2250 50  0001 C CNN
-	1    21700 2250
+P 21550 2200
+F 0 "#PWR041" H 21550 2050 50  0001 C CNN
+F 1 "+3.3V" H 21565 2373 50  0000 C CNN
+F 2 "" H 21550 2200 50  0001 C CNN
+F 3 "" H 21550 2200 50  0001 C CNN
+	1    21550 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 21000 3100 0    50   Input ~ 0
+Text GLabel 20850 3050 0    50   Input ~ 0
 SDA
-Text GLabel 21000 3200 0    50   Input ~ 0
+Text GLabel 20850 3150 0    50   Input ~ 0
 SCL
 Wire Wire Line
-	20500 2500 20500 3050
-NoConn ~ 21000 3700
-NoConn ~ 21000 3800
+	20350 2450 20350 3000
+NoConn ~ 20850 3650
+NoConn ~ 20850 3750
 $Comp
 L Device:R R11
-U 1 1 62CEE4E8
-P 20300 5000
-F 0 "R11" H 20370 5046 50  0000 L CNN
-F 1 "10k" H 20370 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 20230 5000 50  0001 C CNN
-F 3 "~" H 20300 5000 50  0001 C CNN
-	1    20300 5000
+U 1 1 61BE04D8
+P 20150 4950
+F 0 "R11" H 20220 4996 50  0000 L CNN
+F 1 "10k" H 20220 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20080 4950 50  0001 C CNN
+F 3 "~" H 20150 4950 50  0001 C CNN
+	1    20150 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R12
 U 1 1 62CEE4EE
-P 20500 5000
-F 0 "R12" H 20570 5046 50  0000 L CNN
-F 1 "10k" H 20570 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 20430 5000 50  0001 C CNN
-F 3 "~" H 20500 5000 50  0001 C CNN
-	1    20500 5000
+P 20350 4950
+F 0 "R12" H 20420 4996 50  0000 L CNN
+F 1 "10k" H 20420 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20280 4950 50  0001 C CNN
+F 3 "~" H 20350 4950 50  0001 C CNN
+	1    20350 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R13
 U 1 1 62CEE4F4
-P 20700 5000
-F 0 "R13" H 20770 5046 50  0000 L CNN
-F 1 "10k" H 20770 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 20630 5000 50  0001 C CNN
-F 3 "~" H 20700 5000 50  0001 C CNN
-	1    20700 5000
+P 20550 4950
+F 0 "R13" H 20620 4996 50  0000 L CNN
+F 1 "10k" H 20620 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20480 4950 50  0001 C CNN
+F 3 "~" H 20550 4950 50  0001 C CNN
+	1    20550 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	21000 4600 20500 4600
+	20850 4550 20350 4550
 $Comp
 L power:GND #PWR033
-U 1 1 62CEE4FB
-P 20300 5250
-F 0 "#PWR033" H 20300 5000 50  0001 C CNN
-F 1 "GND" H 20305 5077 50  0000 C CNN
-F 2 "" H 20300 5250 50  0001 C CNN
-F 3 "" H 20300 5250 50  0001 C CNN
-	1    20300 5250
+U 1 1 61BE04DB
+P 20150 5200
+F 0 "#PWR033" H 20150 4950 50  0001 C CNN
+F 1 "GND" H 20155 5027 50  0000 C CNN
+F 2 "" H 20150 5200 50  0001 C CNN
+F 3 "" H 20150 5200 50  0001 C CNN
+	1    20150 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	20300 5150 20300 5250
+	20150 5100 20150 5200
 $Comp
 L power:GND #PWR035
 U 1 1 62CEE502
-P 20500 5250
-F 0 "#PWR035" H 20500 5000 50  0001 C CNN
-F 1 "GND" H 20505 5077 50  0000 C CNN
-F 2 "" H 20500 5250 50  0001 C CNN
-F 3 "" H 20500 5250 50  0001 C CNN
-	1    20500 5250
+P 20350 5200
+F 0 "#PWR035" H 20350 4950 50  0001 C CNN
+F 1 "GND" H 20355 5027 50  0000 C CNN
+F 2 "" H 20350 5200 50  0001 C CNN
+F 3 "" H 20350 5200 50  0001 C CNN
+	1    20350 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	20500 5150 20500 5250
+	20350 5100 20350 5200
 $Comp
 L power:GND #PWR036
 U 1 1 62CEE509
-P 20700 5250
-F 0 "#PWR036" H 20700 5000 50  0001 C CNN
-F 1 "GND" H 20705 5077 50  0000 C CNN
-F 2 "" H 20700 5250 50  0001 C CNN
-F 3 "" H 20700 5250 50  0001 C CNN
-	1    20700 5250
+P 20550 5200
+F 0 "#PWR036" H 20550 4950 50  0001 C CNN
+F 1 "GND" H 20555 5027 50  0000 C CNN
+F 2 "" H 20550 5200 50  0001 C CNN
+F 3 "" H 20550 5200 50  0001 C CNN
+	1    20550 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	20700 5150 20700 5250
+	20550 5100 20550 5200
 Wire Wire Line
-	21000 4700 20700 4700
+	20850 4650 20550 4650
 Wire Wire Line
-	20700 4700 20700 4850
+	20550 4650 20550 4800
 Wire Wire Line
-	20500 4850 20500 4600
+	20350 4800 20350 4550
 Wire Wire Line
-	20300 4850 20300 4500
+	20150 4800 20150 4450
 Wire Wire Line
-	20300 4500 21000 4500
+	20150 4450 20850 4450
 $Comp
 L Switch:SW_DIP_x03 SW3
 U 1 1 62CEE515
-P 19800 4700
-F 0 "SW3" H 19800 5167 50  0000 C CNN
-F 1 "SW_DIP_x03" H 19800 5076 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 19800 4700 50  0001 C CNN
-F 3 "~" H 19800 4700 50  0001 C CNN
-	1    19800 4700
+P 19650 4650
+F 0 "SW3" H 19650 5117 50  0000 C CNN
+F 1 "SW_DIP_x03" H 19650 5026 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin" H 19650 4650 50  0001 C CNN
+F 3 "~" H 19650 4650 50  0001 C CNN
+	1    19650 4650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	20700 4700 20100 4700
-Connection ~ 20700 4700
+	20550 4650 19950 4650
+Connection ~ 20550 4650
 Wire Wire Line
-	20500 4600 20100 4600
-Connection ~ 20500 4600
+	20350 4550 19950 4550
+Connection ~ 20350 4550
 Wire Wire Line
-	20300 4500 20100 4500
-Connection ~ 20300 4500
+	20150 4450 19950 4450
+Connection ~ 20150 4450
 $Comp
 L power:+3V3 #PWR030
 U 1 1 62CEE521
-P 19350 4300
-F 0 "#PWR030" H 19350 4150 50  0001 C CNN
-F 1 "+3V3" H 19365 4473 50  0000 C CNN
-F 2 "" H 19350 4300 50  0001 C CNN
-F 3 "" H 19350 4300 50  0001 C CNN
-	1    19350 4300
+P 19200 4250
+F 0 "#PWR030" H 19200 4100 50  0001 C CNN
+F 1 "+3V3" H 19215 4423 50  0000 C CNN
+F 2 "" H 19200 4250 50  0001 C CNN
+F 3 "" H 19200 4250 50  0001 C CNN
+	1    19200 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	19500 4700 19350 4700
+	19350 4650 19200 4650
 Wire Wire Line
-	19350 4700 19350 4600
+	19200 4650 19200 4550
 Wire Wire Line
-	19500 4600 19350 4600
-Connection ~ 19350 4600
+	19350 4550 19200 4550
+Connection ~ 19200 4550
 Wire Wire Line
-	19350 4600 19350 4500
+	19200 4550 19200 4450
 Wire Wire Line
-	19500 4500 19350 4500
-Connection ~ 19350 4500
+	19350 4450 19200 4450
+Connection ~ 19200 4450
 Wire Wire Line
-	19350 4500 19350 4300
+	19200 4450 19200 4250
 $Comp
 L power:GND #PWR042
 U 1 1 62CEE52F
-P 21700 5150
-F 0 "#PWR042" H 21700 4900 50  0001 C CNN
-F 1 "GND" H 21705 4977 50  0000 C CNN
-F 2 "" H 21700 5150 50  0001 C CNN
-F 3 "" H 21700 5150 50  0001 C CNN
-	1    21700 5150
+P 21550 5100
+F 0 "#PWR042" H 21550 4850 50  0001 C CNN
+F 1 "GND" H 21555 4927 50  0000 C CNN
+F 2 "" H 21550 5100 50  0001 C CNN
+F 3 "" H 21550 5100 50  0001 C CNN
+	1    21550 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	21700 5150 21700 5000
-Wire Wire Line
-	19800 11600 19800 12000
-Wire Wire Line
-	20900 12000 19800 12000
-Wire Wire Line
-	19900 11500 19900 13600
-Wire Wire Line
-	19900 13600 21000 13600
-Wire Wire Line
-	20000 11850 20000 11300
-Wire Wire Line
-	21000 11850 20000 11850
-Wire Wire Line
-	19400 11400 20550 11400
-Wire Wire Line
-	20550 10250 20900 10250
-Wire Wire Line
-	20550 11400 20550 10250
-Wire Wire Line
-	19800 8450 19800 8050
-Wire Wire Line
-	20900 8450 19800 8450
-Wire Wire Line
-	19900 7950 19900 10050
-Wire Wire Line
-	19900 10050 21000 10050
-Wire Wire Line
-	19400 7750 20400 7750
-Wire Wire Line
-	20400 8300 21000 8300
-Wire Wire Line
-	20400 7750 20400 8300
-Wire Wire Line
-	20500 6700 20900 6700
-Wire Wire Line
-	20500 7850 20500 6700
-Wire Wire Line
-	19400 7850 20500 7850
-Wire Wire Line
-	19800 11600 19400 11600
-Wire Wire Line
-	19900 11500 19400 11500
-Wire Wire Line
-	20000 11300 19400 11300
-Wire Wire Line
-	21200 11800 21200 11700
-Wire Wire Line
-	21200 13550 21200 13450
-$Comp
-L boneIO:RM85-2011-35-1005 K23
-U 1 1 61994846
-P 21200 11700
-F 0 "K23" H 21850 11965 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 21850 11874 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 22350 11800 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 22350 11700 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 22350 11600 50  0001 L CNN "Description"
-F 5 "15.7" H 22350 11500 50  0001 L CNN "Height"
-F 6 "Relpol" H 22350 11400 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 22350 11300 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 22350 11200 50  0001 L CNN "Arrow Part Number"
-	1    21200 11700
-	0    1    -1   0   
-$EndComp
-NoConn ~ 21100 10400
-NoConn ~ 21100 11700
-Wire Wire Line
-	21200 10400 21200 10300
+	21550 5100 21550 4950
 $Comp
 L Connector:Screw_Terminal_01x04 J13
-U 1 1 6199484F
-P 19200 11400
-F 0 "J13" H 19118 10975 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 19118 11066 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 19200 11400 50  0001 C CNN
-F 3 "~" H 19200 11400 50  0001 C CNN
-	1    19200 11400
+U 1 1 61BE048A
+P 19050 11350
+F 0 "J13" H 18968 10925 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 18968 11016 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 19050 11350 50  0001 C CNN
+F 3 "~" H 19050 11350 50  0001 C CNN
+	1    19050 11350
 	-1   0    0    -1  
 $EndComp
-$Comp
-L boneIO:RM85-2011-35-1005 K24
-U 1 1 6199485A
-P 21200 13450
-F 0 "K24" H 21850 13715 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 21850 13624 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 22350 13550 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 22350 13450 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 22350 13350 50  0001 L CNN "Description"
-F 5 "15.7" H 22350 13250 50  0001 L CNN "Height"
-F 6 "Relpol" H 22350 13150 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 22350 13050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 22350 12950 50  0001 L CNN "Arrow Part Number"
-	1    21200 13450
-	0    1    -1   0   
-$EndComp
-NoConn ~ 21100 12150
-NoConn ~ 21100 13450
-Wire Wire Line
-	21200 12150 21200 12050
-Wire Wire Line
-	19800 8050 19400 8050
-Wire Wire Line
-	19900 7950 19400 7950
-Wire Wire Line
-	21200 8250 21200 8150
-Wire Wire Line
-	21200 10000 21200 9900
-$Comp
-L boneIO:RM85-2011-35-1005 K21
-U 1 1 6199486C
-P 21200 8150
-F 0 "K21" H 21850 8415 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 21850 8324 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 22350 8250 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 22350 8150 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 22350 8050 50  0001 L CNN "Description"
-F 5 "15.7" H 22350 7950 50  0001 L CNN "Height"
-F 6 "Relpol" H 22350 7850 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 22350 7750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 22350 7650 50  0001 L CNN "Arrow Part Number"
-	1    21200 8150
-	0    1    -1   0   
-$EndComp
-NoConn ~ 21100 6850
-NoConn ~ 21100 8150
-Wire Wire Line
-	21200 6850 21200 6750
 $Comp
 L Connector:Screw_Terminal_01x04 J12
-U 1 1 61994875
-P 19200 7850
-F 0 "J12" H 19118 7425 50  0000 C CNN
-F 1 "Screw_Terminal_01x04" H 19118 7516 50  0000 C CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 19200 7850 50  0001 C CNN
-F 3 "~" H 19200 7850 50  0001 C CNN
-	1    19200 7850
+U 1 1 61BE048D
+P 19050 7800
+F 0 "J12" H 18968 7375 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 18968 7466 50  0000 C CNN
+F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_4-G_1x04_P7.50mm_Horizontal" H 19050 7800 50  0001 C CNN
+F 3 "~" H 19050 7800 50  0001 C CNN
+	1    19050 7800
 	-1   0    0    -1  
 $EndComp
-$Comp
-L boneIO:RM85-2011-35-1005 K22
-U 1 1 61994881
-P 21200 9900
-F 0 "K22" H 21850 10165 50  0000 C CNN
-F 1 "RM85-2011-35-1005" H 21850 10074 50  0000 C CNN
-F 2 "boneIO:RM852011351005_1" H 22350 10000 50  0001 L CNN
-F 3 "https://www.tme.eu/Document/59558cd216efa4c8744bca8622313f6c/e_RM85.pdf" H 22350 9900 50  0001 L CNN
-F 4 "Relpol PCB Mount Non-Latching Relay, 5V dc Coil 16 A Non-Latching Relay" H 22350 9800 50  0001 L CNN "Description"
-F 5 "15.7" H 22350 9700 50  0001 L CNN "Height"
-F 6 "Relpol" H 22350 9600 50  0001 L CNN "Manufacturer_Name"
-F 7 "RM85-2011-35-1005" H 22350 9500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "RM85-2011-35-1005" H 22350 9400 50  0001 L CNN "Arrow Part Number"
-	1    21200 9900
-	0    1    -1   0   
-$EndComp
-NoConn ~ 21100 8600
-NoConn ~ 21100 9900
-Wire Wire Line
-	21200 8600 21200 8500
-Wire Wire Line
-	21200 8250 21400 8250
-Wire Wire Line
-	21200 10000 21400 10000
-Wire Wire Line
-	21200 11800 21400 11800
-Wire Wire Line
-	21200 13550 21400 13550
-Text GLabel 21400 8250 2    50   Input ~ 0
-RELAY21
-Text GLabel 21400 10000 2    50   Input ~ 0
-RELAY22
-Text GLabel 21400 11800 2    50   Input ~ 0
-RELAY23
-Text GLabel 21400 13550 2    50   Input ~ 0
-RELAY24
-Text GLabel 22400 4000 2    50   Input ~ 0
+Text GLabel 22250 3950 2    50   Input ~ 0
 K21
 $Comp
 L Interface_Expansion:MCP23017_SS U3
-U 1 1 62CEE4B7
-P 21700 3900
-F 0 "U3" H 21700 5181 50  0000 C CNN
-F 1 "MCP23017_SS" H 21700 5090 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 21900 2900 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 21900 2800 50  0001 L CNN
-	1    21700 3900
+U 1 1 61BE04D4
+P 21550 3850
+F 0 "U3" H 21550 5131 50  0000 C CNN
+F 1 "MCP23017_SS" H 21550 5040 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 21750 2850 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 21750 2750 50  0001 L CNN
+	1    21550 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 22400 4100 2    50   Input ~ 0
+Text GLabel 22250 4050 2    50   Input ~ 0
 K22
-Text GLabel 18850 4000 2    50   Input ~ 0
+Text GLabel 18700 3950 2    50   Input ~ 0
 K23
-Text GLabel 18850 4100 2    50   Input ~ 0
+Text GLabel 18700 4050 2    50   Input ~ 0
 K24
-Text GLabel 9100 4050 0    50   Input ~ 0
+Text GLabel 8950 4000 0    50   Input ~ 0
 K21
-Text GLabel 9100 4150 0    50   Input ~ 0
+Text GLabel 8950 4100 0    50   Input ~ 0
 K22
-Text GLabel 11200 3450 0    50   Input ~ 0
+Text GLabel 11050 3400 0    50   Input ~ 0
 K23
-Text GLabel 11200 3550 0    50   Input ~ 0
+Text GLabel 11050 3500 0    50   Input ~ 0
 K24
 Wire Wire Line
-	9100 4150 9250 4150
+	8950 4100 9100 4100
 Wire Wire Line
-	9100 4050 9250 4050
+	8950 4000 9100 4000
 Wire Wire Line
-	11200 3450 11450 3450
+	11050 3400 11300 3400
 Wire Wire Line
-	11200 3550 11450 3550
-Text GLabel 15050 3850 2    50   Input ~ 0
+	11050 3500 11300 3500
+Text GLabel 14900 3800 2    50   Input ~ 0
 RELAY21
-Text GLabel 15050 3950 2    50   Input ~ 0
+Text GLabel 14900 3900 2    50   Input ~ 0
 RELAY22
 Wire Wire Line
-	10050 4050 10400 4050
+	9900 4000 10250 4000
 Wire Wire Line
-	10050 4150 10400 4150
+	9900 4100 10250 4100
 Wire Wire Line
-	10300 3350 10300 4250
-Connection ~ 10300 3350
-Text GLabel 15050 3750 2    50   Input ~ 0
+	10150 3300 10150 4200
+Connection ~ 10150 3300
+Text GLabel 14900 3700 2    50   Input ~ 0
 RELAY23
-Text GLabel 15050 3650 2    50   Input ~ 0
+Text GLabel 14900 3600 2    50   Input ~ 0
 RELAY24
 Wire Wire Line
-	12250 3450 12600 3450
+	12100 3400 12450 3400
 Wire Wire Line
-	12250 3550 12600 3550
-$Comp
-L power:VCC #PWR0101
-U 1 1 618D8D05
-P 3600 6750
-F 0 "#PWR0101" H 3600 6600 50  0001 C CNN
-F 1 "VCC" H 3615 6923 50  0000 C CNN
-F 2 "" H 3600 6750 50  0001 C CNN
-F 3 "" H 3600 6750 50  0001 C CNN
-	1    3600 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0102
-U 1 1 6191393C
-P 3600 8500
-F 0 "#PWR0102" H 3600 8350 50  0001 C CNN
-F 1 "VCC" H 3615 8673 50  0000 C CNN
-F 2 "" H 3600 8500 50  0001 C CNN
-F 3 "" H 3600 8500 50  0001 C CNN
-	1    3600 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0103
-U 1 1 619888AF
-P 3600 10300
-F 0 "#PWR0103" H 3600 10150 50  0001 C CNN
-F 1 "VCC" H 3615 10473 50  0000 C CNN
-F 2 "" H 3600 10300 50  0001 C CNN
-F 3 "" H 3600 10300 50  0001 C CNN
-	1    3600 10300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0104
-U 1 1 619FE2C1
-P 3600 12050
-F 0 "#PWR0104" H 3600 11900 50  0001 C CNN
-F 1 "VCC" H 3615 12223 50  0000 C CNN
-F 2 "" H 3600 12050 50  0001 C CNN
-F 3 "" H 3600 12050 50  0001 C CNN
-	1    3600 12050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0105
-U 1 1 61A7319E
-P 6100 12050
-F 0 "#PWR0105" H 6100 11900 50  0001 C CNN
-F 1 "VCC" H 6115 12223 50  0000 C CNN
-F 2 "" H 6100 12050 50  0001 C CNN
-F 3 "" H 6100 12050 50  0001 C CNN
-	1    6100 12050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0106
-U 1 1 61AE7F6E
-P 6100 10300
-F 0 "#PWR0106" H 6100 10150 50  0001 C CNN
-F 1 "VCC" H 6115 10473 50  0000 C CNN
-F 2 "" H 6100 10300 50  0001 C CNN
-F 3 "" H 6100 10300 50  0001 C CNN
-	1    6100 10300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0107
-U 1 1 61B5CCD5
-P 6100 8500
-F 0 "#PWR0107" H 6100 8350 50  0001 C CNN
-F 1 "VCC" H 6115 8673 50  0000 C CNN
-F 2 "" H 6100 8500 50  0001 C CNN
-F 3 "" H 6100 8500 50  0001 C CNN
-	1    6100 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0108
-U 1 1 61BD1A55
-P 6100 6750
-F 0 "#PWR0108" H 6100 6600 50  0001 C CNN
-F 1 "VCC" H 6115 6923 50  0000 C CNN
-F 2 "" H 6100 6750 50  0001 C CNN
-F 3 "" H 6100 6750 50  0001 C CNN
-	1    6100 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0109
-U 1 1 61C4682E
-P 10800 6750
-F 0 "#PWR0109" H 10800 6600 50  0001 C CNN
-F 1 "VCC" H 10815 6923 50  0000 C CNN
-F 2 "" H 10800 6750 50  0001 C CNN
-F 3 "" H 10800 6750 50  0001 C CNN
-	1    10800 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0110
-U 1 1 61CBB4E5
-P 10800 8500
-F 0 "#PWR0110" H 10800 8350 50  0001 C CNN
-F 1 "VCC" H 10815 8673 50  0000 C CNN
-F 2 "" H 10800 8500 50  0001 C CNN
-F 3 "" H 10800 8500 50  0001 C CNN
-	1    10800 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0111
-U 1 1 61D30265
-P 10800 10300
-F 0 "#PWR0111" H 10800 10150 50  0001 C CNN
-F 1 "VCC" H 10815 10473 50  0000 C CNN
-F 2 "" H 10800 10300 50  0001 C CNN
-F 3 "" H 10800 10300 50  0001 C CNN
-	1    10800 10300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0112
-U 1 1 61DA502E
-P 10800 12050
-F 0 "#PWR0112" H 10800 11900 50  0001 C CNN
-F 1 "VCC" H 10815 12223 50  0000 C CNN
-F 2 "" H 10800 12050 50  0001 C CNN
-F 3 "" H 10800 12050 50  0001 C CNN
-	1    10800 12050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0113
-U 1 1 61E19D50
-P 13300 12050
-F 0 "#PWR0113" H 13300 11900 50  0001 C CNN
-F 1 "VCC" H 13315 12223 50  0000 C CNN
-F 2 "" H 13300 12050 50  0001 C CNN
-F 3 "" H 13300 12050 50  0001 C CNN
-	1    13300 12050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0114
-U 1 1 61E8EA98
-P 13300 10300
-F 0 "#PWR0114" H 13300 10150 50  0001 C CNN
-F 1 "VCC" H 13315 10473 50  0000 C CNN
-F 2 "" H 13300 10300 50  0001 C CNN
-F 3 "" H 13300 10300 50  0001 C CNN
-	1    13300 10300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0115
-U 1 1 61F037F4
-P 13300 8500
-F 0 "#PWR0115" H 13300 8350 50  0001 C CNN
-F 1 "VCC" H 13315 8673 50  0000 C CNN
-F 2 "" H 13300 8500 50  0001 C CNN
-F 3 "" H 13300 8500 50  0001 C CNN
-	1    13300 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0116
-U 1 1 61FED302
-P 13300 6750
-F 0 "#PWR0116" H 13300 6600 50  0001 C CNN
-F 1 "VCC" H 13315 6923 50  0000 C CNN
-F 2 "" H 13300 6750 50  0001 C CNN
-F 3 "" H 13300 6750 50  0001 C CNN
-	1    13300 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0117
-U 1 1 62062039
-P 18050 6750
-F 0 "#PWR0117" H 18050 6600 50  0001 C CNN
-F 1 "VCC" H 18065 6923 50  0000 C CNN
-F 2 "" H 18050 6750 50  0001 C CNN
-F 3 "" H 18050 6750 50  0001 C CNN
-	1    18050 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0118
-U 1 1 620D6D77
-P 18050 8500
-F 0 "#PWR0118" H 18050 8350 50  0001 C CNN
-F 1 "VCC" H 18065 8673 50  0000 C CNN
-F 2 "" H 18050 8500 50  0001 C CNN
-F 3 "" H 18050 8500 50  0001 C CNN
-	1    18050 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0119
-U 1 1 6214BB14
-P 18050 10300
-F 0 "#PWR0119" H 18050 10150 50  0001 C CNN
-F 1 "VCC" H 18065 10473 50  0000 C CNN
-F 2 "" H 18050 10300 50  0001 C CNN
-F 3 "" H 18050 10300 50  0001 C CNN
-	1    18050 10300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0120
-U 1 1 621C09C6
-P 18050 12050
-F 0 "#PWR0120" H 18050 11900 50  0001 C CNN
-F 1 "VCC" H 18065 12223 50  0000 C CNN
-F 2 "" H 18050 12050 50  0001 C CNN
-F 3 "" H 18050 12050 50  0001 C CNN
-	1    18050 12050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0121
-U 1 1 622356C4
-P 21200 12050
-F 0 "#PWR0121" H 21200 11900 50  0001 C CNN
-F 1 "VCC" H 21215 12223 50  0000 C CNN
-F 2 "" H 21200 12050 50  0001 C CNN
-F 3 "" H 21200 12050 50  0001 C CNN
-	1    21200 12050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0122
-U 1 1 622AA401
-P 21200 10300
-F 0 "#PWR0122" H 21200 10150 50  0001 C CNN
-F 1 "VCC" H 21215 10473 50  0000 C CNN
-F 2 "" H 21200 10300 50  0001 C CNN
-F 3 "" H 21200 10300 50  0001 C CNN
-	1    21200 10300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0123
-U 1 1 6231F161
-P 21200 8500
-F 0 "#PWR0123" H 21200 8350 50  0001 C CNN
-F 1 "VCC" H 21215 8673 50  0000 C CNN
-F 2 "" H 21200 8500 50  0001 C CNN
-F 3 "" H 21200 8500 50  0001 C CNN
-	1    21200 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0124
-U 1 1 62393E80
-P 21200 6750
-F 0 "#PWR0124" H 21200 6600 50  0001 C CNN
-F 1 "VCC" H 21215 6923 50  0000 C CNN
-F 2 "" H 21200 6750 50  0001 C CNN
-F 3 "" H 21200 6750 50  0001 C CNN
-	1    21200 6750
-	1    0    0    -1  
-$EndComp
+	12100 3500 12450 3500
 $Comp
 L power:+24V #PWR0126
-U 1 1 624447D8
-P 5450 4550
-F 0 "#PWR0126" H 5450 4400 50  0001 C CNN
-F 1 "+24V" H 5465 4723 50  0000 C CNN
-F 2 "" H 5450 4550 50  0001 C CNN
-F 3 "" H 5450 4550 50  0001 C CNN
-	1    5450 4550
+U 1 1 61BE04BD
+P 5300 4500
+F 0 "#PWR0126" H 5300 4350 50  0001 C CNN
+F 1 "+24V" H 5315 4673 50  0000 C CNN
+F 2 "" H 5300 4500 50  0001 C CNN
+F 3 "" H 5300 4500 50  0001 C CNN
+	1    5300 4500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 4800 5450 4550
+	5300 4750 5300 4500
 $Comp
 L power:VCC #PWR0128
 U 1 1 625E9887
-P 10300 3050
-F 0 "#PWR0128" H 10300 2900 50  0001 C CNN
-F 1 "VCC" H 10315 3223 50  0000 C CNN
-F 2 "" H 10300 3050 50  0001 C CNN
-F 3 "" H 10300 3050 50  0001 C CNN
-	1    10300 3050
+P 10150 3000
+F 0 "#PWR0128" H 10150 2850 50  0001 C CNN
+F 1 "VCC" H 10165 3173 50  0000 C CNN
+F 2 "" H 10150 3000 50  0001 C CNN
+F 3 "" H 10150 3000 50  0001 C CNN
+	1    10150 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0129
-U 1 1 6269D992
-P 12500 3050
-F 0 "#PWR0129" H 12500 2900 50  0001 C CNN
-F 1 "VCC" H 12515 3223 50  0000 C CNN
-F 2 "" H 12500 3050 50  0001 C CNN
-F 3 "" H 12500 3050 50  0001 C CNN
-	1    12500 3050
+U 1 1 61BE04C1
+P 12350 3000
+F 0 "#PWR0129" H 12350 2850 50  0001 C CNN
+F 1 "VCC" H 12365 3173 50  0000 C CNN
+F 2 "" H 12350 3000 50  0001 C CNN
+F 3 "" H 12350 3000 50  0001 C CNN
+	1    12350 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0130
 U 1 1 62715676
-P 14950 3050
-F 0 "#PWR0130" H 14950 2900 50  0001 C CNN
-F 1 "VCC" H 14965 3223 50  0000 C CNN
-F 2 "" H 14950 3050 50  0001 C CNN
-F 3 "" H 14950 3050 50  0001 C CNN
-	1    14950 3050
+P 14800 3000
+F 0 "#PWR0130" H 14800 2850 50  0001 C CNN
+F 1 "VCC" H 14815 3173 50  0000 C CNN
+F 2 "" H 14800 3000 50  0001 C CNN
+F 3 "" H 14800 3000 50  0001 C CNN
+	1    14800 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R14
 U 1 1 627FC321
-P 20200 3200
-F 0 "R14" H 20270 3246 50  0000 L CNN
-F 1 "4.7k" H 20270 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 20130 3200 50  0001 C CNN
-F 3 "~" H 20200 3200 50  0001 C CNN
-	1    20200 3200
+P 20050 3150
+F 0 "R14" H 20120 3196 50  0000 L CNN
+F 1 "4.7k" H 20120 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19980 3150 50  0001 C CNN
+F 3 "~" H 20050 3150 50  0001 C CNN
+	1    20050 3150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0131
 U 1 1 627FC327
-P 20200 3000
-F 0 "#PWR0131" H 20200 2850 50  0001 C CNN
-F 1 "+3V3" H 20215 3173 50  0000 C CNN
-F 2 "" H 20200 3000 50  0001 C CNN
-F 3 "" H 20200 3000 50  0001 C CNN
-	1    20200 3000
+P 20050 2950
+F 0 "#PWR0131" H 20050 2800 50  0001 C CNN
+F 1 "+3V3" H 20065 3123 50  0000 C CNN
+F 2 "" H 20050 2950 50  0001 C CNN
+F 3 "" H 20050 2950 50  0001 C CNN
+	1    20050 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	20200 3000 20200 3050
+	20050 2950 20050 3000
 Wire Wire Line
-	21000 4000 20200 4000
+	20850 3950 20050 3950
 Wire Wire Line
-	20200 3350 20200 4000
+	20050 3300 20050 3950
 Wire Wire Line
-	2250 3850 2850 3850
+	2100 3800 2700 3800
 Wire Wire Line
-	2250 3950 2850 3950
-Connection ~ 6850 4500
+	2100 3900 2700 3900
+Connection ~ 6700 4450
 Wire Wire Line
-	6850 4800 7000 4800
+	6700 4750 6850 4750
 Wire Wire Line
-	6850 4500 6850 4800
+	6700 4450 6700 4750
 Wire Wire Line
-	6850 4500 7000 4500
+	6700 4450 6850 4450
 Wire Wire Line
-	6850 4500 6850 4250
+	6700 4450 6700 4200
 Wire Wire Line
-	7300 4800 7650 4800
+	7150 4750 7500 4750
 Wire Wire Line
-	7300 4500 7650 4500
-Text GLabel 7650 4500 2    50   Input ~ 0
+	7150 4450 7500 4450
+Text GLabel 7500 4450 2    50   Input ~ 0
 SCL
-Text GLabel 7650 4800 2    50   Input ~ 0
+Text GLabel 7500 4750 2    50   Input ~ 0
 SDA
 Wire Wire Line
-	6100 4800 6350 4800
+	5950 4750 6200 4750
 Wire Wire Line
-	5450 4800 5700 4800
+	5300 4750 5550 4750
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP1
-U 1 1 61863BB9
-P 5900 4800
-F 0 "JP1" H 5900 5005 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 5900 4914 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 5900 4800 50  0001 C CNN
-F 3 "~" H 5900 4800 50  0001 C CNN
-	1    5900 4800
+U 1 1 61BE0485
+P 5750 4750
+F 0 "JP1" H 5750 4955 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 5750 4864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 5750 4750 50  0001 C CNN
+F 3 "~" H 5750 4750 50  0001 C CNN
+	1    5750 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 4800 6350 4550
+	6200 4750 6200 4500
 $Comp
 L power:+5V #PWR0127
 U 1 1 6247F63E
-P 6350 4550
-F 0 "#PWR0127" H 6350 4400 50  0001 C CNN
-F 1 "+5V" H 6365 4723 50  0000 C CNN
-F 2 "" H 6350 4550 50  0001 C CNN
-F 3 "" H 6350 4550 50  0001 C CNN
-	1    6350 4550
+P 6200 4500
+F 0 "#PWR0127" H 6200 4350 50  0001 C CNN
+F 1 "+5V" H 6215 4673 50  0000 C CNN
+F 2 "" H 6200 4500 50  0001 C CNN
+F 3 "" H 6200 4500 50  0001 C CNN
+	1    6200 4500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 4950 5900 5050
+	5750 4900 5750 5000
 $Comp
 L power:VCC #PWR0125
-U 1 1 623CE8C5
-P 5900 5050
-F 0 "#PWR0125" H 5900 4900 50  0001 C CNN
-F 1 "VCC" H 5915 5223 50  0000 C CNN
-F 2 "" H 5900 5050 50  0001 C CNN
-F 3 "" H 5900 5050 50  0001 C CNN
-	1    5900 5050
+U 1 1 61BE04BC
+P 5750 5000
+F 0 "#PWR0125" H 5750 4850 50  0001 C CNN
+F 1 "VCC" H 5765 5173 50  0000 C CNN
+F 2 "" H 5750 5000 50  0001 C CNN
+F 3 "" H 5750 5000 50  0001 C CNN
+	1    5750 5000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6900 3450 6900 3750
-Connection ~ 6900 3450
+	6750 3400 6750 3700
+Connection ~ 6750 3400
 Wire Wire Line
-	6900 3350 6900 3450
-Text GLabel 6650 3550 2    50   Input ~ 0
+	6750 3300 6750 3400
+Text GLabel 6500 3500 2    50   Input ~ 0
 SDA
-Text GLabel 6150 3550 0    50   Input ~ 0
+Text GLabel 6000 3500 0    50   Input ~ 0
 SCL
 Wire Wire Line
-	6650 3450 6900 3450
+	6500 3400 6750 3400
 Wire Wire Line
-	6900 3350 6900 3250
-Connection ~ 6900 3350
+	6750 3300 6750 3200
+Connection ~ 6750 3300
 Wire Wire Line
-	6650 3350 6900 3350
+	6500 3300 6750 3300
 Wire Wire Line
-	6900 3250 6650 3250
+	6750 3200 6500 3200
 Wire Wire Line
-	5300 3450 6150 3450
+	5150 3400 6000 3400
 Wire Wire Line
-	5300 3000 5300 3450
+	5150 2950 5150 3400
 Wire Wire Line
-	5550 3350 6150 3350
+	5400 3300 6000 3300
 Wire Wire Line
-	5550 3000 5550 3350
+	5400 2950 5400 3300
 Wire Wire Line
-	5800 3250 6150 3250
+	5650 3200 6000 3200
 Wire Wire Line
-	5800 3000 5800 3250
+	5650 2950 5650 3200
 $Comp
 L power:GND #PWR026
 U 1 1 61B786DB
-P 6900 3750
-F 0 "#PWR026" H 6900 3500 50  0001 C CNN
-F 1 "GND" H 6905 3577 50  0000 C CNN
-F 2 "" H 6900 3750 50  0001 C CNN
-F 3 "" H 6900 3750 50  0001 C CNN
-	1    6900 3750
+P 6750 3700
+F 0 "#PWR026" H 6750 3450 50  0001 C CNN
+F 1 "GND" H 6755 3527 50  0000 C CNN
+F 2 "" H 6750 3700 50  0001 C CNN
+F 3 "" H 6750 3700 50  0001 C CNN
+	1    6750 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR031
 U 1 1 61B7750C
-P 5550 3000
-F 0 "#PWR031" H 5550 2850 50  0001 C CNN
-F 1 "+5V" H 5565 3173 50  0000 C CNN
-F 2 "" H 5550 3000 50  0001 C CNN
-F 3 "" H 5550 3000 50  0001 C CNN
-	1    5550 3000
+P 5400 2950
+F 0 "#PWR031" H 5400 2800 50  0001 C CNN
+F 1 "+5V" H 5415 3123 50  0000 C CNN
+F 2 "" H 5400 2950 50  0001 C CNN
+F 3 "" H 5400 2950 50  0001 C CNN
+	1    5400 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+24V #PWR029
-U 1 1 61B0C600
-P 5800 3000
-F 0 "#PWR029" H 5800 2850 50  0001 C CNN
-F 1 "+24V" H 5815 3173 50  0000 C CNN
-F 2 "" H 5800 3000 50  0001 C CNN
-F 3 "" H 5800 3000 50  0001 C CNN
-	1    5800 3000
+U 1 1 61BE0497
+P 5650 2950
+F 0 "#PWR029" H 5650 2800 50  0001 C CNN
+F 1 "+24V" H 5665 3123 50  0000 C CNN
+F 2 "" H 5650 2950 50  0001 C CNN
+F 3 "" H 5650 2950 50  0001 C CNN
+	1    5650 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR032
-U 1 1 61B0C5FA
-P 5300 3000
-F 0 "#PWR032" H 5300 2850 50  0001 C CNN
-F 1 "+3V3" H 5315 3173 50  0000 C CNN
-F 2 "" H 5300 3000 50  0001 C CNN
-F 3 "" H 5300 3000 50  0001 C CNN
-	1    5300 3000
+U 1 1 61BE0496
+P 5150 2950
+F 0 "#PWR032" H 5150 2800 50  0001 C CNN
+F 1 "+3V3" H 5165 3123 50  0000 C CNN
+F 2 "" H 5150 2950 50  0001 C CNN
+F 3 "" H 5150 2950 50  0001 C CNN
+	1    5150 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J3
 U 1 1 61AD4E35
-P 6350 3350
-F 0 "J3" H 6400 3667 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 6400 3576 50  0000 C CNN
-F 2 "boneIO:PinHeader_2x04_P2.54mm_Vertical" H 6350 3350 50  0001 C CNN
-F 3 "~" H 6350 3350 50  0001 C CNN
-	1    6350 3350
+P 6200 3300
+F 0 "J3" H 6250 3617 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 6250 3526 50  0000 C CNN
+F 2 "boneIO - relay board 24x16A:PinHeader_2x04_P2.54mm_Vertical" H 6200 3300 50  0001 C CNN
+F 3 "~" H 6200 3300 50  0001 C CNN
+	1    6200 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR03
 U 1 1 61C69064
-P 6850 4250
-F 0 "#PWR03" H 6850 4100 50  0001 C CNN
-F 1 "+3V3" H 6865 4423 50  0000 C CNN
-F 2 "" H 6850 4250 50  0001 C CNN
-F 3 "" H 6850 4250 50  0001 C CNN
-	1    6850 4250
+P 6700 4200
+F 0 "#PWR03" H 6700 4050 50  0001 C CNN
+F 1 "+3V3" H 6715 4373 50  0000 C CNN
+F 2 "" H 6700 4200 50  0001 C CNN
+F 3 "" H 6700 4200 50  0001 C CNN
+	1    6700 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 61BC2F50
-P 7150 4800
-F 0 "R2" H 7220 4846 50  0000 L CNN
-F 1 "4.7k" H 7220 4755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7080 4800 50  0001 C CNN
-F 3 "~" H 7150 4800 50  0001 C CNN
-	1    7150 4800
+P 7000 4750
+F 0 "R2" H 7070 4796 50  0000 L CNN
+F 1 "4.7k" H 7070 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 4750 50  0001 C CNN
+F 3 "~" H 7000 4750 50  0001 C CNN
+	1    7000 4750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 61BC2208
-P 7150 4500
-F 0 "R5" H 7220 4546 50  0000 L CNN
-F 1 "4.7k" H 7220 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7080 4500 50  0001 C CNN
-F 3 "~" H 7150 4500 50  0001 C CNN
-	1    7150 4500
+P 7000 4450
+F 0 "R5" H 7070 4496 50  0000 L CNN
+F 1 "4.7k" H 7070 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 4450 50  0001 C CNN
+F 3 "~" H 7000 4450 50  0001 C CNN
+	1    7000 4450
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
-	8550 6050 8550 1600
+	8400 6000 8400 1550
 Wire Notes Line
-	15700 6050 15700 1600
+	15550 6000 15550 1550
 Wire Notes Line
-	700  1600 22800 1600
+	550  1550 22650 1550
 Wire Notes Line
-	700  6050 22800 6050
+	550  6000 22650 6000
 Wire Notes Line
-	700  1600 700  14350
+	550  1550 550  14300
 Wire Notes Line
-	22800 1600 22800 14350
+	22650 1550 22650 14300
 Wire Notes Line
-	700  14350 22800 14350
-Text Notes 18650 2300 0    197  ~ 39
+	550  14300 22650 14300
+Text Notes 18500 2250 0    197  ~ 39
 MCP23017
-Text Notes 8400 1200 0    197  ~ 39
+Text Notes 8250 1150 0    197  ~ 39
 boneIO - relay board 24x16A v0.2
 Wire Wire Line
-	3250 3350 3250 3650
-NoConn ~ 18850 3700
-NoConn ~ 18850 3800
-NoConn ~ 22400 4300
-NoConn ~ 22400 4400
-NoConn ~ 22400 4500
-NoConn ~ 22400 4600
-NoConn ~ 22400 4700
-NoConn ~ 22400 4200
+	3100 3300 3100 3600
+NoConn ~ 18700 3650
+NoConn ~ 18700 3750
+NoConn ~ 22250 4250
+NoConn ~ 22250 4350
+NoConn ~ 22250 4450
+NoConn ~ 22250 4550
+NoConn ~ 22250 4650
+NoConn ~ 22250 4150
+Wire Wire Line
+	14150 4300 14150 4450
+Wire Wire Line
+	3700 3300 3700 3350
+Wire Wire Line
+	1050 4000 1050 4200
+Connection ~ 1050 4200
+Wire Wire Line
+	21550 2200 21550 2450
+Connection ~ 21550 2450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61BE0490
+P 7000 2150
+F 0 "#FLG0101" H 7000 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 7000 2323 50  0000 C CNN
+F 2 "" H 7000 2150 50  0001 C CNN
+F 3 "~" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0133
+U 1 1 61BE0491
+P 7000 2000
+F 0 "#PWR0133" H 7000 1850 50  0001 C CNN
+F 1 "+3V3" H 7015 2173 50  0000 C CNN
+F 2 "" H 7000 2000 50  0001 C CNN
+F 3 "" H 7000 2000 50  0001 C CNN
+	1    7000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2150 7000 2000
+$Comp
+L power:+5V #PWR0134
+U 1 1 61AA15B4
+P 7250 2000
+F 0 "#PWR0134" H 7250 1850 50  0001 C CNN
+F 1 "+5V" H 7265 2173 50  0000 C CNN
+F 2 "" H 7250 2000 50  0001 C CNN
+F 3 "" H 7250 2000 50  0001 C CNN
+	1    7250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61ADCEBD
+P 7250 2150
+F 0 "#FLG0102" H 7250 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 7250 2323 50  0000 C CNN
+F 2 "" H 7250 2150 50  0001 C CNN
+F 3 "~" H 7250 2150 50  0001 C CNN
+	1    7250 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7250 2150 7250 2000
+$Comp
+L power:+24V #PWR0135
+U 1 1 61BE0498
+P 7550 2000
+F 0 "#PWR0135" H 7550 1850 50  0001 C CNN
+F 1 "+24V" H 7565 2173 50  0000 C CNN
+F 2 "" H 7550 2000 50  0001 C CNN
+F 3 "" H 7550 2000 50  0001 C CNN
+	1    7550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 61B54C9F
+P 7550 2150
+F 0 "#FLG0103" H 7550 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 7550 2323 50  0000 C CNN
+F 2 "" H 7550 2150 50  0001 C CNN
+F 3 "~" H 7550 2150 50  0001 C CNN
+	1    7550 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7550 2150 7550 2000
+$Comp
+L power:GND #PWR0136
+U 1 1 61BE049E
+P 7850 2000
+F 0 "#PWR0136" H 7850 1750 50  0001 C CNN
+F 1 "GND" H 7855 1827 50  0000 C CNN
+F 2 "" H 7850 2000 50  0001 C CNN
+F 3 "" H 7850 2000 50  0001 C CNN
+	1    7850 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 2150 7850 2000
+$Comp
+L power:VCC #PWR0137
+U 1 1 61BE04A1
+P 6750 2000
+F 0 "#PWR0137" H 6750 1850 50  0001 C CNN
+F 1 "VCC" H 6765 2173 50  0000 C CNN
+F 2 "" H 6750 2000 50  0001 C CNN
+F 3 "" H 6750 2000 50  0001 C CNN
+	1    6750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 61D38686
+P 6750 2150
+F 0 "#FLG0104" H 6750 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 2323 50  0000 C CNN
+F 2 "" H 6750 2150 50  0001 C CNN
+F 3 "~" H 6750 2150 50  0001 C CNN
+	1    6750 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 2150 6750 2000
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 61DB26DF
+P 7850 2150
+F 0 "#FLG0105" H 7850 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 7850 2323 50  0000 C CNN
+F 2 "" H 7850 2150 50  0001 C CNN
+F 3 "~" H 7850 2150 50  0001 C CNN
+	1    7850 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U7
+U 1 1 61CD74E5
+P 3850 6400
+F 0 "U7" H 5228 5546 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 5228 5455 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 3850 6400 50  0001 C CNN
+F 3 "" H 3850 6400 50  0001 C CNN
+	1    3850 6400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6650 2600 6650
+$Comp
+L power:VCC #PWR0101
+U 1 1 61BE0486
+P 3500 6700
+F 0 "#PWR0101" H 3500 6550 50  0001 C CNN
+F 1 "VCC" H 3515 6873 50  0000 C CNN
+F 2 "" H 3500 6700 50  0001 C CNN
+F 3 "" H 3500 6700 50  0001 C CNN
+	1    3500 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 7900 2    50   Input ~ 0
+RELAY1
+Wire Wire Line
+	2600 6650 2600 6800
+Wire Wire Line
+	3500 6700 3500 6800
+Wire Wire Line
+	3500 7800 3500 7900
+Wire Wire Line
+	3500 7900 3600 7900
+Wire Wire Line
+	1650 7800 2200 7800
+Wire Wire Line
+	2200 7800 2200 6650
+Wire Wire Line
+	2600 7800 2200 7800
+Connection ~ 2200 7800
+Wire Wire Line
+	2750 7800 2750 7900
+Wire Wire Line
+	2750 7900 2350 7900
+Wire Wire Line
+	2350 7900 2350 7700
+Wire Wire Line
+	2350 6700 2750 6700
+Wire Wire Line
+	2750 6700 2750 6800
+Wire Wire Line
+	1650 7700 2350 7700
+Connection ~ 2350 7700
+Wire Wire Line
+	2350 7700 2350 6700
+Wire Wire Line
+	3500 8350 3500 8250
+Text GLabel 3650 9450 2    50   Input ~ 0
+RELAY2
+$Comp
+L power:VCC #PWR0102
+U 1 1 6191393C
+P 3500 8250
+F 0 "#PWR0102" H 3500 8100 50  0001 C CNN
+F 1 "VCC" H 3515 8423 50  0000 C CNN
+F 2 "" H 3500 8250 50  0001 C CNN
+F 3 "" H 3500 8250 50  0001 C CNN
+	1    3500 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U8
+U 1 1 6263F52D
+P 3850 7950
+F 0 "U8" H 5228 7096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 5228 7005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 3850 7950 50  0001 C CNN
+F 3 "" H 3850 7950 50  0001 C CNN
+	1    3850 7950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 8250 2600 8350
+Wire Wire Line
+	2750 9500 2750 9350
+Wire Wire Line
+	2600 9350 2600 9450
+Wire Wire Line
+	2600 9450 2400 9450
+Wire Wire Line
+	2400 9450 2400 8700
+Wire Wire Line
+	2400 8250 2600 8250
+Wire Wire Line
+	3500 9350 3500 9450
+Wire Wire Line
+	3500 9450 3650 9450
+Wire Wire Line
+	1650 8000 2200 8000
+Wire Wire Line
+	2200 8000 2200 8700
+Wire Wire Line
+	2200 8700 2400 8700
+Connection ~ 2400 8700
+Wire Wire Line
+	2400 8700 2400 8250
+Wire Wire Line
+	2750 8200 2300 8200
+Wire Wire Line
+	2300 8200 2300 7900
+Wire Wire Line
+	1650 7900 2300 7900
+Wire Wire Line
+	2750 8200 2750 8350
+Wire Wire Line
+	2300 8200 2300 9500
+Wire Wire Line
+	2300 9500 2750 9500
+Connection ~ 2300 8200
+$Comp
+L boneIO:RM85-2011-35-1024 U9
+U 1 1 62B44078
+P 3850 9950
+F 0 "U9" H 5228 9096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 5228 9005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 3850 9950 50  0001 C CNN
+F 3 "" H 3850 9950 50  0001 C CNN
+	1    3850 9950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 10200 2600 10200
+$Comp
+L power:VCC #PWR05
+U 1 1 62B4407F
+P 3500 10250
+F 0 "#PWR05" H 3500 10100 50  0001 C CNN
+F 1 "VCC" H 3515 10423 50  0000 C CNN
+F 2 "" H 3500 10250 50  0001 C CNN
+F 3 "" H 3500 10250 50  0001 C CNN
+	1    3500 10250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 11450 2    50   Input ~ 0
+RELAY3
+Wire Wire Line
+	2600 10200 2600 10350
+Wire Wire Line
+	3500 10250 3500 10350
+Wire Wire Line
+	3500 11350 3500 11450
+Wire Wire Line
+	3500 11450 3600 11450
+Wire Wire Line
+	1650 11350 2200 11350
+Wire Wire Line
+	2200 11350 2200 10200
+Wire Wire Line
+	2600 11350 2200 11350
+Connection ~ 2200 11350
+Wire Wire Line
+	2750 11350 2750 11450
+Wire Wire Line
+	2750 11450 2350 11450
+Wire Wire Line
+	2350 11450 2350 11250
+Wire Wire Line
+	2350 10250 2750 10250
+Wire Wire Line
+	2750 10250 2750 10350
+Wire Wire Line
+	1650 11250 2350 11250
+Connection ~ 2350 11250
+Wire Wire Line
+	2350 11250 2350 10250
+Wire Wire Line
+	3500 11900 3500 11800
+Text GLabel 3650 13000 2    50   Input ~ 0
+RELAY4
+$Comp
+L power:VCC #PWR06
+U 1 1 62B44098
+P 3500 11800
+F 0 "#PWR06" H 3500 11650 50  0001 C CNN
+F 1 "VCC" H 3515 11973 50  0000 C CNN
+F 2 "" H 3500 11800 50  0001 C CNN
+F 3 "" H 3500 11800 50  0001 C CNN
+	1    3500 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U10
+U 1 1 62B4409E
+P 3850 11500
+F 0 "U10" H 5228 10646 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 5228 10555 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 3850 11500 50  0001 C CNN
+F 3 "" H 3850 11500 50  0001 C CNN
+	1    3850 11500
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	14300 4350 14300 4500
+	2600 11800 2600 11900
 Wire Wire Line
-	3850 3350 3850 3400
+	2750 13050 2750 12900
+Wire Wire Line
+	2600 12900 2600 13000
+Wire Wire Line
+	2600 13000 2400 13000
+Wire Wire Line
+	2400 13000 2400 12250
+Wire Wire Line
+	2400 11800 2600 11800
+Wire Wire Line
+	3500 12900 3500 13000
+Wire Wire Line
+	3500 13000 3650 13000
+Wire Wire Line
+	1650 11550 2200 11550
+Wire Wire Line
+	2200 11550 2200 12250
+Wire Wire Line
+	2200 12250 2400 12250
+Connection ~ 2400 12250
+Wire Wire Line
+	2400 12250 2400 11800
+Wire Wire Line
+	2750 11750 2300 11750
+Wire Wire Line
+	2300 11750 2300 11450
+Wire Wire Line
+	1650 11450 2300 11450
+Wire Wire Line
+	2750 11750 2750 11900
+Wire Wire Line
+	2300 11750 2300 13050
 Wire Wire Line
-	1200 4050 1200 4250
-Connection ~ 1200 4250
+	2300 13050 2750 13050
+Connection ~ 2300 11750
+$Comp
+L boneIO:RM85-2011-35-1024 U11
+U 1 1 62C28776
+P 5550 6400
+F 0 "U11" H 6928 5546 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 6928 5455 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 5550 6400 50  0001 C CNN
+F 3 "" H 5550 6400 50  0001 C CNN
+	1    5550 6400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	21700 2250 21700 2500
-Connection ~ 21700 2500
+	7200 6650 6800 6650
+$Comp
+L power:VCC #PWR07
+U 1 1 62C2877D
+P 5900 6700
+F 0 "#PWR07" H 5900 6550 50  0001 C CNN
+F 1 "VCC" H 5915 6873 50  0000 C CNN
+F 2 "" H 5900 6700 50  0001 C CNN
+F 3 "" H 5900 6700 50  0001 C CNN
+	1    5900 6700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5800 7900 0    50   Input ~ 0
+RELAY5
 Wire Wire Line
-	13500 6850 13500 8150
+	6800 6650 6800 6800
 Wire Wire Line
-	3300 6700 3300 6850
+	5900 6700 5900 6800
 Wire Wire Line
-	3300 8450 3300 8600
+	5900 7800 5900 7900
 Wire Wire Line
-	3300 10250 3300 10400
+	5900 7900 5800 7900
 Wire Wire Line
-	3400 10400 3400 11700
+	7750 7800 7200 7800
 Wire Wire Line
-	3300 12000 3300 12150
+	7200 7800 7200 6650
 Wire Wire Line
-	3400 12150 3400 13450
+	6800 7800 7200 7800
+Connection ~ 7200 7800
 Wire Wire Line
-	6400 12000 6400 12150
+	6650 7800 6650 7900
+Wire Wire Line
+	6650 7900 7050 7900
+Wire Wire Line
+	7050 7900 7050 7700
+Wire Wire Line
+	7050 6700 6650 6700
 Wire Wire Line
-	6300 12150 6300 13450
+	6650 6700 6650 6800
 Wire Wire Line
-	6400 10250 6400 10400
+	7750 7700 7050 7700
+Connection ~ 7050 7700
 Wire Wire Line
-	6300 10400 6300 11700
+	7050 7700 7050 6700
 Wire Wire Line
-	6400 8450 6400 8600
+	5900 8350 5900 8250
+Text GLabel 5750 9450 0    50   Input ~ 0
+RELAY6
+$Comp
+L power:VCC #PWR08
+U 1 1 62C28796
+P 5900 8250
+F 0 "#PWR08" H 5900 8100 50  0001 C CNN
+F 1 "VCC" H 5915 8423 50  0000 C CNN
+F 2 "" H 5900 8250 50  0001 C CNN
+F 3 "" H 5900 8250 50  0001 C CNN
+	1    5900 8250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U12
+U 1 1 62C2879C
+P 5550 7950
+F 0 "U12" H 6928 7096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 6928 7005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 5550 7950 50  0001 C CNN
+F 3 "" H 5550 7950 50  0001 C CNN
+	1    5550 7950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6300 8600 6300 9900
+	6800 8250 6800 8350
 Wire Wire Line
-	6300 6850 6300 8150
+	6650 9500 6650 9350
 Wire Wire Line
-	6400 6700 6400 6850
+	6800 9350 6800 9450
 Wire Wire Line
-	10500 12000 10500 12150
+	6800 9450 7000 9450
 Wire Wire Line
-	10600 12150 10600 13450
+	7000 9450 7000 8700
 Wire Wire Line
-	10500 10250 10500 10400
+	7000 8250 6800 8250
 Wire Wire Line
-	10600 10400 10600 11700
+	5900 9350 5900 9450
 Wire Wire Line
-	10500 8450 10500 8600
+	5900 9450 5750 9450
 Wire Wire Line
-	10600 8600 10600 9900
+	7750 8000 7200 8000
 Wire Wire Line
-	10500 6700 10500 6850
+	7200 8000 7200 8700
+Wire Wire Line
+	7200 8700 7000 8700
+Connection ~ 7000 8700
 Wire Wire Line
-	10600 6850 10600 8150
+	7000 8700 7000 8250
 Wire Wire Line
-	13600 6700 13600 6850
+	6650 8200 7100 8200
 Wire Wire Line
-	13600 8450 13600 8600
+	7100 8200 7100 7900
 Wire Wire Line
-	13500 8600 13500 9900
+	7750 7900 7100 7900
 Wire Wire Line
-	13600 10250 13600 10400
+	6650 8200 6650 8350
 Wire Wire Line
-	13500 10400 13500 11700
+	7100 8200 7100 9500
 Wire Wire Line
-	13600 12000 13600 12150
+	7100 9500 6650 9500
+Connection ~ 7100 8200
+$Comp
+L boneIO:RM85-2011-35-1024 U13
+U 1 1 62E19CC7
+P 5550 9950
+F 0 "U13" H 6928 9096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 6928 9005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 5550 9950 50  0001 C CNN
+F 3 "" H 5550 9950 50  0001 C CNN
+	1    5550 9950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	13500 12150 13500 13450
+	7200 10200 6800 10200
+$Comp
+L power:VCC #PWR010
+U 1 1 62E19CCE
+P 5900 10250
+F 0 "#PWR010" H 5900 10100 50  0001 C CNN
+F 1 "VCC" H 5915 10423 50  0000 C CNN
+F 2 "" H 5900 10250 50  0001 C CNN
+F 3 "" H 5900 10250 50  0001 C CNN
+	1    5900 10250
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5800 11450 0    50   Input ~ 0
+RELAY7
 Wire Wire Line
-	17750 12000 17750 12150
+	6800 10200 6800 10350
 Wire Wire Line
-	17850 12150 17850 13450
+	5900 10250 5900 10350
 Wire Wire Line
-	17750 8450 17750 8600
+	5900 11350 5900 11450
 Wire Wire Line
-	17850 8600 17850 9900
+	5900 11450 5800 11450
 Wire Wire Line
-	17850 6850 17850 8150
+	7750 11350 7200 11350
 Wire Wire Line
-	17750 6700 17750 6850
+	7200 11350 7200 10200
 Wire Wire Line
-	20900 6700 20900 6850
+	6800 11350 7200 11350
+Connection ~ 7200 11350
 Wire Wire Line
-	21000 6850 21000 8150
+	6650 11350 6650 11450
 Wire Wire Line
-	20900 8450 20900 8600
+	6650 11450 7050 11450
 Wire Wire Line
-	21000 8600 21000 9900
+	7050 11450 7050 11250
 Wire Wire Line
-	20900 10250 20900 10400
+	7050 10250 6650 10250
 Wire Wire Line
-	21000 10400 21000 11700
+	6650 10250 6650 10350
 Wire Wire Line
-	20900 12000 20900 12150
+	7750 11250 7050 11250
+Connection ~ 7050 11250
 Wire Wire Line
-	21000 12150 21000 13450
-Connection ~ 21000 11700
+	7050 11250 7050 10250
 Wire Wire Line
-	21000 11700 21000 11850
-Connection ~ 20900 10400
+	5900 11900 5900 11800
+Text GLabel 5750 13000 0    50   Input ~ 0
+RELAY8
+$Comp
+L power:VCC #PWR017
+U 1 1 62E19CE7
+P 5900 11800
+F 0 "#PWR017" H 5900 11650 50  0001 C CNN
+F 1 "VCC" H 5915 11973 50  0000 C CNN
+F 2 "" H 5900 11800 50  0001 C CNN
+F 3 "" H 5900 11800 50  0001 C CNN
+	1    5900 11800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U14
+U 1 1 62E19CED
+P 5550 11500
+F 0 "U14" H 6928 10646 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 6928 10555 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 5550 11500 50  0001 C CNN
+F 3 "" H 5550 11500 50  0001 C CNN
+	1    5550 11500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	20900 10400 20900 11700
-Connection ~ 20900 12150
+	6800 11800 6800 11900
 Wire Wire Line
-	20900 12150 20900 13450
-Connection ~ 21000 13450
+	6650 13050 6650 12900
 Wire Wire Line
-	21000 13450 21000 13600
-Connection ~ 17850 13450
+	6800 12900 6800 13000
 Wire Wire Line
-	17850 13450 17850 13600
-Connection ~ 17750 12150
+	6800 13000 7000 13000
 Wire Wire Line
-	17750 12150 17750 13450
-Connection ~ 20900 6850
+	7000 13000 7000 12250
 Wire Wire Line
-	20900 6850 20900 8150
-Connection ~ 21000 8150
+	7000 11800 6800 11800
 Wire Wire Line
-	21000 8150 21000 8300
-Connection ~ 17750 6850
+	5900 12900 5900 13000
 Wire Wire Line
-	17750 6850 17750 8150
-Connection ~ 17850 8150
+	5900 13000 5750 13000
 Wire Wire Line
-	17850 8150 17850 8300
-Connection ~ 17850 9900
+	7750 11550 7200 11550
 Wire Wire Line
-	17850 9900 17850 10050
-Connection ~ 17750 8600
+	7200 11550 7200 12250
 Wire Wire Line
-	17750 8600 17750 9900
-Connection ~ 13600 6850
+	7200 12250 7000 12250
+Connection ~ 7000 12250
 Wire Wire Line
-	13600 6850 13600 8150
-Connection ~ 13500 8150
+	7000 12250 7000 11800
 Wire Wire Line
-	13500 8150 13500 8300
-Connection ~ 10500 6850
+	6650 11750 7100 11750
 Wire Wire Line
-	10500 6850 10500 8150
-Connection ~ 10600 8150
+	7100 11750 7100 11450
 Wire Wire Line
-	10600 8150 10600 8300
-Connection ~ 10500 8600
+	7750 11450 7100 11450
 Wire Wire Line
-	10500 8600 10500 9900
-Connection ~ 10600 9900
+	6650 11750 6650 11900
 Wire Wire Line
-	10600 9900 10600 10050
-Connection ~ 13500 9900
+	7100 11750 7100 13050
 Wire Wire Line
-	13500 9900 13500 10050
-Connection ~ 13600 8600
+	7100 13050 6650 13050
+Connection ~ 7100 11750
+$Comp
+L boneIO:RM85-2011-35-1024 U15
+U 1 1 630D367D
+P 11050 6400
+F 0 "U15" H 12428 5546 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 12428 5455 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 11050 6400 50  0001 C CNN
+F 3 "" H 11050 6400 50  0001 C CNN
+	1    11050 6400
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	13600 8600 13600 9900
-Connection ~ 13600 10400
+	9400 6650 9800 6650
+$Comp
+L power:VCC #PWR018
+U 1 1 630D3684
+P 10700 6700
+F 0 "#PWR018" H 10700 6550 50  0001 C CNN
+F 1 "VCC" H 10715 6873 50  0000 C CNN
+F 2 "" H 10700 6700 50  0001 C CNN
+F 3 "" H 10700 6700 50  0001 C CNN
+	1    10700 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 10800 7900 2    50   Input ~ 0
+RELAY9
 Wire Wire Line
-	13600 10400 13600 11700
-Connection ~ 13500 11700
+	9800 6650 9800 6800
 Wire Wire Line
-	13500 11700 13500 11850
-Connection ~ 10500 10400
+	10700 6700 10700 6800
 Wire Wire Line
-	10500 10400 10500 11700
-Connection ~ 10600 11700
+	10700 7800 10700 7900
 Wire Wire Line
-	10600 11700 10600 11850
-Connection ~ 10500 12150
+	10700 7900 10800 7900
 Wire Wire Line
-	10500 12150 10500 13450
-Connection ~ 10600 13450
+	8850 7800 9400 7800
 Wire Wire Line
-	10600 13450 10600 13600
-Connection ~ 13500 13450
+	9400 7800 9400 6650
 Wire Wire Line
-	13500 13450 13500 13600
-Connection ~ 13600 12150
+	9800 7800 9400 7800
+Connection ~ 9400 7800
 Wire Wire Line
-	13600 12150 13600 13450
-Connection ~ 6300 13450
+	9950 7800 9950 7900
 Wire Wire Line
-	6300 13450 6300 13600
-Connection ~ 6400 12150
+	9950 7900 9550 7900
 Wire Wire Line
-	6400 12150 6400 13450
-Connection ~ 6400 10400
+	9550 7900 9550 7700
 Wire Wire Line
-	6400 10400 6400 11700
-Connection ~ 6300 11700
+	9550 6700 9950 6700
 Wire Wire Line
-	6300 11700 6300 11850
-Connection ~ 6300 9900
+	9950 6700 9950 6800
 Wire Wire Line
-	6300 9900 6300 10050
-Connection ~ 6400 8600
+	8850 7700 9550 7700
+Connection ~ 9550 7700
 Wire Wire Line
-	6400 8600 6400 9900
-Connection ~ 6300 8150
+	9550 7700 9550 6700
 Wire Wire Line
-	6300 8150 6300 8300
-Connection ~ 6400 6850
+	10700 8350 10700 8250
+Text GLabel 10850 9450 2    50   Input ~ 0
+RELAY10
+$Comp
+L power:VCC #PWR019
+U 1 1 630D369D
+P 10700 8250
+F 0 "#PWR019" H 10700 8100 50  0001 C CNN
+F 1 "VCC" H 10715 8423 50  0000 C CNN
+F 2 "" H 10700 8250 50  0001 C CNN
+F 3 "" H 10700 8250 50  0001 C CNN
+	1    10700 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U16
+U 1 1 630D36A3
+P 11050 7950
+F 0 "U16" H 12428 7096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 12428 7005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 11050 7950 50  0001 C CNN
+F 3 "" H 11050 7950 50  0001 C CNN
+	1    11050 7950
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	6400 6850 6400 8150
-Connection ~ 3300 12150
+	9800 8250 9800 8350
 Wire Wire Line
-	3300 12150 3300 13450
-Connection ~ 3400 13450
+	9950 9500 9950 9350
 Wire Wire Line
-	3400 13450 3400 13600
-Connection ~ 3400 11700
+	9800 9350 9800 9450
 Wire Wire Line
-	3400 11700 3400 11850
-Connection ~ 3300 10400
+	9800 9450 9600 9450
 Wire Wire Line
-	3300 10400 3300 11700
+	9600 9450 9600 8700
 Wire Wire Line
-	3300 8150 3300 6850
-Connection ~ 3300 6850
+	9600 8250 9800 8250
 Wire Wire Line
-	3400 8300 3400 8150
+	10700 9350 10700 9450
 Wire Wire Line
-	3400 8150 3400 6850
-Connection ~ 3400 8150
+	10700 9450 10850 9450
 Wire Wire Line
-	3300 8600 3300 9900
-Connection ~ 3300 8600
+	8850 8000 9400 8000
 Wire Wire Line
-	3400 10050 3400 9900
+	9400 8000 9400 8700
 Wire Wire Line
-	3400 9900 3400 8600
-Connection ~ 3400 9900
-Connection ~ 20900 8600
+	9400 8700 9600 8700
+Connection ~ 9600 8700
 Wire Wire Line
-	20900 8600 20900 9900
-Connection ~ 21000 9900
+	9600 8700 9600 8250
 Wire Wire Line
-	21000 9900 21000 10050
+	9950 8200 9500 8200
+Wire Wire Line
+	9500 8200 9500 7900
+Wire Wire Line
+	8850 7900 9500 7900
+Wire Wire Line
+	9950 8200 9950 8350
+Wire Wire Line
+	9500 8200 9500 9500
+Wire Wire Line
+	9500 9500 9950 9500
+Connection ~ 9500 8200
+$Comp
+L boneIO:RM85-2011-35-1024 U17
+U 1 1 63121808
+P 11050 9950
+F 0 "U17" H 12428 9096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 12428 9005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 11050 9950 50  0001 C CNN
+F 3 "" H 11050 9950 50  0001 C CNN
+	1    11050 9950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 10200 9800 10200
+$Comp
+L power:VCC #PWR020
+U 1 1 6312180F
+P 10700 10250
+F 0 "#PWR020" H 10700 10100 50  0001 C CNN
+F 1 "VCC" H 10715 10423 50  0000 C CNN
+F 2 "" H 10700 10250 50  0001 C CNN
+F 3 "" H 10700 10250 50  0001 C CNN
+	1    10700 10250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10800 11450 2    50   Input ~ 0
+RELAY11
+Wire Wire Line
+	9800 10200 9800 10350
+Wire Wire Line
+	10700 10250 10700 10350
+Wire Wire Line
+	10700 11350 10700 11450
+Wire Wire Line
+	10700 11450 10800 11450
+Wire Wire Line
+	9950 11350 9950 11450
+Wire Wire Line
+	9950 11450 9550 11450
+Wire Wire Line
+	9550 10250 9950 10250
+Wire Wire Line
+	9950 10250 9950 10350
+Wire Wire Line
+	10700 11900 10700 11800
+Text GLabel 10850 13000 2    50   Input ~ 0
+RELAY12
+$Comp
+L power:VCC #PWR037
+U 1 1 63121828
+P 10700 11800
+F 0 "#PWR037" H 10700 11650 50  0001 C CNN
+F 1 "VCC" H 10715 11973 50  0000 C CNN
+F 2 "" H 10700 11800 50  0001 C CNN
+F 3 "" H 10700 11800 50  0001 C CNN
+	1    10700 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U18
+U 1 1 6312182E
+P 11050 11500
+F 0 "U18" H 12428 10646 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 12428 10555 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 11050 11500 50  0001 C CNN
+F 3 "" H 11050 11500 50  0001 C CNN
+	1    11050 11500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 11800 9800 11900
+Wire Wire Line
+	9950 13050 9950 12900
+Wire Wire Line
+	9800 12900 9800 13000
+Wire Wire Line
+	9800 13000 9600 13000
+Wire Wire Line
+	9600 11800 9800 11800
+Wire Wire Line
+	10700 12900 10700 13000
+Wire Wire Line
+	10700 13000 10850 13000
+Wire Wire Line
+	9950 11750 9500 11750
+Wire Wire Line
+	8850 11450 9500 11450
+Wire Wire Line
+	9950 11750 9950 11900
+Wire Wire Line
+	9500 11750 9500 13050
+Wire Wire Line
+	9500 13050 9950 13050
+$Comp
+L boneIO:RM85-2011-35-1024 U19
+U 1 1 6321686B
+P 12750 6400
+F 0 "U19" H 14128 5546 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 14128 5455 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 12750 6400 50  0001 C CNN
+F 3 "" H 12750 6400 50  0001 C CNN
+	1    12750 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14400 6650 14000 6650
+$Comp
+L power:VCC #PWR038
+U 1 1 63216872
+P 13100 6700
+F 0 "#PWR038" H 13100 6550 50  0001 C CNN
+F 1 "VCC" H 13115 6873 50  0000 C CNN
+F 2 "" H 13100 6700 50  0001 C CNN
+F 3 "" H 13100 6700 50  0001 C CNN
+	1    13100 6700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 13000 7900 0    50   Input ~ 0
+RELAY16
+Wire Wire Line
+	14000 6650 14000 6800
+Wire Wire Line
+	13100 6700 13100 6800
+Wire Wire Line
+	13100 7800 13100 7900
+Wire Wire Line
+	13100 7900 13000 7900
+Wire Wire Line
+	14950 7800 14400 7800
+Wire Wire Line
+	14400 7800 14400 6650
+Wire Wire Line
+	14000 7800 14400 7800
+Connection ~ 14400 7800
+Wire Wire Line
+	13850 7800 13850 7900
+Wire Wire Line
+	13850 7900 14250 7900
+Wire Wire Line
+	14250 7900 14250 7700
+Wire Wire Line
+	14250 6700 13850 6700
+Wire Wire Line
+	13850 6700 13850 6800
+Wire Wire Line
+	14950 7700 14250 7700
+Connection ~ 14250 7700
+Wire Wire Line
+	14250 7700 14250 6700
+Wire Wire Line
+	13100 8350 13100 8250
+Text GLabel 12950 9450 0    50   Input ~ 0
+RELAY15
+$Comp
+L power:VCC #PWR039
+U 1 1 6321688B
+P 13100 8250
+F 0 "#PWR039" H 13100 8100 50  0001 C CNN
+F 1 "VCC" H 13115 8423 50  0000 C CNN
+F 2 "" H 13100 8250 50  0001 C CNN
+F 3 "" H 13100 8250 50  0001 C CNN
+	1    13100 8250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U20
+U 1 1 63216891
+P 12750 7950
+F 0 "U20" H 14128 7096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 14128 7005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 12750 7950 50  0001 C CNN
+F 3 "" H 12750 7950 50  0001 C CNN
+	1    12750 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 8250 14000 8350
+Wire Wire Line
+	13850 9500 13850 9350
+Wire Wire Line
+	14000 9350 14000 9450
+Wire Wire Line
+	14000 9450 14200 9450
+Wire Wire Line
+	14200 9450 14200 8700
+Wire Wire Line
+	14200 8250 14000 8250
+Wire Wire Line
+	13100 9350 13100 9450
+Wire Wire Line
+	13100 9450 12950 9450
+Wire Wire Line
+	14950 8000 14400 8000
+Wire Wire Line
+	14400 8000 14400 8700
+Wire Wire Line
+	14400 8700 14200 8700
+Connection ~ 14200 8700
+Wire Wire Line
+	14200 8700 14200 8250
+Wire Wire Line
+	13850 8200 14300 8200
+Wire Wire Line
+	14300 8200 14300 7900
+Wire Wire Line
+	14950 7900 14300 7900
+Wire Wire Line
+	13850 8200 13850 8350
+Wire Wire Line
+	14300 8200 14300 9500
+Wire Wire Line
+	14300 9500 13850 9500
+Connection ~ 14300 8200
+$Comp
+L boneIO:RM85-2011-35-1024 U21
+U 1 1 6330BD69
+P 12750 9950
+F 0 "U21" H 14128 9096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 14128 9005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 12750 9950 50  0001 C CNN
+F 3 "" H 12750 9950 50  0001 C CNN
+	1    12750 9950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14400 10200 14000 10200
+$Comp
+L power:VCC #PWR040
+U 1 1 6330BD70
+P 13100 10250
+F 0 "#PWR040" H 13100 10100 50  0001 C CNN
+F 1 "VCC" H 13115 10423 50  0000 C CNN
+F 2 "" H 13100 10250 50  0001 C CNN
+F 3 "" H 13100 10250 50  0001 C CNN
+	1    13100 10250
+	-1   0    0    -1  
+$EndComp
+Text GLabel 13000 11450 0    50   Input ~ 0
+RELAY14
+Wire Wire Line
+	14000 10200 14000 10350
+Wire Wire Line
+	13100 10250 13100 10350
+Wire Wire Line
+	13100 11350 13100 11450
+Wire Wire Line
+	13100 11450 13000 11450
+Wire Wire Line
+	14950 11350 14400 11350
+Wire Wire Line
+	14400 11350 14400 10200
+Wire Wire Line
+	14000 11350 14400 11350
+Connection ~ 14400 11350
+Wire Wire Line
+	13850 11350 13850 11450
+Wire Wire Line
+	13850 11450 14250 11450
+Wire Wire Line
+	14250 11450 14250 11250
+Wire Wire Line
+	14250 10250 13850 10250
+Wire Wire Line
+	13850 10250 13850 10350
+Wire Wire Line
+	14950 11250 14250 11250
+Connection ~ 14250 11250
+Wire Wire Line
+	14250 11250 14250 10250
+Wire Wire Line
+	13100 11900 13100 11800
+Text GLabel 12950 13000 0    50   Input ~ 0
+RELAY13
+$Comp
+L power:VCC #PWR044
+U 1 1 6330BD89
+P 13100 11800
+F 0 "#PWR044" H 13100 11650 50  0001 C CNN
+F 1 "VCC" H 13115 11973 50  0000 C CNN
+F 2 "" H 13100 11800 50  0001 C CNN
+F 3 "" H 13100 11800 50  0001 C CNN
+	1    13100 11800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U22
+U 1 1 6330BD8F
+P 12750 11500
+F 0 "U22" H 14128 10646 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 14128 10555 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 12750 11500 50  0001 C CNN
+F 3 "" H 12750 11500 50  0001 C CNN
+	1    12750 11500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 11800 14000 11900
+Wire Wire Line
+	13850 13050 13850 12900
+Wire Wire Line
+	14000 12900 14000 13000
+Wire Wire Line
+	14000 13000 14200 13000
+Wire Wire Line
+	14200 13000 14200 12250
+Wire Wire Line
+	14200 11800 14000 11800
+Wire Wire Line
+	13100 12900 13100 13000
+Wire Wire Line
+	13100 13000 12950 13000
+Wire Wire Line
+	14950 11550 14400 11550
+Wire Wire Line
+	14400 11550 14400 12250
+Wire Wire Line
+	14400 12250 14200 12250
+Connection ~ 14200 12250
+Wire Wire Line
+	14200 12250 14200 11800
+Wire Wire Line
+	13850 11750 14300 11750
+Wire Wire Line
+	14300 11750 14300 11450
+Wire Wire Line
+	14950 11450 14300 11450
+Wire Wire Line
+	13850 11750 13850 11900
+Wire Wire Line
+	14300 11750 14300 13050
+Wire Wire Line
+	14300 13050 13850 13050
+Connection ~ 14300 11750
+$Comp
+L boneIO:RM85-2011-35-1024 U23
+U 1 1 63401E3A
+P 18300 6400
+F 0 "U23" H 19678 5546 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 19678 5455 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 18300 6400 50  0001 C CNN
+F 3 "" H 18300 6400 50  0001 C CNN
+	1    18300 6400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16650 6650 17050 6650
+$Comp
+L power:VCC #PWR045
+U 1 1 63401E41
+P 17950 6700
+F 0 "#PWR045" H 17950 6550 50  0001 C CNN
+F 1 "VCC" H 17965 6873 50  0000 C CNN
+F 2 "" H 17950 6700 50  0001 C CNN
+F 3 "" H 17950 6700 50  0001 C CNN
+	1    17950 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 18050 7900 2    50   Input ~ 0
+RELAY17
+Wire Wire Line
+	17050 6650 17050 6800
+Wire Wire Line
+	17950 6700 17950 6800
+Wire Wire Line
+	17950 7800 17950 7900
+Wire Wire Line
+	17950 7900 18050 7900
+Wire Wire Line
+	17200 7800 17200 7900
+Wire Wire Line
+	17200 7900 16800 7900
+Wire Wire Line
+	16800 6700 17200 6700
+Wire Wire Line
+	17200 6700 17200 6800
+Wire Wire Line
+	17950 8350 17950 8250
+Text GLabel 18100 9450 2    50   Input ~ 0
+RELAY18
+$Comp
+L power:VCC #PWR046
+U 1 1 63401E5A
+P 17950 8250
+F 0 "#PWR046" H 17950 8100 50  0001 C CNN
+F 1 "VCC" H 17965 8423 50  0000 C CNN
+F 2 "" H 17950 8250 50  0001 C CNN
+F 3 "" H 17950 8250 50  0001 C CNN
+	1    17950 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U24
+U 1 1 63401E60
+P 18300 7950
+F 0 "U24" H 19678 7096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 19678 7005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 18300 7950 50  0001 C CNN
+F 3 "" H 18300 7950 50  0001 C CNN
+	1    18300 7950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	17050 8250 17050 8350
+Wire Wire Line
+	17200 9500 17200 9350
+Wire Wire Line
+	17050 9350 17050 9450
+Wire Wire Line
+	17050 9450 16850 9450
+Wire Wire Line
+	16850 8250 17050 8250
+Wire Wire Line
+	17950 9350 17950 9450
+Wire Wire Line
+	17950 9450 18100 9450
+Wire Wire Line
+	16100 8000 16650 8000
+Wire Wire Line
+	17200 8200 16750 8200
+Wire Wire Line
+	16100 7900 16750 7900
+Wire Wire Line
+	17200 8200 17200 8350
+Wire Wire Line
+	16750 8200 16750 9500
+Wire Wire Line
+	16750 9500 17200 9500
+$Comp
+L boneIO:RM85-2011-35-1024 U25
+U 1 1 634EFA68
+P 18300 9950
+F 0 "U25" H 19678 9096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 19678 9005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 18300 9950 50  0001 C CNN
+F 3 "" H 18300 9950 50  0001 C CNN
+	1    18300 9950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16650 10200 17050 10200
+$Comp
+L power:VCC #PWR047
+U 1 1 634EFA6F
+P 17950 10250
+F 0 "#PWR047" H 17950 10100 50  0001 C CNN
+F 1 "VCC" H 17965 10423 50  0000 C CNN
+F 2 "" H 17950 10250 50  0001 C CNN
+F 3 "" H 17950 10250 50  0001 C CNN
+	1    17950 10250
+	1    0    0    -1  
+$EndComp
+Text GLabel 18050 11450 2    50   Input ~ 0
+RELAY19
+Wire Wire Line
+	17050 10200 17050 10350
+Wire Wire Line
+	17950 10250 17950 10350
+Wire Wire Line
+	17950 11350 17950 11450
+Wire Wire Line
+	17950 11450 18050 11450
+Wire Wire Line
+	16650 11350 16650 11250
+Wire Wire Line
+	17050 11350 16650 11350
+Wire Wire Line
+	17200 11350 17200 11450
+Wire Wire Line
+	17200 11450 16800 11450
+Wire Wire Line
+	16800 10250 17200 10250
+Wire Wire Line
+	17200 10250 17200 10350
+Wire Wire Line
+	17950 11900 17950 11800
+Text GLabel 18100 13000 2    50   Input ~ 0
+RELAY20
+$Comp
+L power:VCC #PWR048
+U 1 1 634EFA88
+P 17950 11800
+F 0 "#PWR048" H 17950 11650 50  0001 C CNN
+F 1 "VCC" H 17965 11973 50  0000 C CNN
+F 2 "" H 17950 11800 50  0001 C CNN
+F 3 "" H 17950 11800 50  0001 C CNN
+	1    17950 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U26
+U 1 1 634EFA8E
+P 18300 11500
+F 0 "U26" H 19678 10646 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 19678 10555 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 18300 11500 50  0001 C CNN
+F 3 "" H 18300 11500 50  0001 C CNN
+	1    18300 11500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	17050 11800 17050 11900
+Wire Wire Line
+	17200 13050 17200 12900
+Wire Wire Line
+	17050 12900 17050 13000
+Wire Wire Line
+	17050 13000 16850 13000
+Wire Wire Line
+	16850 11800 17050 11800
+Wire Wire Line
+	17950 12900 17950 13000
+Wire Wire Line
+	17950 13000 18100 13000
+Wire Wire Line
+	17200 11750 16750 11750
+Wire Wire Line
+	16100 11450 16750 11450
+Wire Wire Line
+	17200 11750 17200 11900
+Wire Wire Line
+	16750 11750 16750 13050
+Wire Wire Line
+	16750 13050 17200 13050
+$Comp
+L boneIO:RM85-2011-35-1024 U27
+U 1 1 63624F39
+P 21450 6400
+F 0 "U27" H 22828 5546 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 22828 5455 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 21450 6400 50  0001 C CNN
+F 3 "" H 21450 6400 50  0001 C CNN
+	1    21450 6400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	19800 6650 20200 6650
+$Comp
+L power:VCC #PWR051
+U 1 1 63624F40
+P 21100 6700
+F 0 "#PWR051" H 21100 6550 50  0001 C CNN
+F 1 "VCC" H 21115 6873 50  0000 C CNN
+F 2 "" H 21100 6700 50  0001 C CNN
+F 3 "" H 21100 6700 50  0001 C CNN
+	1    21100 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 21200 7900 2    50   Input ~ 0
+RELAY21
+Wire Wire Line
+	20200 6650 20200 6800
+Wire Wire Line
+	21100 6700 21100 6800
+Wire Wire Line
+	21100 7800 21100 7900
+Wire Wire Line
+	21100 7900 21200 7900
+Wire Wire Line
+	19250 7800 19800 7800
+Wire Wire Line
+	19800 7800 19800 6650
+Wire Wire Line
+	20200 7800 19800 7800
+Connection ~ 19800 7800
+Wire Wire Line
+	20350 7800 20350 7900
+Wire Wire Line
+	20350 7900 19950 7900
+Wire Wire Line
+	19950 7900 19950 7700
+Wire Wire Line
+	19950 6700 20350 6700
+Wire Wire Line
+	20350 6700 20350 6800
+Wire Wire Line
+	19250 7700 19950 7700
+Connection ~ 19950 7700
+Wire Wire Line
+	19950 7700 19950 6700
+Wire Wire Line
+	21100 8350 21100 8250
+Text GLabel 21250 9450 2    50   Input ~ 0
+RELAY22
+$Comp
+L power:VCC #PWR054
+U 1 1 63624F59
+P 21100 8250
+F 0 "#PWR054" H 21100 8100 50  0001 C CNN
+F 1 "VCC" H 21115 8423 50  0000 C CNN
+F 2 "" H 21100 8250 50  0001 C CNN
+F 3 "" H 21100 8250 50  0001 C CNN
+	1    21100 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U28
+U 1 1 63624F5F
+P 21450 7950
+F 0 "U28" H 22828 7096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 22828 7005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 21450 7950 50  0001 C CNN
+F 3 "" H 21450 7950 50  0001 C CNN
+	1    21450 7950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	20200 8250 20200 8350
+Wire Wire Line
+	20350 9500 20350 9350
+Wire Wire Line
+	20200 9350 20200 9450
+Wire Wire Line
+	20200 9450 20000 9450
+Wire Wire Line
+	20000 9450 20000 8700
+Wire Wire Line
+	20000 8250 20200 8250
+Wire Wire Line
+	21100 9350 21100 9450
+Wire Wire Line
+	21100 9450 21250 9450
+Wire Wire Line
+	19250 8000 19800 8000
+Wire Wire Line
+	19800 8000 19800 8700
+Wire Wire Line
+	19800 8700 20000 8700
+Connection ~ 20000 8700
+Wire Wire Line
+	20000 8700 20000 8250
+Wire Wire Line
+	20350 8200 19900 8200
+Wire Wire Line
+	19900 8200 19900 7900
+Wire Wire Line
+	19250 7900 19900 7900
+Wire Wire Line
+	20350 8200 20350 8350
+Wire Wire Line
+	19900 8200 19900 9500
+Wire Wire Line
+	19900 9500 20350 9500
+Connection ~ 19900 8200
+$Comp
+L boneIO:RM85-2011-35-1024 U29
+U 1 1 6375A470
+P 21450 9950
+F 0 "U29" H 22828 9096 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 22828 9005 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 21450 9950 50  0001 C CNN
+F 3 "" H 21450 9950 50  0001 C CNN
+	1    21450 9950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	19800 10200 20200 10200
+$Comp
+L power:VCC #PWR055
+U 1 1 6375A477
+P 21100 10250
+F 0 "#PWR055" H 21100 10100 50  0001 C CNN
+F 1 "VCC" H 21115 10423 50  0000 C CNN
+F 2 "" H 21100 10250 50  0001 C CNN
+F 3 "" H 21100 10250 50  0001 C CNN
+	1    21100 10250
+	1    0    0    -1  
+$EndComp
+Text GLabel 21200 11450 2    50   Input ~ 0
+RELAY23
+Wire Wire Line
+	20200 10200 20200 10350
+Wire Wire Line
+	21100 10250 21100 10350
+Wire Wire Line
+	21100 11350 21100 11450
+Wire Wire Line
+	21100 11450 21200 11450
+Wire Wire Line
+	19250 11350 19800 11350
+Wire Wire Line
+	19800 11350 19800 10200
+Wire Wire Line
+	20200 11350 19800 11350
+Connection ~ 19800 11350
+Wire Wire Line
+	20350 11350 20350 11450
+Wire Wire Line
+	20350 11450 19950 11450
+Wire Wire Line
+	19950 11450 19950 11250
+Wire Wire Line
+	19950 10250 20350 10250
+Wire Wire Line
+	20350 10250 20350 10350
+Wire Wire Line
+	19250 11250 19950 11250
+Connection ~ 19950 11250
+Wire Wire Line
+	19950 11250 19950 10250
+Wire Wire Line
+	21100 11900 21100 11800
+Text GLabel 21250 13000 2    50   Input ~ 0
+RELAY24
+$Comp
+L power:VCC #PWR056
+U 1 1 6375A490
+P 21100 11800
+F 0 "#PWR056" H 21100 11650 50  0001 C CNN
+F 1 "VCC" H 21115 11973 50  0000 C CNN
+F 2 "" H 21100 11800 50  0001 C CNN
+F 3 "" H 21100 11800 50  0001 C CNN
+	1    21100 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L boneIO:RM85-2011-35-1024 U30
+U 1 1 6375A496
+P 21450 11500
+F 0 "U30" H 22828 10646 50  0000 L CNN
+F 1 "RM85-2011-35-1024" H 22828 10555 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:RM852011351024" H 21450 11500 50  0001 C CNN
+F 3 "" H 21450 11500 50  0001 C CNN
+	1    21450 11500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	20200 11800 20200 11900
+Wire Wire Line
+	20350 13050 20350 12900
+Wire Wire Line
+	20200 12900 20200 13000
+Wire Wire Line
+	20200 13000 20000 13000
+Wire Wire Line
+	20000 13000 20000 12250
+Wire Wire Line
+	20000 11800 20200 11800
+Wire Wire Line
+	21100 12900 21100 13000
+Wire Wire Line
+	21100 13000 21250 13000
+Wire Wire Line
+	19250 11550 19800 11550
+Wire Wire Line
+	19800 11550 19800 12250
+Wire Wire Line
+	19800 12250 20000 12250
+Connection ~ 20000 12250
+Wire Wire Line
+	20000 12250 20000 11800
+Wire Wire Line
+	20350 11750 19900 11750
+Wire Wire Line
+	19900 11750 19900 11450
+Wire Wire Line
+	19250 11450 19900 11450
+Wire Wire Line
+	20350 11750 20350 11900
+Wire Wire Line
+	19900 11750 19900 13050
+Wire Wire Line
+	19900 13050 20350 13050
+Connection ~ 19900 11750
+NoConn ~ 2900 6800
+NoConn ~ 2900 7800
+NoConn ~ 2900 8350
+NoConn ~ 2900 9350
+NoConn ~ 2900 10350
+NoConn ~ 2900 11350
+NoConn ~ 2900 11900
+NoConn ~ 2900 12900
+NoConn ~ 6500 11900
+NoConn ~ 6500 12900
+NoConn ~ 6500 10350
+NoConn ~ 6500 11350
+NoConn ~ 6500 9350
+NoConn ~ 6500 8350
+NoConn ~ 6500 7800
+NoConn ~ 6500 6800
+NoConn ~ 10100 6800
+NoConn ~ 10100 7800
+NoConn ~ 10100 8350
+NoConn ~ 10100 9350
+NoConn ~ 10100 10350
+NoConn ~ 10100 11350
+NoConn ~ 10100 11900
+NoConn ~ 10100 12900
+NoConn ~ 13700 12900
+NoConn ~ 13700 11900
+NoConn ~ 13700 10350
+NoConn ~ 13700 11350
+NoConn ~ 13700 9350
+NoConn ~ 13700 8350
+NoConn ~ 13700 7800
+NoConn ~ 13700 6800
+NoConn ~ 17350 6800
+NoConn ~ 17350 7800
+NoConn ~ 17350 8350
+NoConn ~ 17350 9350
+NoConn ~ 17350 10350
+NoConn ~ 17350 11350
+NoConn ~ 17350 11900
+NoConn ~ 17350 12900
+NoConn ~ 20500 12900
+NoConn ~ 20500 11900
+NoConn ~ 20500 11350
+NoConn ~ 20500 10350
+NoConn ~ 20500 9350
+NoConn ~ 20500 8350
+NoConn ~ 20500 7800
+NoConn ~ 20500 6800
+NoConn ~ 18250 7250
+$Comp
+L boneIO:MCP9808-E_MS U1
+U 1 1 61B1AE5F
+P 2600 3500
+F 0 "U1" H 3544 2946 50  0000 L CNN
+F 1 "MCP9808-E_MS" H 3544 2855 50  0000 L CNN
+F 2 "boneIO - relay board 24x16A:SOP65P490X110-8N" H 2600 3500 50  0001 L BNN
+F 3 "" H 2600 3500 50  0001 L BNN
+	1    2600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16800 10250 16800 11400
+Wire Wire Line
+	16100 11250 16650 11250
+Connection ~ 16650 11250
+Wire Wire Line
+	16650 11250 16650 10200
+Wire Wire Line
+	16100 11350 16600 11350
+Wire Wire Line
+	16600 11350 16600 11400
+Wire Wire Line
+	16600 11400 16800 11400
+Connection ~ 16800 11400
+Wire Wire Line
+	16800 11400 16800 11450
+Wire Wire Line
+	16850 8250 16850 9450
+Wire Wire Line
+	16750 8200 16650 8200
+Wire Wire Line
+	16650 8200 16650 8000
+Connection ~ 16750 8200
+Wire Wire Line
+	16750 7900 16750 8100
+Wire Wire Line
+	16750 8100 16850 8100
+Wire Wire Line
+	16850 8100 16850 8250
+Connection ~ 16850 8250
+Wire Wire Line
+	8850 11350 9550 11350
+Wire Wire Line
+	9550 10250 9550 11350
+Connection ~ 9550 11350
+Wire Wire Line
+	9550 11350 9550 11450
+Wire Wire Line
+	9800 11350 9800 11400
+Wire Wire Line
+	9400 11400 9400 11250
+Wire Wire Line
+	9400 11400 9800 11400
+Wire Wire Line
+	8850 11250 9400 11250
+Connection ~ 9400 11250
+Wire Wire Line
+	9400 11250 9400 10200
+Wire Wire Line
+	9600 11800 9600 13000
+Wire Wire Line
+	9500 11550 9500 11750
+Wire Wire Line
+	8850 11550 9500 11550
+Connection ~ 9500 11750
+Wire Wire Line
+	9500 11450 9500 11500
+Wire Wire Line
+	9500 11500 9600 11500
+Wire Wire Line
+	9600 11500 9600 11800
+Connection ~ 9600 11800
+Wire Wire Line
+	16800 6700 16800 7800
+Wire Wire Line
+	16100 7800 16800 7800
+Connection ~ 16800 7800
+Wire Wire Line
+	16800 7800 16800 7900
+Wire Wire Line
+	17050 7800 17050 7850
+Wire Wire Line
+	16650 7850 16650 7700
+Wire Wire Line
+	16650 7850 17050 7850
+Wire Wire Line
+	16100 7700 16650 7700
+Connection ~ 16650 7700
+Wire Wire Line
+	16650 7700 16650 6650
+Wire Wire Line
+	16850 11800 16850 13000
+Wire Wire Line
+	16750 11750 16750 11550
+Wire Wire Line
+	16100 11550 16750 11550
+Connection ~ 16750 11750
+Wire Wire Line
+	16750 11450 16750 11500
+Wire Wire Line
+	16750 11500 16850 11500
+Wire Wire Line
+	16850 11500 16850 11800
+Connection ~ 16850 11800
 $EndSCHEMATC
