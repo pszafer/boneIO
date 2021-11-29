@@ -3,6 +3,7 @@ from .iorelay import GpioRelay
 from .const import (
     ACTION,
     ACTIONS,
+    GPIO,
     ID,
     KIND,
     OUTPUT,
@@ -63,11 +64,14 @@ class Manager:
         self._input_pins = input_pins
         loop = asyncio.get_event_loop()
 
+        def choose_output(pin_kind=GPIO):
+            if pin_kind == GPIO:
+                return GpioRelay
+
         self.output = {
-            gpio[ID]: GpioRelay(
+            gpio[ID]: choose_output(gpio[KIND])(
                 pin=gpio[PIN],
                 id=gpio[ID],
-                pin_kind=gpio[KIND],
                 send_message=self.send_message,
                 topic_prefix=topic_prefix,
             )
@@ -94,6 +98,7 @@ class Manager:
         ]
 
         self.send_message(topic=f"{topic_prefix}/{STATE}", payload=ONLINE)
+        _LOGGER.info("Manager ready to handle input and outputs.")
 
     def press_callback(self, x: ClickTypes, inpin: str, actions: dict) -> None:
         """Press callback to use in input gpio.
