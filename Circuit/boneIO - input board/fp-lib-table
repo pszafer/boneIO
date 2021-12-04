@@ -1,3 +1,5 @@
 (fp_lib_table
-  (lib (name "boneIO - input board")(type KiCad)(uri "${KIPRJMOD}/3D_model/boneIO - input board.pretty")(options "")(descr ""))
+  (lib (name rs485)(type KiCad)(uri ${KIPRJMOD}/3D_model/rs485.pretty)(options "")(descr ""))
+  (lib (name LM2596)(type KiCad)(uri ${KIPRJMOD}/3D_model/LM2596.pretty)(options "")(descr ""))
+  (lib (name PC817)(type KiCad)(uri ${KIPRJMOD}/3D_model/PC817.pretty)(options "")(descr ""))
 )
