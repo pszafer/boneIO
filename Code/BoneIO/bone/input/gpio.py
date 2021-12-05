@@ -1,18 +1,35 @@
 """GPIOInputButton to receive signals."""
-from .gpio import setup_input, read_input, edge_detect
-
+from ..helper.gpio import setup_input, read_input, edge_detect
+import subprocess
 from functools import partial
 from typing import Callable, Any
-from datetime import datetime, timedelta
+from datetime import datetime
 import logging
 import asyncio
-from .const import SINGLE, DOUBLE, LONG, ClickTypes
+from ..const import (
+    CONFIG_PIN,
+    GPIO,
+    SINGLE,
+    DOUBLE,
+    LONG,
+    ClickTypes,
+    DEBOUNCE_DURATION,
+    LONG_PRESS_DURATION,
+    DELAY_DURATION,
+    SECOND_DELAY_DURATION,
+)
 
 _LOGGER = logging.getLogger(__name__)
-DEBOUNCE_DURATION = timedelta(seconds=0.2)
-LONG_PRESS_DURATION = timedelta(seconds=0.7)
-DELAY_DURATION = 0.1
-SECOND_DELAY_DURATION = 0.3
+
+
+def configure_pin(pin: str) -> None:
+    pin = f"{pin[0:3]}0{pin[3]}" if len(pin) == 4 else pin
+    _LOGGER.debug(f"Configuring pin for GPIO {pin}")
+    subprocess.run(
+        [CONFIG_PIN, pin, GPIO],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.STDOUT,
+    )
 
 
 class GpioInputButton:
@@ -23,6 +40,7 @@ class GpioInputButton:
     ) -> None:
         """Setup GPIO Input Button"""
         self._pin = pin
+        configure_pin(pin)
         self._loop = asyncio.get_running_loop()
         self._press_callback = press_callback
         setup_input(self._pin)
@@ -67,6 +85,7 @@ class GpioInputButton:
 
     @property
     def is_pressed(self):
+        """Is button pressed."""
         return read_input(self._pin)
 
     def check_press_length(self) -> None:

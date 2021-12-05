@@ -166,6 +166,8 @@ class MQTTClient:
             )
             tasks.add(messages_task)
 
+            tasks.update(manager.get_oled_tasks())
+
             topic = f"{manager.relay_topic}"
             await self.subscribe(topic)
 

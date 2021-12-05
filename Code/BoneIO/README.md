@@ -1,9 +1,8 @@
 Example usage:
-boneio run -d --mqttserver mqtt.server --username mqtt --password mqtt -r 17 -i 3,5 --input_prefix_pin "" --relay_prefix_pin "" -rp '{"3":"17"}'
+boneio run -dd -c config.yaml
 
-Which means script will connect to remote pigpio, connect to mqtt server and:
+Install needed:
 
-- use pin 17 as relay pin
-- use pins 3,4,5 as input pins
-- no prefixes (so it is rpi)
-- it will map single click on PIN 3 to toggle PIN 17
+```
+sudo apt-get install libopenjp2-7-dev libatlas-base-dev
+```

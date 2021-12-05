@@ -1,10 +1,4 @@
-import re
-import json
-
-
-from typing import Tuple, Any
-from yaml import load, YAMLError, Loader
-from cerberus import Validator
+from .helper import CustomValidator, load_yaml_file
 import click
 import logging
 from colorlog import ColoredFormatter
@@ -14,6 +8,8 @@ from .const import (
     ENABLED,
     GPIO_INPUT,
     HA_DISCOVERY,
+    MCP23017,
+    OLED,
     OUTPUT,
     PAHO,
     MQTT,
@@ -48,14 +44,6 @@ logging.getLogger().handlers[0].setFormatter(
 )
 
 MAINPATH = os.path.join(os.path.dirname(__file__))
-
-
-def load_yaml_file(filename: str) -> Any:
-    with open(filename, "r") as stream:
-        try:
-            return load(stream, Loader=Loader)
-        except YAMLError as exception:
-            raise exception
 
 
 def add_options(options):
@@ -126,7 +114,7 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
     else:
         logging.getLogger(PAHO).setLevel(logging.WARN)
     schema = load_yaml_file(os.path.join(MAINPATH, "schema.yaml"))
-    v = Validator(schema, purge_unknown=True)
+    v = CustomValidator(schema, purge_unknown=True)
     config_yaml = load_yaml_file(config)
     if not config_yaml:
         _LOGGER.info("Missing file.")
@@ -145,7 +133,8 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
         input_pins=_config[GPIO_INPUT],
         ha_discovery=_config[MQTT][HA_DISCOVERY][ENABLED],
         ha_discovery_prefix=_config[MQTT][HA_DISCOVERY][TOPIC_PREFIX],
-        # relay_input_map=relay_input_map,
+        mcp23017=_config[MCP23017],
+        oled=_config.get(OLED),
     )
     await client.start_client(manager)
 

@@ -47,11 +47,16 @@ mqtt:
           default: homeassistant
           meta:
             label: Prefix topic of HA discovery.
-i2c:
+
+oled:
+  type: boolean
+  coerce: to_bool
+
+mcp23017:
   type: list
   required: False
   meta:
-    label: I2C Pin config
+    label: mcp23017 Pin config
   schema:
     type: dict
     schema:
@@ -60,21 +65,17 @@ i2c:
         required: False
         meta:
           label: Id of I2C to use in pin config
-      sda:
+      address:
         type: string
         required: True
         meta:
           label: GPIO of I2C SDA 
-      scl:
-        type: string
-        required: True
-        meta:
-          label: GPIO of I2C SCL
 
 output:
   type: list
   meta:
     label: List of output relays
+  check_with: output_id_uniqueness
   schema:
     type: dict
     schema:
@@ -85,14 +86,27 @@ output:
           label: Id to send to use in HA and in GPIO Input. Default to `kind_pin`
       kind:
         type: string
-        allowed: ['gpio', 'i2c']
+        allowed: ['gpio', 'mcp']
         meta:
           label: Either GPIO or i2c.
+      mcp_id:
+        type: string
+        required: False
+        meta:
+          label: MCP ID to connect
       pin:
         type: string
         required: True
         meta:
           label: PIN to use.
+      ha_type:
+        type: string
+        required: True
+        allowed: ['switch', 'light']
+        default: 'switch'
+        meta:
+          label: If HA discovery is used device if relay is light or switch.
+
 
 gpio_input:
   type: list

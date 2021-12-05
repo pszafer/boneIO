@@ -1,0 +1,20 @@
+mqtt:
+  host: mqtt.hass
+  username: mqtt
+  password: pass
+  # ha_discovery:
+  #   enabled: True
+
+# i2c:
+#   - id: myb
+#     sda: "P9_18"
+#     scl: "P9_17"
+
+gpio_input:
+  - id: "one"
+    pin: "P8_3"
+
+output:
+  - id: myinput
+    kind: gpio
+    pin: P9_17
