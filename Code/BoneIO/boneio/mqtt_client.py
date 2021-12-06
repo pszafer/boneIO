@@ -144,7 +144,7 @@ class MQTTClient:
                 self.create_client()  # reset connect/reconnect futures
 
     async def _subscribe_manager(self, manager: any) -> None:
-        """Connect and subscribe to manager topics."""
+        """Connect and subscribe to manager topics + host stats."""
         async with AsyncExitStack() as stack:
             tasks: Set[asyncio.Task] = set()
 
@@ -165,8 +165,6 @@ class MQTTClient:
                 handle_messages(messages, manager.receive_message)
             )
             tasks.add(messages_task)
-
-            tasks.update(manager.get_oled_tasks())
 
             topic = f"{manager.relay_topic}"
             await self.subscribe(topic)

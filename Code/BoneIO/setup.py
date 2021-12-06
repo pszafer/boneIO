@@ -2,14 +2,18 @@
 # -*- coding:utf-8 -*-
 from setuptools import setup, find_packages
 
-with open("bone/version.py") as f:
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+
+with open("boneio/version.py") as f:
     exec(f.read())
 
 setup(
-    name="boneIO",
+    name="boneio",
     version=__version__,  # type: ignore # noqa: F821,
     description="Python Helper for BoneIO",
-    long_description="Python Helper for BoneIO",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/maciejk1984/boneIO",
     download_url="https://github.com/maciejk1984/boneIO/archive/{}.zip".format(
@@ -43,5 +47,5 @@ setup(
         "pyaml==21.10.1",
         "typing-extensions==3.10.0.2",
     ],
-    entry_points={"console_scripts": ["boneio=bone.bonecli:cli"]},
+    entry_points={"console_scripts": ["boneio=boneio.bonecli:cli"]},
 )

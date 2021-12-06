@@ -1,7 +1,19 @@
 import asyncio
 import psutil
 from math import floor
-from ..const import GIGABYTE, MEGABYTE, NETWORK, DISK, MEMORY, CPU, SWAP, UPTIME
+from ..const import (
+    GIGABYTE,
+    MEGABYTE,
+    NETWORK,
+    DISK,
+    MEMORY,
+    CPU,
+    SWAP,
+    UPTIME,
+    HOST,
+    OUTPUT,
+    OledDataTypes,
+)
 import time
 
 intervals = (
@@ -113,3 +125,38 @@ host_stats = {
     SWAP: get_swap_info,
     UPTIME: get_uptime,
 }
+
+import socket
+
+
+class HostData:
+    """Helper class to store host data."""
+
+    data = {UPTIME: {}, NETWORK: {}, CPU: {}, DISK: {}, MEMORY: {}, SWAP: {}}
+
+    def __init__(self, output: dict) -> None:
+        """Initialize HostData."""
+        self._hostname = socket.gethostname()
+        self.data[UPTIME] = {HOST: self._hostname, UPTIME: 0}
+        self._output = output
+
+    def write(self, type: str, data: dict) -> None:
+        """Write data of chosen type."""
+        self.data[type] = data
+
+    def write_uptime(self, uptime: str) -> None:
+        """Write uptime."""
+        self.data[UPTIME][UPTIME] = uptime
+
+    def get(self, type: OledDataTypes) -> dict:
+        """Get saved stats."""
+        if type == OUTPUT:
+            return self._get_output()
+        return self.data[type]
+
+    def _get_output(self) -> dict:
+        """Get stats for output."""
+        out = {}
+        for output in self._output.values():
+            out[output.id] = output.state
+        return out

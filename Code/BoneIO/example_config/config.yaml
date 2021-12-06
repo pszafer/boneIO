@@ -1,0 +1,29 @@
+mqtt:
+  host: hostname
+  username: mqtt
+  password: password
+  topic_prefix: boneiohome
+  ha_discovery:
+    enabled: yes
+i2c:
+  id: myb
+  sda: P9_18
+  scl: P9_17
+oled:
+mcp23017:
+  - id: mcp1
+    address: 0x20
+  - id: mcp2
+    address: 0x21
+
+gpio_input:
+  - id: "one"
+    pin: P8_12
+  - id: "two"
+    pin: P8_7
+    actions:
+      single:
+        action: output
+        pin: light1
+
+output: !include output.yaml

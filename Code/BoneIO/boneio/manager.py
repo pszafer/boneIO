@@ -1,8 +1,14 @@
 from .input import GpioInputButton
 from .relay import GpioRelay, MCPRelay
 from .oled import Oled
+from .helper.stats import host_stats, HostData
+from typing import Set
+import asyncio
+import logging
+
 from .const import (
     ACTION,
+    OUTPUT,
     ACTIONS,
     ADDRESS,
     GPIO,
@@ -64,9 +70,11 @@ class Manager:
         ha_discovery_prefix: str = "homeassistant",
         mcp23017: Optional[List] = None,
         oled: bool = False,
+        web: bool = False,
     ) -> None:
         """Initialize the manager."""
         loop = asyncio.get_event_loop()
+        self._host_data = None
 
         self.send_message = send_message
         self._topic_prefix = topic_prefix
@@ -75,6 +83,7 @@ class Manager:
         self._i2cbusio = I2C(SCL, SDA)
         self._mcp = {}
         self._oled = None
+        self._tasks: List[asyncio.Task] = []
 
         if mcp23017:
             for mcp in mcp23017:
@@ -127,15 +136,19 @@ class Manager:
             for gpio in self._input_pins
         ]
 
+        if oled or web:
+            self._host_data = HostData(output=self.output)
+            for f in host_stats.values():
+                self._tasks.append(asyncio.create_task(f(self._host_data)))
+
         if oled:
-            self._oled = Oled(self.output)
+            self._oled = Oled(self._host_data)
+            self._tasks.append(self._oled.get_task())
 
         self.send_message(topic=f"{topic_prefix}/{STATE}", payload=ONLINE)
 
-    def get_oled_tasks(self) -> any:
-        if not self._oled:
-            return []
-        return self._oled.get_tasks()
+    def get_tasks(self) -> Set[asyncio.Task]:
+        return self._tasks
 
     def press_callback(self, x: ClickTypes, inpin: str, actions: dict) -> None:
         """Press callback to use in input gpio.

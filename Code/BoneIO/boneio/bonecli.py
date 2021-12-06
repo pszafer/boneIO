@@ -1,6 +1,7 @@
 from .helper import CustomValidator, load_yaml_file
 import click
 import logging
+from contextlib import AsyncExitStack
 from colorlog import ColoredFormatter
 from .mqtt_client import MQTTClient
 from .manager import Manager
@@ -136,7 +137,10 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
         mcp23017=_config[MCP23017],
         oled=_config.get(OLED),
     )
-    await client.start_client(manager)
+    tasks = set()
+    tasks.add(client.start_client(manager))
+    tasks.update(manager.get_tasks())
+    await asyncio.gather(*tasks)
 
 
 if __name__ == "__main__":
