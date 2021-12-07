@@ -33,6 +33,7 @@ from .helper import (
     HostData,
     ha_relay_availibilty_message,
     ha_sensor_availibilty_message,
+    ha_sensor_temp_availibilty_message,
     host_stats,
 )
 from .input import GpioInputButton
@@ -51,11 +52,11 @@ class Manager:
         topic_prefix: str,
         relay_pins: List,
         input_pins: List,
+        lm75: dict = None,
         ha_discovery: bool = True,
         ha_discovery_prefix: str = HOMEASSISTANT,
         mcp23017: Optional[List] = None,
         oled: bool = False,
-        web: bool = True,
     ) -> None:
         """Initialize the manager."""
         _LOGGER.info("Initializing manager module.")
@@ -71,8 +72,33 @@ class Manager:
         self._grouped_outputs = {}
         self._oled = None
         self._tasks: List[asyncio.Task] = []
+        self._lm75 = None
 
-        if mcp23017:
+        def create_lm75_sensor():
+            """Create LM sensor in manager."""
+            from .sensor.lm75 import LM75
+
+            name = lm75.get(ID)
+            id = name.replace(" ", "")
+            self._lm75 = LM75(
+                id=id,
+                name=name,
+                i2c=self._i2cbusio,
+                address=lm75[ADDRESS],
+                send_message=self.send_message,
+                topic_prefix=topic_prefix,
+            )
+            self.send_ha_autodiscovery(
+                id=id,
+                name=name,
+                ha_type="sensor",
+                prefix=ha_discovery_prefix,
+                availibilty_msg_func=ha_sensor_temp_availibilty_message,
+            )
+            self._tasks.append(asyncio.create_task(self._lm75.send_state()))
+
+        def create_mcp23017():
+            """Create MCP23017."""
             for mcp in mcp23017:
                 id = mcp[ID] or mcp[ADDRESS]
                 self._mcp[id] = MCP23017(i2c=self._i2cbusio, address=mcp[ADDRESS])
@@ -82,6 +108,12 @@ class Manager:
                 )
                 time.sleep(sleep_time)
                 self._grouped_outputs[id] = {}
+
+        if lm75:
+            create_lm75_sensor()
+
+        if mcp23017:
+            create_mcp23017()
 
         def configure_relay(gpio: dict) -> Any:
             """Configure kind of relay. Most common MCP."""
@@ -153,15 +185,15 @@ class Manager:
 
         self.buttons = [configure_button(gpio=gpio) for gpio in self._input_pins]
 
-        if oled or web:
+        if oled:
             self._host_data = HostData(
-                output=self._grouped_outputs, callback=self._host_data_callback
+                output=self._grouped_outputs,
+                lm75=self._lm75,
+                callback=self._host_data_callback,
             )
             for f in host_stats.values():
                 self._tasks.append(asyncio.create_task(f(self._host_data)))
             _LOGGER.debug("Gathering host data enabled.")
-
-        if oled:
             self._oled = Oled(
                 host_data=self._host_data, output_groups=list(self._grouped_outputs)
             )
@@ -189,7 +221,7 @@ class Manager:
                 if output_gpio:
                     output_gpio.toggle()
         # This is similar how Z2M is clearing click sensor.
-        self._loop.call_later(1, self.send_message, topic, "")
+        # self._loop.call_later(1, self.send_message, topic, "")
 
     def send_ha_autodiscovery(
         self,

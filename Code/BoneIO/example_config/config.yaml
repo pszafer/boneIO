@@ -5,10 +5,7 @@ mqtt:
   topic_prefix: boneiohome
   ha_discovery:
     enabled: yes
-i2c:
-  id: myb
-  sda: P9_18
-  scl: P9_17
+
 oled:
 mcp23017:
   - id: mcp1

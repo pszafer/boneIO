@@ -7,7 +7,19 @@ from typing import Callable
 
 import psutil
 
-from ..const import CPU, DISK, GIGABYTE, HOST, MEGABYTE, MEMORY, NETWORK, SWAP, UPTIME
+from ..const import (
+    CPU,
+    DISK,
+    GIGABYTE,
+    HOST,
+    MEGABYTE,
+    MEMORY,
+    NETWORK,
+    SWAP,
+    TEMPERATURE,
+    UPTIME,
+)
+from ..sensor.lm75 import LM75
 
 intervals = (("d", 86400), ("h", 3600), ("m", 60))
 
@@ -120,10 +132,11 @@ class HostData:
 
     data = {UPTIME: {}, NETWORK: {}, CPU: {}, DISK: {}, MEMORY: {}, SWAP: {}}
 
-    def __init__(self, output: dict, callback: Callable) -> None:
+    def __init__(self, output: dict, callback: Callable, lm75: LM75) -> None:
         """Initialize HostData."""
         self._hostname = socket.gethostname()
         self.data[UPTIME] = {HOST: self._hostname, UPTIME: 0}
+        self._lm75 = lm75
         self._output = output
         self._callback = callback
         self._loop = asyncio.get_running_loop()
@@ -136,6 +149,8 @@ class HostData:
     def write_uptime(self, uptime: str) -> None:
         """Write uptime."""
         self.data[UPTIME][UPTIME] = uptime
+        if self._lm75:
+            self.data[UPTIME][self._lm75.name] = self._lm75.state
         self._loop.call_soon_threadsafe(partial(self._callback, UPTIME))
 
     def get(self, type: str) -> dict:

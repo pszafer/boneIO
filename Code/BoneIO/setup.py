@@ -32,7 +32,7 @@ setup(
         "Adafruit-BBIO==1.2.0",
         "Adafruit-Blinka==6.15.0",
         "adafruit-circuitpython-mcp230xx==2.5.1",
-        "Adafruit-PlatformDetect==3.17.2",
+        "adafruit-circuitpython-pct2075==1.1.11" "Adafruit-PlatformDetect==3.17.2",
         "Adafruit-PureIO==1.1.9",
         "asyncio-mqtt==0.10.0",
         "Cerberus==1.3.4",

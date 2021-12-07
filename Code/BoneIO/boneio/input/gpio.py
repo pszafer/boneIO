@@ -4,7 +4,7 @@ import logging
 import subprocess
 from datetime import datetime
 from functools import partial
-from typing import Any, Callable
+from typing import Callable
 
 from ..const import (
     CONFIG_PIN,

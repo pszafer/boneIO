@@ -138,6 +138,7 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
         ha_discovery=_config[MQTT][HA_DISCOVERY][ENABLED],
         ha_discovery_prefix=_config[MQTT][HA_DISCOVERY][TOPIC_PREFIX],
         mcp23017=_config[MCP23017],
+        lm75=_config.get("lm75"),
         oled=_config.get(OLED),
     )
     tasks = set()

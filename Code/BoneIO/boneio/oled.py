@@ -22,7 +22,7 @@ danube = make_font("danube__.ttf", 15, local=True)
 screen_order = [UPTIME, NETWORK, CPU, DISK, MEMORY, SWAP]
 
 STANDARD_ROWS = [17, 32, 47]
-UPTIME_ROWS = list(range(25, 40, 10))
+UPTIME_ROWS = list(range(25, 50, 10))
 OUTPUT_ROWS = list(range(14, 60, 6))
 OUTPUT_COLS = range(0, 101, 50)
 

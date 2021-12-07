@@ -52,6 +52,22 @@ oled:
   type: boolean
   coerce: to_bool
 
+lm75:
+  type: dict
+  required: False
+  schema:
+    id:
+      type: string
+      required: False
+      meta:
+        label: Id of I2C to use in pin config
+    address:
+      type: string
+      required: True
+      default: 0x48
+      meta:
+        label: GPIO of I2C SDA
+
 mcp23017:
   type: list
   required: False
@@ -62,7 +78,8 @@ mcp23017:
     schema:
       id:
         type: string
-        required: False
+        required: True
+        default: lm75
         meta:
           label: Id of I2C to use in pin config
       address:

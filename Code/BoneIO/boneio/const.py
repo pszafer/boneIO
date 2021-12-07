@@ -57,4 +57,6 @@ OLED = "oled"
 FONTS = "fonts"
 OledDataTypes = Literal[UPTIME, NETWORK, CPU, DISK, MEMORY, SWAP, OUTPUT]
 INIT_SLEEP = "init_sleep"
-INPUT="input"
+INPUT = "input"
+TEMPERATURE = "temperature"
+SENSOR = "sensor"
