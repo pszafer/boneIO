@@ -1,5 +1,4 @@
 import asyncio
-from functools import partial
 import logging
 import time
 from typing import Any, Callable, List, Optional, Set, Union
@@ -17,6 +16,7 @@ from .const import (
     HOMEASSISTANT,
     ID,
     INIT_SLEEP,
+    INPUT,
     KIND,
     MCP,
     MCP_ID,
@@ -29,34 +29,17 @@ from .const import (
     STATE,
     ClickTypes,
 )
-from .helper.stats import HostData, host_stats
+from .helper import (
+    HostData,
+    ha_relay_availibilty_message,
+    ha_sensor_availibilty_message,
+    host_stats,
+)
 from .input import GpioInputButton
 from .oled import Oled
 from .relay import GpioRelay, MCPRelay
-from .version import __version__
 
 _LOGGER = logging.getLogger(__name__)
-
-
-def ha_availibilty_message(relay_id: str, relay_name: str, topic: str = "boneio"):
-    """Create availability topic for HA."""
-    return {
-        "availability": [{"topic": f"{topic}/{STATE}"}],
-        "command_topic": f"{topic}/relay/{relay_id}/set",
-        "device": {
-            "identifiers": [topic],
-            "manufacturer": "BoneIO",
-            "model": "BoneIO Relay Board",
-            "name": f"BoneIO {topic}",
-            "sw_version": __version__,
-        },
-        "name": relay_name,
-        "payload_off": OFF,
-        "payload_on": ON,
-        "state_topic": f"{topic}/{RELAY}/{relay_id}",
-        "unique_id": f"{topic}{RELAY}{relay_id}",
-        "value_template": "{{ value_json.state }}",
-    }
 
 
 class Manager:
@@ -140,10 +123,11 @@ class Manager:
         for out in self.output.values():
             if ha_discovery:
                 self.send_ha_autodiscovery(
-                    relay_id=out.id,
-                    relay_name=out.name,
+                    id=out.id,
+                    name=out.name,
                     ha_type=out.ha_type,
                     prefix=ha_discovery_prefix,
+                    availibilty_msg_func=ha_relay_availibilty_message,
                 )
             self._loop.call_soon_threadsafe(
                 self._loop.call_later,
@@ -151,14 +135,23 @@ class Manager:
                 out.send_state,
             )
 
-        self.buttons = [
-            GpioInputButton(
-                pin=gpio[PIN],
+        def configure_button(gpio):
+            pin = gpio[PIN]
+            button = GpioInputButton(
+                pin=pin,
                 press_callback=lambda x, i: self.press_callback(x, i, gpio[ACTIONS]),
                 rest_pin=gpio,
             )
-            for gpio in self._input_pins
-        ]
+            self.send_ha_autodiscovery(
+                id=pin,
+                name=gpio.get(ID, pin),
+                ha_type="sensor",
+                prefix=ha_discovery_prefix,
+                availibilty_msg_func=ha_sensor_availibilty_message,
+            )
+            return button
+
+        self.buttons = [configure_button(gpio=gpio) for gpio in self._input_pins]
 
         if oled or web:
             self._host_data = HostData(
@@ -186,7 +179,8 @@ class Manager:
     def press_callback(self, x: ClickTypes, inpin: str, actions: dict) -> None:
         """Press callback to use in input gpio.
         If relay input map is provided also toggle action on relay."""
-        self.send_message(topic=f"{self._topic_prefix}/input/{inpin}", payload=x)
+        topic = f"{self._topic_prefix}/{INPUT}/{inpin}"
+        self.send_message(topic=topic, payload=x)
         action = actions.get(x)
         if action:
             if action[ACTION] == OUTPUT:
@@ -194,17 +188,21 @@ class Manager:
                 output_gpio = self.output.get(action[PIN])
                 if output_gpio:
                     output_gpio.toggle()
+        # This is similar how Z2M is clearing click sensor.
+        self._loop.call_later(1, self.send_message, topic, "")
 
     def send_ha_autodiscovery(
-        self, relay_id: str, relay_name: str, prefix: str, ha_type: str = "switch"
+        self,
+        id: str,
+        name: str,
+        prefix: str,
+        availibilty_msg_func: Callable,
+        ha_type: str = "switch",
     ) -> None:
         """Send HA autodiscovery information for each relay."""
-        msg = ha_availibilty_message(
-            topic=self._topic_prefix, relay_id=relay_id, relay_name=relay_name
-        )
-        topic = f"{prefix}/{ha_type}/{self._topic_prefix}/{relay_id}/config"
-        _LOGGER.debug("Sending HA discovery for relay %s.", relay_name)
-        print(msg)
+        msg = availibilty_msg_func(topic=self._topic_prefix, id=id, name=name)
+        topic = f"{prefix}/{ha_type}/{self._topic_prefix}/{id}/config"
+        _LOGGER.debug("Sending HA discovery for %s, %s.", ha_type, name)
         self.send_message(topic=topic, payload=msg)
 
     def receive_message(self, topic: str, message: str) -> None:

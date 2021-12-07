@@ -37,7 +37,7 @@ class GpioInputButton:
     """Represent Gpio input switch."""
 
     def __init__(
-        self, pin: str, press_callback: Callable[[ClickTypes, str], None], rest_pin: Any
+        self, pin: str, press_callback: Callable[[ClickTypes, str], None], **kwargs
     ) -> None:
         """Setup GPIO Input Button"""
         self._pin = pin
