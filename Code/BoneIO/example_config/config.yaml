@@ -7,6 +7,11 @@ mqtt:
     enabled: yes
 
 oled:
+
+lm75:
+  id: temp
+  address: 0x48
+
 mcp23017:
   - id: mcp1
     address: 0x20
