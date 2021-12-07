@@ -21,7 +21,8 @@ class BasicRelay:
         ha_type=SWITCH,
     ) -> None:
         """Initialize Basic relay."""
-        self._id = id
+        self._id = id.replace(" ", "")
+        self._name = id
         self._ha_type = ha_type
         self._send_message = send_message
         self._relay_topic = f"{topic_prefix}/{RELAY}/"
@@ -37,8 +38,14 @@ class BasicRelay:
 
     @property
     def id(self) -> bool:
-        """Id of the relay."""
+        """Id of the relay.
+        Has to be trimmed out of spaces because of MQTT handling in HA."""
         return self._id or self._pin
+
+    @property
+    def name(self) -> bool:
+        """Not trimmed id."""
+        return self._name or self._pin
 
     @property
     def state(self) -> bool:

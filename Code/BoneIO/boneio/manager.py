@@ -1,4 +1,5 @@
 import asyncio
+from functools import partial
 import logging
 import time
 from typing import Any, Callable, List, Optional, Set, Union
@@ -37,7 +38,7 @@ from .version import __version__
 _LOGGER = logging.getLogger(__name__)
 
 
-def ha_availibilty_message(topic, relay_id):
+def ha_availibilty_message(relay_id: str, relay_name: str, topic: str = "boneio"):
     """Create availability topic for HA."""
     return {
         "availability": [{"topic": f"{topic}/{STATE}"}],
@@ -49,7 +50,7 @@ def ha_availibilty_message(topic, relay_id):
             "name": f"BoneIO {topic}",
             "sw_version": __version__,
         },
-        "name": f"Relay {relay_id}",
+        "name": relay_name,
         "payload_off": OFF,
         "payload_on": ON,
         "state_topic": f"{topic}/{RELAY}/{relay_id}",
@@ -75,7 +76,7 @@ class Manager:
     ) -> None:
         """Initialize the manager."""
         _LOGGER.info("Initializing manager module.")
-        loop = asyncio.get_event_loop()
+        self._loop = asyncio.get_event_loop()
         self._host_data = None
 
         self.send_message = send_message
@@ -101,16 +102,16 @@ class Manager:
 
         def configure_relay(gpio: dict) -> Any:
             """Configure kind of relay. Most common MCP."""
+            relay_id = gpio[ID].replace(" ", "")
             if gpio[KIND] == MCP:
                 mcp_id = gpio.get(MCP_ID, "")
                 mcp = self._mcp.get(mcp_id)
                 if not mcp:
                     _LOGGER.error("No such MCP configured!")
                     return
-                relay_id = gpio[ID]
                 mcp_relay = MCPRelay(
                     pin=int(gpio[PIN]),
-                    id=relay_id,
+                    id=gpio[ID],
                     send_message=self.send_message,
                     topic_prefix=topic_prefix,
                     mcp=mcp,
@@ -130,18 +131,22 @@ class Manager:
                     topic_prefix=topic_prefix,
                     callback=lambda: self._host_data_callback(GPIO),
                 )
-                self._grouped_outputs[GPIO][gpio[ID]] = gpio_relay
+                self._grouped_outputs[GPIO][relay_id] = gpio_relay
                 return gpio_relay
 
-        self.output = {gpio[ID]: configure_relay(gpio) for gpio in relay_pins}
+        self.output = {
+            gpio[ID].replace(" ", ""): configure_relay(gpio) for gpio in relay_pins
+        }
         for out in self.output.values():
             if ha_discovery:
-                _LOGGER.debug("Sending HA discovery.")
                 self.send_ha_autodiscovery(
-                    relay=out.id, ha_type=out.ha_type, prefix=ha_discovery_prefix
+                    relay_id=out.id,
+                    relay_name=out.name,
+                    ha_type=out.ha_type,
+                    prefix=ha_discovery_prefix,
                 )
-            loop.call_soon_threadsafe(
-                loop.call_later,
+            self._loop.call_soon_threadsafe(
+                self._loop.call_later,
                 0.5,
                 out.send_state,
             )
@@ -191,11 +196,15 @@ class Manager:
                     output_gpio.toggle()
 
     def send_ha_autodiscovery(
-        self, relay: str, prefix: str, ha_type: str = "switch"
+        self, relay_id: str, relay_name: str, prefix: str, ha_type: str = "switch"
     ) -> None:
         """Send HA autodiscovery information for each relay."""
-        msg = ha_availibilty_message(self._topic_prefix, relay_id=relay)
-        topic = f"{prefix}/{ha_type}/{self._topic_prefix}/{ha_type}/config"
+        msg = ha_availibilty_message(
+            topic=self._topic_prefix, relay_id=relay_id, relay_name=relay_name
+        )
+        topic = f"{prefix}/{ha_type}/{self._topic_prefix}/{relay_id}/config"
+        _LOGGER.debug("Sending HA discovery for relay %s.", relay_name)
+        print(msg)
         self.send_message(topic=topic, payload=msg)
 
     def receive_message(self, topic: str, message: str) -> None:
