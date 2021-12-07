@@ -1,23 +1,24 @@
 """GPIOInputButton to receive signals."""
-from ..helper.gpio import setup_input, read_input, edge_detect
-import subprocess
-from functools import partial
-from typing import Callable, Any
-from datetime import datetime
-import logging
 import asyncio
+import logging
+import subprocess
+from datetime import datetime
+from functools import partial
+from typing import Any, Callable
+
 from ..const import (
     CONFIG_PIN,
-    GPIO,
-    SINGLE,
-    DOUBLE,
-    LONG,
-    ClickTypes,
     DEBOUNCE_DURATION,
-    LONG_PRESS_DURATION,
     DELAY_DURATION,
+    DOUBLE,
+    GPIO,
+    LONG,
+    LONG_PRESS_DURATION,
     SECOND_DELAY_DURATION,
+    SINGLE,
+    ClickTypes,
 )
+from ..helper.gpio import edge_detect, read_input, setup_input
 
 _LOGGER = logging.getLogger(__name__)
 

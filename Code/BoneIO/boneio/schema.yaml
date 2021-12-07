@@ -69,7 +69,13 @@ mcp23017:
         type: string
         required: True
         meta:
-          label: GPIO of I2C SDA 
+          label: GPIO of I2C SDA
+      init_sleep:
+        type: integer
+        required: True
+        default: 0
+        meta:
+          label: How long to sleep for MCP to initialize.
 
 output:
   type: list

@@ -1,6 +1,7 @@
 # from typing import Literal
-from typing_extensions import Literal
 from datetime import timedelta
+
+from typing_extensions import Literal
 
 DEBOUNCE_DURATION = timedelta(seconds=0.2)
 LONG_PRESS_DURATION = timedelta(seconds=0.7)
@@ -21,6 +22,7 @@ HOST = "host"
 USERNAME = "username"
 PASSWORD = "password"
 TOPIC_PREFIX = "topic_prefix"
+HOMEASSISTANT = "homeassistant"
 HA_DISCOVERY = "ha_discovery"
 ENABLED = "enabled"
 GPIO_INPUT = "gpio_input"
@@ -52,4 +54,6 @@ MEMORY = "memory"
 SWAP = "swap"
 WHITE = "white"
 OLED = "oled"
+FONTS = "fonts"
 OledDataTypes = Literal[UPTIME, NETWORK, CPU, DISK, MEMORY, SWAP, OUTPUT]
+INIT_SLEEP = "init_sleep"

@@ -1,27 +1,15 @@
 import asyncio
-import psutil
-from math import floor
-from ..const import (
-    GIGABYTE,
-    MEGABYTE,
-    NETWORK,
-    DISK,
-    MEMORY,
-    CPU,
-    SWAP,
-    UPTIME,
-    HOST,
-    OUTPUT,
-    OledDataTypes,
-)
+import socket
 import time
+from functools import partial
+from math import floor
+from typing import Callable
 
-intervals = (
-    ("d", 86400),  # 60 * 60 * 24
-    ("h", 3600),  # 60 * 60
-    ("m", 60),
-    ("s", 1),
-)
+import psutil
+
+from ..const import CPU, DISK, GIGABYTE, HOST, MEGABYTE, MEMORY, NETWORK, SWAP, UPTIME
+
+intervals = (("d", 86400), ("h", 3600), ("m", 60))
 
 
 def display_time(seconds):
@@ -46,7 +34,7 @@ async def get_network_info(host_data):
             NETWORK,
             {"ip": net[0].address, "mask": net[0].netmask, "mac": net[2].address},
         )
-        await asyncio.sleep(30)
+        await asyncio.sleep(60)
 
 
 async def get_cpu_info(host_data):
@@ -114,7 +102,7 @@ async def get_uptime(host_data):
     while True:
         uptime = display_time(time.clock_gettime(time.CLOCK_BOOTTIME))
         host_data.write_uptime(uptime)
-        await asyncio.sleep(10)
+        await asyncio.sleep(30)
 
 
 host_stats = {
@@ -126,37 +114,39 @@ host_stats = {
     UPTIME: get_uptime,
 }
 
-import socket
-
 
 class HostData:
     """Helper class to store host data."""
 
     data = {UPTIME: {}, NETWORK: {}, CPU: {}, DISK: {}, MEMORY: {}, SWAP: {}}
 
-    def __init__(self, output: dict) -> None:
+    def __init__(self, output: dict, callback: Callable) -> None:
         """Initialize HostData."""
         self._hostname = socket.gethostname()
         self.data[UPTIME] = {HOST: self._hostname, UPTIME: 0}
         self._output = output
+        self._callback = callback
+        self._loop = asyncio.get_running_loop()
 
     def write(self, type: str, data: dict) -> None:
         """Write data of chosen type."""
         self.data[type] = data
+        self._loop.call_soon_threadsafe(partial(self._callback, type))
 
     def write_uptime(self, uptime: str) -> None:
         """Write uptime."""
         self.data[UPTIME][UPTIME] = uptime
+        self._loop.call_soon_threadsafe(partial(self._callback, UPTIME))
 
-    def get(self, type: OledDataTypes) -> dict:
+    def get(self, type: str) -> dict:
         """Get saved stats."""
-        if type == OUTPUT:
-            return self._get_output()
+        if type in self._output:
+            return self._get_output(type)
         return self.data[type]
 
-    def _get_output(self) -> dict:
+    def _get_output(self, type: str) -> dict:
         """Get stats for output."""
         out = {}
-        for output in self._output.values():
+        for output in self._output[type].values():
             out[output.id] = output.state
         return out

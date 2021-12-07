@@ -1,5 +1,5 @@
 """Input classes."""
 
-from .gpio import GpioInputButton
+from .gpio import GpioInputButton, configure_pin
 
-__all__ = ["GpioInputButton"]
+__all__ = ["GpioInputButton", "configure_pin"]

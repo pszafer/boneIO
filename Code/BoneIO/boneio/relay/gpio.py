@@ -3,9 +3,10 @@
 Created just in case.
 """
 
-from ..helper.gpio import setup_output, read_input, write_output, HIGH, LOW
-from .basic import BasicRelay
 import logging
+
+from ..helper.gpio import HIGH, LOW, read_input, setup_output, write_output
+from .basic import BasicRelay
 
 _LOGGER = logging.getLogger(__name__)
 

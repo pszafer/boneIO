@@ -6,10 +6,12 @@ import uuid
 from contextlib import AsyncExitStack
 from typing import Any, Callable, Optional, Set, Union
 
-from asyncio_mqtt import Client as AsyncioClient, MqttError
 import paho.mqtt.client as mqtt
+from asyncio_mqtt import Client as AsyncioClient
+from asyncio_mqtt import MqttError
 from paho.mqtt.properties import Properties
 from paho.mqtt.subscribeoptions import SubscribeOptions
+
 from .const import PAHO
 
 _LOGGER = logging.getLogger(__name__)

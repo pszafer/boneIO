@@ -1,37 +1,37 @@
-from .input import GpioInputButton
-from .relay import GpioRelay, MCPRelay
-from .oled import Oled
-from .helper.stats import host_stats, HostData
-from typing import Set
 import asyncio
 import logging
+import time
+from typing import Any, Callable, List, Optional, Set, Union
+
+from adafruit_mcp230xx.mcp23017 import MCP23017
+from board import SCL, SDA
+from busio import I2C
 
 from .const import (
     ACTION,
-    OUTPUT,
     ACTIONS,
     ADDRESS,
     GPIO,
     HA_TYPE,
+    HOMEASSISTANT,
     ID,
+    INIT_SLEEP,
     KIND,
     MCP,
     MCP_ID,
+    OFF,
+    ON,
+    ONLINE,
     OUTPUT,
     PIN,
     RELAY,
-    ON,
-    OFF,
-    ONLINE,
     STATE,
     ClickTypes,
 )
-from typing import Callable, Optional, Union, List, Any
-import logging
-import asyncio
-from busio import I2C
-from board import SCL, SDA
-from adafruit_mcp230xx.mcp23017 import MCP23017
+from .helper.stats import HostData, host_stats
+from .input import GpioInputButton
+from .oled import Oled
+from .relay import GpioRelay, MCPRelay
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -67,12 +67,13 @@ class Manager:
         relay_pins: List,
         input_pins: List,
         ha_discovery: bool = True,
-        ha_discovery_prefix: str = "homeassistant",
+        ha_discovery_prefix: str = HOMEASSISTANT,
         mcp23017: Optional[List] = None,
         oled: bool = False,
-        web: bool = False,
+        web: bool = True,
     ) -> None:
         """Initialize the manager."""
+        _LOGGER.info("Initializing manager module.")
         loop = asyncio.get_event_loop()
         self._host_data = None
 
@@ -82,37 +83,54 @@ class Manager:
         self._input_pins = input_pins
         self._i2cbusio = I2C(SCL, SDA)
         self._mcp = {}
+        self._grouped_outputs = {}
         self._oled = None
         self._tasks: List[asyncio.Task] = []
 
         if mcp23017:
             for mcp in mcp23017:
-                self._mcp[mcp[ID] or mcp[ADDRESS]] = MCP23017(
-                    i2c=self._i2cbusio, address=mcp[ADDRESS]
+                id = mcp[ID] or mcp[ADDRESS]
+                self._mcp[id] = MCP23017(i2c=self._i2cbusio, address=mcp[ADDRESS])
+                sleep_time = mcp.get(INIT_SLEEP, 0)
+                _LOGGER.debug(
+                    f"Sleeping for {sleep_time}s while MCP {id} is initializing."
                 )
+                time.sleep(sleep_time)
+                self._grouped_outputs[id] = {}
 
         def configure_relay(gpio: dict) -> Any:
             """Configure kind of relay. Most common MCP."""
             if gpio[KIND] == MCP:
-                mcp = self._mcp.get(gpio.get(MCP_ID, ""))
+                mcp_id = gpio.get(MCP_ID, "")
+                mcp = self._mcp.get(mcp_id)
                 if not mcp:
                     _LOGGER.error("No such MCP configured!")
                     return
-                return MCPRelay(
+                relay_id = gpio[ID]
+                mcp_relay = MCPRelay(
                     pin=int(gpio[PIN]),
-                    id=gpio[ID],
+                    id=relay_id,
                     send_message=self.send_message,
                     topic_prefix=topic_prefix,
                     mcp=mcp,
+                    mcp_id=mcp_id,
                     ha_type=gpio[HA_TYPE],
+                    callback=lambda: self._host_data_callback(mcp_id),
                 )
+                self._grouped_outputs[mcp_id][relay_id] = mcp_relay
+                return mcp_relay
             elif gpio[KIND] == GPIO:
-                return GpioRelay(
+                if not GPIO in self._grouped_outputs:
+                    self._grouped_outputs[GPIO] = {}
+                gpio_relay = GpioRelay(
                     pin=gpio[PIN],
                     id=gpio[ID],
                     send_message=self.send_message,
                     topic_prefix=topic_prefix,
+                    callback=lambda: self._host_data_callback(GPIO),
                 )
+                self._grouped_outputs[GPIO][gpio[ID]] = gpio_relay
+                return gpio_relay
 
         self.output = {gpio[ID]: configure_relay(gpio) for gpio in relay_pins}
         for out in self.output.values():
@@ -137,15 +155,24 @@ class Manager:
         ]
 
         if oled or web:
-            self._host_data = HostData(output=self.output)
+            self._host_data = HostData(
+                output=self._grouped_outputs, callback=self._host_data_callback
+            )
             for f in host_stats.values():
                 self._tasks.append(asyncio.create_task(f(self._host_data)))
+            _LOGGER.debug("Gathering host data enabled.")
 
         if oled:
-            self._oled = Oled(self._host_data)
-            self._tasks.append(self._oled.get_task())
+            self._oled = Oled(
+                host_data=self._host_data, output_groups=list(self._grouped_outputs)
+            )
 
         self.send_message(topic=f"{topic_prefix}/{STATE}", payload=ONLINE)
+        _LOGGER.info("BoneIO manager is ready.")
+
+    def _host_data_callback(self, type):
+        if self._oled:
+            self._oled.handle_data_update(type)
 
     def get_tasks(self) -> Set[asyncio.Task]:
         return self._tasks

@@ -1,28 +1,29 @@
-from .helper import CustomValidator, load_yaml_file
-import click
+import asyncio
 import logging
-from contextlib import AsyncExitStack
+import os
+from functools import wraps
+
+import click
 from colorlog import ColoredFormatter
-from .mqtt_client import MQTTClient
-from .manager import Manager
+
 from .const import (
     ENABLED,
     GPIO_INPUT,
     HA_DISCOVERY,
+    HOST,
     MCP23017,
+    MQTT,
     OLED,
     OUTPUT,
     PAHO,
-    MQTT,
-    HOST,
+    PASSWORD,
     TOPIC_PREFIX,
     USERNAME,
-    PASSWORD,
 )
+from .helper import CustomValidator, load_yaml_file
+from .manager import Manager
+from .mqtt_client import MQTTClient
 from .version import __version__
-import asyncio
-import os
-from functools import wraps
 
 _LOGGER = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -103,6 +104,7 @@ _options = [
 @coro
 async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
     """Run BoneIO."""
+    _LOGGER.info("BoneIO starting.")
     if debug == 0:
         logging.getLogger().setLevel(logging.INFO)
     if debug > 0:
@@ -121,6 +123,7 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
         _LOGGER.info("Missing file.")
         return
     _config = v.normalized(config_yaml)
+    _LOGGER.info("Connecting to MQTT.")
     client = MQTTClient(
         host=_config[MQTT][HOST],
         username=_config[MQTT].get(USERNAME),
@@ -138,8 +141,8 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
         oled=_config.get(OLED),
     )
     tasks = set()
-    tasks.add(client.start_client(manager))
     tasks.update(manager.get_tasks())
+    tasks.add(client.start_client(manager))
     await asyncio.gather(*tasks)
 
 

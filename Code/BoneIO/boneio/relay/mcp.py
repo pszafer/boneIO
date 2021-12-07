@@ -1,8 +1,10 @@
 """MCP23017 Relay module."""
 
-from .basic import BasicRelay
-from adafruit_mcp230xx.mcp23017 import MCP23017
 import logging
+
+from adafruit_mcp230xx.mcp23017 import MCP23017
+
+from .basic import BasicRelay
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -10,14 +12,25 @@ _LOGGER = logging.getLogger(__name__)
 class MCPRelay(BasicRelay):
     """Represents MCP Relay output"""
 
-    def __init__(self, pin: int, mcp: MCP23017, **kwargs) -> None:
+    def __init__(self, pin: int, mcp: MCP23017, mcp_id: str, **kwargs) -> None:
         """Initialize MCP relay."""
         super().__init__(**kwargs)
         self._pin_id = pin
         self._pin = mcp.get_pin(pin)
         self._pin.switch_to_output(value=True)
+        self._mcp_id = mcp_id
         self._pin.value = False
         _LOGGER.debug("Setup MCP with pin %s", self._pin_id)
+
+    @property
+    def is_mcp_type(self) -> bool:
+        """Check if relay is mcp type."""
+        return True
+
+    @property
+    def mcp_id(self) -> str:
+        """Retrieve parent MCP ID."""
+        return self._mcp_id
 
     @property
     def is_active(self) -> bool:
