@@ -32,6 +32,7 @@ from .helper.stats import HostData, host_stats
 from .input import GpioInputButton
 from .oled import Oled
 from .relay import GpioRelay, MCPRelay
+from .version import __version__
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -46,7 +47,7 @@ def ha_availibilty_message(topic, relay_id):
             "manufacturer": "BoneIO",
             "model": "BoneIO Relay Board",
             "name": f"BoneIO {topic}",
-            "sw_version": "0.0.1",
+            "sw_version": __version__,
         },
         "name": f"Relay {relay_id}",
         "payload_off": OFF,
