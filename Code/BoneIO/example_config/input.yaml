@@ -195,11 +195,3 @@
   pin: P8_8
 - id: J8_4
   pin: P8_7
-
-
-- id: J1_2
-  pin: P9_29
-  actions:
-    single:
-      action: output
-      pin: light1
