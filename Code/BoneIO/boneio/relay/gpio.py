@@ -5,8 +5,8 @@ Created just in case.
 
 import logging
 
-from ..helper.gpio import HIGH, LOW, read_input, setup_output, write_output
-from .basic import BasicRelay
+from boneio.helper.gpio import HIGH, LOW, read_input, setup_output, write_output
+from boneio.relay.basic import BasicRelay
 
 _LOGGER = logging.getLogger(__name__)
 

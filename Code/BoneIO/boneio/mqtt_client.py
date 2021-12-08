@@ -12,7 +12,7 @@ from asyncio_mqtt import MqttError
 from paho.mqtt.properties import Properties
 from paho.mqtt.subscribeoptions import SubscribeOptions
 
-from .const import PAHO
+from boneio.const import PAHO
 
 _LOGGER = logging.getLogger(__name__)
 

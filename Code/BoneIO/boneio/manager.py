@@ -7,7 +7,7 @@ from adafruit_mcp230xx.mcp23017 import MCP23017
 from board import SCL, SDA
 from busio import I2C
 
-from .const import (
+from boneio.const import (
     ACTION,
     ACTIONS,
     ADDRESS,
@@ -29,16 +29,18 @@ from .const import (
     STATE,
     ClickTypes,
 )
-from .helper import (
+from boneio.helper import (
     HostData,
     ha_relay_availibilty_message,
     ha_sensor_availibilty_message,
     ha_sensor_temp_availibilty_message,
     host_stats,
+    GPIOInputException,
+    I2CError,
 )
-from .input import GpioInputButton
-from .oled import Oled
-from .relay import GpioRelay, MCPRelay
+from boneio.input import GpioInputButton
+from boneio.oled import Oled
+from boneio.relay import GpioRelay, MCPRelay
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -76,38 +78,46 @@ class Manager:
 
         def create_lm75_sensor():
             """Create LM sensor in manager."""
-            from .sensor.lm75 import LM75
+            from .sensor.lm75 import LM75Sensor
 
             name = lm75.get(ID)
             id = name.replace(" ", "")
-            self._lm75 = LM75(
-                id=id,
-                name=name,
-                i2c=self._i2cbusio,
-                address=lm75[ADDRESS],
-                send_message=self.send_message,
-                topic_prefix=topic_prefix,
-            )
-            self.send_ha_autodiscovery(
-                id=id,
-                name=name,
-                ha_type="sensor",
-                prefix=ha_discovery_prefix,
-                availibilty_msg_func=ha_sensor_temp_availibilty_message,
-            )
-            self._tasks.append(asyncio.create_task(self._lm75.send_state()))
+            try:
+                self._lm75 = LM75Sensor(
+                    id=id,
+                    name=name,
+                    i2c=self._i2cbusio,
+                    address=lm75[ADDRESS],
+                    send_message=self.send_message,
+                    topic_prefix=topic_prefix,
+                )
+                self.send_ha_autodiscovery(
+                    id=id,
+                    name=name,
+                    ha_type="sensor",
+                    prefix=ha_discovery_prefix,
+                    availibilty_msg_func=ha_sensor_temp_availibilty_message,
+                )
+                self._tasks.append(asyncio.create_task(self._lm75.send_state()))
+            except I2CError as err:
+                _LOGGER.error("Can't configure LM75 sensor. %s", err)
+                pass
 
         def create_mcp23017():
             """Create MCP23017."""
             for mcp in mcp23017:
                 id = mcp[ID] or mcp[ADDRESS]
-                self._mcp[id] = MCP23017(i2c=self._i2cbusio, address=mcp[ADDRESS])
-                sleep_time = mcp.get(INIT_SLEEP, 0)
-                _LOGGER.debug(
-                    f"Sleeping for {sleep_time}s while MCP {id} is initializing."
-                )
-                time.sleep(sleep_time)
-                self._grouped_outputs[id] = {}
+                try:
+                    self._mcp[id] = MCP23017(i2c=self._i2cbusio, address=mcp[ADDRESS])
+                    sleep_time = mcp.get(INIT_SLEEP, 0)
+                    _LOGGER.debug(
+                        f"Sleeping for {sleep_time}s while MCP {id} is initializing."
+                    )
+                    time.sleep(sleep_time)
+                    self._grouped_outputs[id] = {}
+                except TimeoutError as err:
+                    _LOGGER.error("Can't connect to MCP %s. %s", id, err)
+                    pass
 
         if lm75:
             create_lm75_sensor()
@@ -168,22 +178,28 @@ class Manager:
             )
 
         def configure_button(gpio):
-            pin = gpio[PIN]
-            button = GpioInputButton(
-                pin=pin,
-                press_callback=lambda x, i: self.press_callback(x, i, gpio[ACTIONS]),
-                rest_pin=gpio,
-            )
-            self.send_ha_autodiscovery(
-                id=pin,
-                name=gpio.get(ID, pin),
-                ha_type="sensor",
-                prefix=ha_discovery_prefix,
-                availibilty_msg_func=ha_sensor_availibilty_message,
-            )
-            return button
+            try:
+                pin = gpio[PIN]
+                GpioInputButton(
+                    pin=pin,
+                    press_callback=lambda x, i: self.press_callback(
+                        x, i, gpio.get(ACTIONS, {})
+                    ),
+                    rest_pin=gpio,
+                )
+                self.send_ha_autodiscovery(
+                    id=pin,
+                    name=gpio.get(ID, pin),
+                    ha_type="sensor",
+                    prefix=ha_discovery_prefix,
+                    availibilty_msg_func=ha_sensor_availibilty_message,
+                )
+            except GPIOInputException as err:
+                _LOGGER.error("This PIN %s can't be configured. %s", pin, err)
+                pass
 
-        self.buttons = [configure_button(gpio=gpio) for gpio in self._input_pins]
+        for gpio in self._input_pins:
+            configure_button(gpio=gpio)
 
         if oled:
             self._host_data = HostData(
@@ -194,9 +210,12 @@ class Manager:
             for f in host_stats.values():
                 self._tasks.append(asyncio.create_task(f(self._host_data)))
             _LOGGER.debug("Gathering host data enabled.")
-            self._oled = Oled(
-                host_data=self._host_data, output_groups=list(self._grouped_outputs)
-            )
+            try:
+                self._oled = Oled(
+                    host_data=self._host_data, output_groups=list(self._grouped_outputs)
+                )
+            except GPIOInputException as err:
+                _LOGGER.error("Can't configure OLED display. %s", err)
 
         self.send_message(topic=f"{topic_prefix}/{STATE}", payload=ONLINE)
         _LOGGER.info("BoneIO manager is ready.")
@@ -217,9 +236,9 @@ class Manager:
         if action:
             if action[ACTION] == OUTPUT:
                 """For now only output type is supported"""
-                output_gpio = self.output.get(action[PIN])
-                if output_gpio:
-                    output_gpio.toggle()
+                relay = self.output.get(action[PIN].replace(" ", ""))
+                if relay:
+                    relay.toggle()
         # This is similar how Z2M is clearing click sensor.
         # self._loop.call_later(1, self.send_message, topic, "")
 

@@ -1,7 +1,7 @@
-from ..version import __version__
+from boneio.version import __version__
 
 
-from ..const import INPUT, OFF, ON, RELAY, STATE, SENSOR
+from boneio.const import INPUT, OFF, ON, RELAY, STATE, SENSOR
 
 
 def ha_relay_availibilty_message(id: str, name: str, topic: str = "boneio"):

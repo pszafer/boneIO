@@ -2,7 +2,7 @@ import os
 
 from PIL import ImageFont
 
-from ..const import FONTS
+from boneio.const import FONTS
 
 
 def make_font(name: str, size: int, local: bool = False):

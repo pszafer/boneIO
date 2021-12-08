@@ -1,5 +1,8 @@
+import logging
 from Adafruit_BBIO import GPIO
 from Adafruit_BBIO.GPIO import HIGH, LOW
+
+from boneio.helper.exceptions import GPIOInputException
 
 
 def setup_output(pin: str):
@@ -10,7 +13,10 @@ def setup_output(pin: str):
 
 def setup_input(pin: str, pull_mode: str = "UP"):
     """Set up a GPIO as input."""
-    GPIO.setup(pin, GPIO.IN, GPIO.PUD_DOWN if pull_mode == "DOWN" else GPIO.PUD_UP)
+    try:
+        GPIO.setup(pin, GPIO.IN, GPIO.PUD_DOWN if pull_mode == "DOWN" else GPIO.PUD_UP)
+    except (ValueError, SystemError) as err:
+        raise GPIOInputException(err)
 
 
 def write_output(pin: str, value: str):
@@ -26,5 +32,7 @@ def read_input(pin: str, on_state=LOW):
 
 def edge_detect(pin, callback, bounce):
     """Add detection for RISING and FALLING events."""
-
-    GPIO.add_event_detect(pin, GPIO.FALLING, callback=callback, bouncetime=bounce)
+    try:
+        GPIO.add_event_detect(pin, GPIO.FALLING, callback=callback, bouncetime=bounce)
+    except RuntimeError as err:
+        raise GPIOInputException(err)

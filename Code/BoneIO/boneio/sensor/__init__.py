@@ -1,4 +1,4 @@
 """Sensor module."""
-from .lm75 import LM75
+from boneio.sensor.lm75 import LM75Sensor
 
-__all__ = ["LM75"]
+__all__ = ["LM75Sensor"]

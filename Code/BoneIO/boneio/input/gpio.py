@@ -6,7 +6,7 @@ from datetime import datetime
 from functools import partial
 from typing import Callable
 
-from ..const import (
+from boneio.const import (
     CONFIG_PIN,
     DEBOUNCE_DURATION,
     DELAY_DURATION,
@@ -18,7 +18,7 @@ from ..const import (
     SINGLE,
     ClickTypes,
 )
-from ..helper.gpio import edge_detect, read_input, setup_input
+from boneio.helper import edge_detect, read_input, setup_input
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -30,6 +30,7 @@ def configure_pin(pin: str) -> None:
         [CONFIG_PIN, pin, GPIO],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.STDOUT,
+        timeout=1,
     )
 
 

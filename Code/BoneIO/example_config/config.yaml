@@ -18,14 +18,6 @@ mcp23017:
   - id: mcp2
     address: 0x21
 
-gpio_input:
-  - id: "one"
-    pin: P8_12
-  - id: "two"
-    pin: P8_7
-    actions:
-      single:
-        action: output
-        pin: light1
+gpio_input: !include input.yaml
 
-output: !include output.yaml
+output: !include output32x5A.yaml

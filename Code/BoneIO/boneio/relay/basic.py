@@ -4,7 +4,7 @@ import asyncio
 import logging
 from typing import Callable, Union
 
-from ..const import OFF, ON, RELAY, STATE, SWITCH
+from boneio.const import OFF, ON, RELAY, STATE, SWITCH
 
 _LOGGER = logging.getLogger(__name__)
 

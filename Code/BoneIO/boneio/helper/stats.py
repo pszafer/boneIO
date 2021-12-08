@@ -7,7 +7,7 @@ from typing import Callable
 
 import psutil
 
-from ..const import (
+from boneio.const import (
     CPU,
     DISK,
     GIGABYTE,
@@ -16,10 +16,9 @@ from ..const import (
     MEMORY,
     NETWORK,
     SWAP,
-    TEMPERATURE,
     UPTIME,
 )
-from ..sensor.lm75 import LM75
+from boneio.sensor import LM75Sensor
 
 intervals = (("d", 86400), ("h", 3600), ("m", 60))
 
@@ -132,7 +131,7 @@ class HostData:
 
     data = {UPTIME: {}, NETWORK: {}, CPU: {}, DISK: {}, MEMORY: {}, SWAP: {}}
 
-    def __init__(self, output: dict, callback: Callable, lm75: LM75) -> None:
+    def __init__(self, output: dict, callback: Callable, lm75: LM75Sensor) -> None:
         """Initialize HostData."""
         self._hostname = socket.gethostname()
         self.data[UPTIME] = {HOST: self._hostname, UPTIME: 0}

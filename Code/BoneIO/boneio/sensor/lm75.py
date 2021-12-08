@@ -3,10 +3,12 @@
 import asyncio
 from adafruit_pct2075 import PCT2075
 from typing import Callable, Union
-from ..const import STATE, SENSOR
+from boneio.const import STATE, SENSOR, LM75
+
+from boneio.helper.exceptions import I2CError
 
 
-class LM75:
+class LM75Sensor:
     """Represent LM75 sensor in BoneIO."""
 
     def __init__(
@@ -16,14 +18,17 @@ class LM75:
         topic_prefix: str,
         name: str,
         send_message: Callable[[str, Union[str, dict]], None],
-        id: str = "lm75",
+        id: str = LM75,
     ):
         """Initialize LM75 class."""
         self._id = id
         self._name = name
         self._send_message = send_message
         self._send_topic = f"{topic_prefix}/{SENSOR}/{self._id}"
-        self._pct = PCT2075(i2c_bus=i2c, address=address)
+        try:
+            self._pct = PCT2075(i2c_bus=i2c, address=address)
+        except ValueError as err:
+            raise I2CError(err)
 
     @property
     def name(self):

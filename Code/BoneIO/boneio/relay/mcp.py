@@ -4,7 +4,7 @@ import logging
 
 from adafruit_mcp230xx.mcp23017 import MCP23017
 
-from .basic import BasicRelay
+from boneio.relay.basic import BasicRelay
 
 _LOGGER = logging.getLogger(__name__)
 

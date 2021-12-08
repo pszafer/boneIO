@@ -7,9 +7,9 @@ from luma.core.render import canvas
 from luma.oled.device import sh1106
 from PIL import ImageDraw
 
-from .const import CPU, DISK, MEMORY, NETWORK, OLED_PIN, SWAP, UPTIME, WHITE
-from .helper import HostData, edge_detect, make_font, setup_input
-from .input import configure_pin
+from boneio.const import CPU, DISK, MEMORY, NETWORK, OLED_PIN, SWAP, UPTIME, WHITE
+from boneio.helper import HostData, edge_detect, make_font, setup_input
+from boneio.input import configure_pin
 
 _LOGGER = logging.getLogger(__name__)
 

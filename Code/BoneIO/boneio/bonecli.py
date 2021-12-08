@@ -6,7 +6,7 @@ from functools import wraps
 import click
 from colorlog import ColoredFormatter
 
-from .const import (
+from boneio.const import (
     ENABLED,
     GPIO_INPUT,
     HA_DISCOVERY,
@@ -19,11 +19,12 @@ from .const import (
     PASSWORD,
     TOPIC_PREFIX,
     USERNAME,
+    LM75,
 )
-from .helper import CustomValidator, load_yaml_file
-from .manager import Manager
-from .mqtt_client import MQTTClient
-from .version import __version__
+from boneio.helper import CustomValidator, load_yaml_file
+from boneio.manager import Manager
+from boneio.mqtt_client import MQTTClient
+from boneio.version import __version__
 
 _LOGGER = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -133,12 +134,12 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
     manager = Manager(
         send_message=client.send_message,
         topic_prefix=_config[MQTT][TOPIC_PREFIX],
-        relay_pins=_config[OUTPUT],
-        input_pins=_config[GPIO_INPUT],
+        relay_pins=_config.get(OUTPUT, []),
+        input_pins=_config.get(GPIO_INPUT, []),
         ha_discovery=_config[MQTT][HA_DISCOVERY][ENABLED],
         ha_discovery_prefix=_config[MQTT][HA_DISCOVERY][TOPIC_PREFIX],
-        mcp23017=_config[MCP23017],
-        lm75=_config.get("lm75"),
+        mcp23017=_config.get(MCP23017, []),
+        lm75=_config.get(LM75),
         oled=_config.get(OLED),
     )
     tasks = set()

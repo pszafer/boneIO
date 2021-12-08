@@ -1,7 +1,7 @@
 from typing import Any
 import os
 from cerberus import Validator
-from ..const import ID, OLED, OUTPUT
+from boneio.const import ID, OLED, OUTPUT
 from yaml import load, YAMLError, SafeLoader
 
 
