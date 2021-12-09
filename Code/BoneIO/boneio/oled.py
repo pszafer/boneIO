@@ -8,8 +8,7 @@ from luma.oled.device import sh1106
 from PIL import ImageDraw
 
 from boneio.const import CPU, DISK, MEMORY, NETWORK, OLED_PIN, SWAP, UPTIME, WHITE
-from boneio.helper import HostData, edge_detect, make_font, setup_input
-from boneio.input import configure_pin
+from boneio.helper import HostData, configure_pin, edge_detect, make_font, setup_input
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -38,7 +37,7 @@ class Oled:
         self._host_data = host_data
         configure_pin(OLED_PIN)
         setup_input(OLED_PIN)
-        edge_detect(OLED_PIN, callback=self._handle_press, bounce=50)
+        edge_detect(pin=OLED_PIN, callback=self._handle_press, bounce=50)
         serial = i2c(port=2, address=0x3C)
         self._device = sh1106(serial)
         _LOGGER.debug("Configuring OLED screen.")

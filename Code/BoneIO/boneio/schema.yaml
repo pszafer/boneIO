@@ -131,7 +131,7 @@ output:
           label: If HA discovery is used device if relay is light or switch.
 
 
-gpio_input:
+input:
   type: list
   meta:
     label: GPIO inputs section
@@ -148,6 +148,19 @@ gpio_input:
         required: True
         meta:
           label: PIN to use.
+      show_in_ha:
+        type: boolean
+        required: True
+        default: True
+        meta:
+          label: If you want you can disable discovering this input in HA.
+      kind:
+        type: string
+        allowed: ['switch', 'sensor']
+        default: switch
+        required: True
+        meta:
+          label: Either switch or sensor. If sensor then no clicks are detected, just simple on/off on gpio.
       actions:
         required: False
         type: dict
@@ -177,6 +190,30 @@ gpio_input:
               message:
                 type: string
           long:
+            required: False
+            type: dict
+            schema:
+              action:
+                type: string
+                allowed: ['mqtt', 'output']
+                default: output
+              pin:
+                type: string
+              message:
+                type: string
+          pressed:
+            required: False
+            type: dict
+            schema:
+              action:
+                type: string
+                allowed: ['mqtt', 'output']
+                default: output
+              pin:
+                type: string
+              message:
+                type: string
+          released:
             required: False
             type: dict
             schema:

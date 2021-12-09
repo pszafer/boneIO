@@ -18,6 +18,6 @@ mcp23017:
   - id: mcp2
     address: 0x21
 
-gpio_input: !include input.yaml
+input: !include input.yaml
 
 output: !include output32x5A.yaml

@@ -1,5 +1,13 @@
 """Helper dir for BoneIO."""
-from boneio.helper.gpio import edge_detect, setup_input, read_input
+from boneio.helper.gpio import (
+    edge_detect,
+    setup_input,
+    setup_output,
+    read_input,
+    write_output,
+    GpioBaseClass,
+    configure_pin,
+)
 from boneio.helper.oled import make_font
 from boneio.helper.stats import HostData, host_stats
 from boneio.helper.yaml import CustomValidator, load_yaml_file
@@ -7,6 +15,7 @@ from boneio.helper.ha_discovery import (
     ha_relay_availibilty_message,
     ha_sensor_availibilty_message,
     ha_sensor_temp_availibilty_message,
+    ha_binary_sensor_availibilty_message,
 )
 from boneio.helper.exceptions import GPIOInputException, I2CError
 
@@ -16,12 +25,17 @@ __all__ = [
     "HostData",
     "host_stats",
     "setup_input",
+    "setup_output",
     "edge_detect",
     "read_input",
+    "write_output",
     "make_font",
     "ha_relay_availibilty_message",
     "ha_sensor_availibilty_message",
     "ha_sensor_temp_availibilty_message",
+    "ha_binary_sensor_availibilty_message",
     "GPIOInputException",
     "I2CError",
+    "GpioBaseClass",
+    "configure_pin",
 ]

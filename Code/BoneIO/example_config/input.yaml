@@ -191,7 +191,10 @@
 
 - id: J8_2
   pin: P8_9
+  kind: sensor
 - id: J8_3
   pin: P8_8
+  kind: sensor
 - id: J8_4
   pin: P8_7
+  kind: sensor

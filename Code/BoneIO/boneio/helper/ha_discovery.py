@@ -1,7 +1,7 @@
 from boneio.version import __version__
 
 
-from boneio.const import INPUT, OFF, ON, RELAY, STATE, SENSOR
+from boneio.const import INPUT, OFF, ON, RELAY, STATE, SENSOR, INPUT_SENSOR
 
 
 def ha_relay_availibilty_message(id: str, name: str, topic: str = "boneio"):
@@ -40,6 +40,25 @@ def ha_sensor_availibilty_message(id: str, name: str, topic: str = "boneio"):
         "name": name,
         "state_topic": f"{topic}/{INPUT}/{id}",
         "unique_id": f"{topic}{INPUT}{id}",
+    }
+
+
+def ha_binary_sensor_availibilty_message(id: str, name: str, topic: str = "boneio"):
+    """Create availability topic for HA."""
+    return {
+        "availability": [{"topic": f"{topic}/{STATE}"}],
+        "device": {
+            "identifiers": [topic],
+            "manufacturer": "BoneIO",
+            "model": "BoneIO Relay Board",
+            "name": f"BoneIO {topic}",
+            "sw_version": __version__,
+        },
+        "payload_on": "pressed",
+        "payload_off": "released",
+        "name": name,
+        "state_topic": f"{topic}/{INPUT_SENSOR}/{id}",
+        "unique_id": f"{topic}{INPUT_SENSOR}{id}",
     }
 
 

@@ -1,31 +1,15 @@
 # from typing import Literal
 from datetime import timedelta
-
+from Adafruit_BBIO.GPIO import HIGH, LOW, BOTH, FALLING
 from typing_extensions import Literal
 
-DEBOUNCE_DURATION = timedelta(seconds=0.2)
-LONG_PRESS_DURATION = timedelta(seconds=0.7)
-DELAY_DURATION = 0.1
-SECOND_DELAY_DURATION = 0.3
+
+# MISCELLANEOUS CONSTS
 RELAY = "relay"
-SINGLE = "single"
-DOUBLE = "double"
-LONG = "long"
-ONLINE = "online"
 ON = "ON"
 OFF = "OFF"
 STATE = "state"
-PAHO = "paho.mqtt.client"
-ClickTypes = Literal[SINGLE, DOUBLE, LONG]
-MQTT = "mqtt"
-HOST = "host"
-USERNAME = "username"
-PASSWORD = "password"
-TOPIC_PREFIX = "topic_prefix"
-HOMEASSISTANT = "homeassistant"
-HA_DISCOVERY = "ha_discovery"
 ENABLED = "enabled"
-GPIO_INPUT = "gpio_input"
 OUTPUT = "output"
 PIN = "pin"
 ID = "id"
@@ -34,17 +18,27 @@ GPIO = "gpio"
 ACTIONS = "actions"
 ACTION = "action"
 OUTPUT = "output"
-ADDRESS = "address"
-MCP23017 = "mcp23017"
 SWITCH = "switch"
 CONFIG_PIN = "/usr/bin/config-pin"
-MCP = "mcp"
-MCP_ID = "mcp_id"
+
+# TIMINGS FOR BUTTONS
+DEBOUNCE_DURATION = timedelta(seconds=0.2)
+LONG_PRESS_DURATION = timedelta(seconds=0.7)
+DELAY_DURATION = 0.1
+SECOND_DELAY_DURATION = 0.3
+
+# HA CONSTS
+HOMEASSISTANT = "homeassistant"
+HA_DISCOVERY = "ha_discovery"
 HA_TYPE = "ha_type"
+SHOW_HA = "show_in_ha"
+
+# OLED CONST
+OLED = "oled"
+FONTS = "fonts"
+OLED_PIN = "P9_41"
 GIGABYTE = 1073741824
 MEGABYTE = 1048576
-OLED_PIN = "P9_41"
-NUM_OF_SCREENS = 6
 WIDTH = 128
 UPTIME = "uptime"
 NETWORK = "network"
@@ -53,11 +47,42 @@ DISK = "disk"
 MEMORY = "memory"
 SWAP = "swap"
 WHITE = "white"
-OLED = "oled"
-FONTS = "fonts"
-OledDataTypes = Literal[UPTIME, NETWORK, CPU, DISK, MEMORY, SWAP, OUTPUT]
-INIT_SLEEP = "init_sleep"
+
+# INPUT CONST
 INPUT = "input"
+SINGLE = "single"
+DOUBLE = "double"
+LONG = "long"
+PRESSED = "pressed"
+RELEASED = "released"
+
+
+# MQTT CONST
+PAHO = "paho.mqtt.client"
+MQTT = "mqtt"
+HOST = "host"
+USERNAME = "username"
+PASSWORD = "password"
+ONLINE = "online"
+TOPIC_PREFIX = "topic_prefix"
+
+# I2C and MCP CONST
+ADDRESS = "address"
+MCP23017 = "mcp23017"
+MCP = "mcp"
+MCP_ID = "mcp_id"
+INIT_SLEEP = "init_sleep"
+
+# SENSOR CONST
 TEMPERATURE = "temperature"
 SENSOR = "sensor"
-LM75="lm75"
+BINARY_SENSOR = "binary_sensor"
+LM75 = "lm75"
+INPUT_SENSOR = "inputsensor"
+
+# TYPING
+ClickTypes = Literal[SINGLE, DOUBLE, LONG, PRESSED, RELEASED]
+OledDataTypes = Literal[UPTIME, NETWORK, CPU, DISK, MEMORY, SWAP, OUTPUT]
+Gpio_States = Literal[HIGH, LOW]
+Gpio_Edges = Literal[BOTH, FALLING]
+InputTypes = Literal[INPUT, INPUT_SENSOR]

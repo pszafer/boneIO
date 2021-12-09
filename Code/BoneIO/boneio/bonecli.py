@@ -8,7 +8,7 @@ from colorlog import ColoredFormatter
 
 from boneio.const import (
     ENABLED,
-    GPIO_INPUT,
+    INPUT,
     HA_DISCOVERY,
     HOST,
     MCP23017,
@@ -135,7 +135,7 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
         send_message=client.send_message,
         topic_prefix=_config[MQTT][TOPIC_PREFIX],
         relay_pins=_config.get(OUTPUT, []),
-        input_pins=_config.get(GPIO_INPUT, []),
+        input_pins=_config.get(INPUT, []),
         ha_discovery=_config[MQTT][HA_DISCOVERY][ENABLED],
         ha_discovery_prefix=_config[MQTT][HA_DISCOVERY][TOPIC_PREFIX],
         mcp23017=_config.get(MCP23017, []),

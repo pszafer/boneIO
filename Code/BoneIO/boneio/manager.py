@@ -28,19 +28,26 @@ from boneio.const import (
     RELAY,
     STATE,
     ClickTypes,
+    InputTypes,
+    SENSOR,
+    SHOW_HA,
+    BINARY_SENSOR,
+    INPUT_SENSOR,
 )
 from boneio.helper import (
     HostData,
     ha_relay_availibilty_message,
     ha_sensor_availibilty_message,
     ha_sensor_temp_availibilty_message,
+    ha_binary_sensor_availibilty_message,
     host_stats,
     GPIOInputException,
     I2CError,
 )
 from boneio.input import GpioInputButton
-from boneio.oled import Oled
+
 from boneio.relay import GpioRelay, MCPRelay
+from boneio.sensor import GpioInputSensor
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -177,31 +184,60 @@ class Manager:
                 out.send_state,
             )
 
-        def configure_button(gpio):
+        def configure_input(gpio):
             try:
                 pin = gpio[PIN]
-                GpioInputButton(
-                    pin=pin,
-                    press_callback=lambda x, i: self.press_callback(
-                        x, i, gpio.get(ACTIONS, {})
-                    ),
-                    rest_pin=gpio,
-                )
-                self.send_ha_autodiscovery(
-                    id=pin,
-                    name=gpio.get(ID, pin),
-                    ha_type="sensor",
-                    prefix=ha_discovery_prefix,
-                    availibilty_msg_func=ha_sensor_availibilty_message,
-                )
+                input_type = gpio.get(KIND)
+                if input_type == SENSOR:
+                    GpioInputSensor(
+                        pin=pin,
+                        press_callback=lambda x, i: self.press_callback(
+                            x=x,
+                            inpin=i,
+                            actions=gpio.get(ACTIONS, {}),
+                            input_type=INPUT_SENSOR,
+                        ),
+                        rest_pin=gpio,
+                    )
+                    availibilty_msg_func = ha_binary_sensor_availibilty_message
+                    ha_type = BINARY_SENSOR
+                else:
+                    GpioInputButton(
+                        pin=pin,
+                        press_callback=lambda x, i: self.press_callback(
+                            x=x,
+                            inpin=i,
+                            actions=gpio.get(ACTIONS, {}),
+                            input_type=INPUT,
+                        ),
+                        rest_pin=gpio,
+                    )
+                    availibilty_msg_func = ha_sensor_availibilty_message
+                    ha_type = SENSOR
+                if gpio.get(SHOW_HA, True):
+                    print(
+                        "INPUT sending disco",
+                        ha_type,
+                        ha_discovery_prefix,
+                        availibilty_msg_func,
+                    )
+                    self.send_ha_autodiscovery(
+                        id=pin,
+                        name=gpio.get(ID, pin),
+                        ha_type=ha_type,
+                        prefix=ha_discovery_prefix,
+                        availibilty_msg_func=availibilty_msg_func,
+                    )
             except GPIOInputException as err:
                 _LOGGER.error("This PIN %s can't be configured. %s", pin, err)
                 pass
 
         for gpio in self._input_pins:
-            configure_button(gpio=gpio)
+            configure_input(gpio=gpio)
 
         if oled:
+            from boneio.oled import Oled
+
             self._host_data = HostData(
                 output=self._grouped_outputs,
                 lm75=self._lm75,
@@ -227,10 +263,12 @@ class Manager:
     def get_tasks(self) -> Set[asyncio.Task]:
         return self._tasks
 
-    def press_callback(self, x: ClickTypes, inpin: str, actions: dict) -> None:
+    def press_callback(
+        self, x: ClickTypes, inpin: str, actions: dict, input_type: InputTypes = INPUT
+    ) -> None:
         """Press callback to use in input gpio.
         If relay input map is provided also toggle action on relay."""
-        topic = f"{self._topic_prefix}/{INPUT}/{inpin}"
+        topic = f"{self._topic_prefix}/{input_type}/{inpin}"
         self.send_message(topic=topic, payload=x)
         action = actions.get(x)
         if action:
