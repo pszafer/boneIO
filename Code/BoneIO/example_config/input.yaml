@@ -35,7 +35,7 @@
       action: output
       pin: switch 4
 - id: J1_6
-  pin: P9_46
+  pin: P8_46
   actions:
     single:
       action: output
@@ -44,7 +44,7 @@
       action: output
       pin: switch 5
 - id: J1_7
-  pin: P9_45
+  pin: P8_45
   actions:
     single:
       action: output
@@ -53,7 +53,7 @@
       action: output
       pin: switch 6
 - id: J1_8
-  pin: P9_44
+  pin: P8_44
   actions:
     single:
       action: output
@@ -153,11 +153,11 @@
 - id: J5_5
   pin: P9_23
 - id: J5_6
-  pin: P8_25
+  pin: P8_25 #MMC1_DAT0
 - id: J5_7
-  pin: P8_27
+  pin: P8_27 #LCD VSYNC
 - id: J5_8
-  pin: P8_28
+  pin: P8_28 #LCD_PCLK
 
 - id: J6_2
   pin: P8_16

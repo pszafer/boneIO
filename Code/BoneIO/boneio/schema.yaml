@@ -225,3 +225,33 @@ input:
                 type: string
               message:
                 type: string
+
+adc:
+  type: list
+  meta:
+    label: GPIO ADC section
+  schema:
+    type: dict
+    schema:
+      id:
+        type: string
+        required: False
+        meta:
+          label: Id to use in HA if needed. Default to pin number.
+      pin:
+        type: string
+        required: True
+        meta:
+          label: PIN to use.
+      update_interval:
+        type: integer
+        required: True
+        default: 60
+        meta:
+          label: Update interval in seconds.
+      show_in_ha:
+        type: boolean
+        required: True
+        default: True
+        meta:
+          label: If you want you can disable discovering this input in HA.

@@ -5,10 +5,18 @@ from typing import List
 from luma.core.interface.serial import i2c
 from luma.core.render import canvas
 from luma.oled.device import sh1106
+from luma.core.error import DeviceNotFoundError
 from PIL import ImageDraw
 
 from boneio.const import CPU, DISK, MEMORY, NETWORK, OLED_PIN, SWAP, UPTIME, WHITE
-from boneio.helper import HostData, configure_pin, edge_detect, make_font, setup_input
+from boneio.helper import (
+    HostData,
+    configure_pin,
+    edge_detect,
+    make_font,
+    setup_input,
+    I2CError,
+)
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -38,8 +46,11 @@ class Oled:
         configure_pin(OLED_PIN)
         setup_input(OLED_PIN)
         edge_detect(pin=OLED_PIN, callback=self._handle_press, bounce=50)
-        serial = i2c(port=2, address=0x3C)
-        self._device = sh1106(serial)
+        try:
+            serial = i2c(port=2, address=0x3C)
+            self._device = sh1106(serial)
+        except DeviceNotFoundError as err:
+            raise I2CError(err)
         _LOGGER.debug("Configuring OLED screen.")
 
     def _draw_standard(self, data: dict, draw: ImageDraw) -> None:

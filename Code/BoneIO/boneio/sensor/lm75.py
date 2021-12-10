@@ -2,38 +2,22 @@
 
 import asyncio
 from adafruit_pct2075 import PCT2075
-from typing import Callable, Union
 from boneio.const import STATE, SENSOR, LM75
 
 from boneio.helper.exceptions import I2CError
+from boneio.helper import BasicMqtt
 
 
-class LM75Sensor:
+class LM75Sensor(BasicMqtt):
     """Represent LM75 sensor in BoneIO."""
 
-    def __init__(
-        self,
-        i2c,
-        address,
-        topic_prefix: str,
-        name: str,
-        send_message: Callable[[str, Union[str, dict]], None],
-        id: str = LM75,
-    ):
+    def __init__(self, i2c, address, id: str = LM75, **kwargs):
         """Initialize LM75 class."""
-        self._id = id
-        self._name = name
-        self._send_message = send_message
-        self._send_topic = f"{topic_prefix}/{SENSOR}/{self._id}"
+        super().__init__(id=id, topic_type=SENSOR, **kwargs)
         try:
             self._pct = PCT2075(i2c_bus=i2c, address=address)
         except ValueError as err:
             raise I2CError(err)
-
-    @property
-    def name(self):
-        """Return name of the sensor."""
-        return self._name
 
     @property
     def state(self):

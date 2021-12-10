@@ -20,6 +20,8 @@ ACTION = "action"
 OUTPUT = "output"
 SWITCH = "switch"
 CONFIG_PIN = "/usr/bin/config-pin"
+UPDATE_INTERVAL = "update_interval"
+ADC = "adc"
 
 # TIMINGS FOR BUTTONS
 DEBOUNCE_DURATION = timedelta(seconds=0.2)

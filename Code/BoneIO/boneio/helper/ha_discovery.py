@@ -25,7 +25,9 @@ def ha_relay_availibilty_message(id: str, name: str, topic: str = "boneio"):
     }
 
 
-def ha_sensor_availibilty_message(id: str, name: str, topic: str = "boneio"):
+def ha_availibilty_message(
+    id: str, name: str, topic: str = "boneio", sensor_type: str = INPUT
+):
     """Create availability topic for HA."""
     return {
         "availability": [{"topic": f"{topic}/{STATE}"}],
@@ -38,9 +40,27 @@ def ha_sensor_availibilty_message(id: str, name: str, topic: str = "boneio"):
         },
         "icon": "mdi:gesture-double-tap",
         "name": name,
-        "state_topic": f"{topic}/{INPUT}/{id}",
-        "unique_id": f"{topic}{INPUT}{id}",
+        "state_topic": f"{topic}/{sensor_type}/{id}",
+        "unique_id": f"{topic}{sensor_type}{id}",
     }
+
+
+def ha_input_availibilty_message(**kwargs):
+    return ha_availibilty_message(sensor_type=INPUT, **kwargs)
+
+
+def ha_adc_sensor_availibilty_message(**kwargs):
+    msg = ha_availibilty_message(sensor_type=SENSOR, **kwargs)
+    msg["unit_of_measurement"] = "V"
+    msg["device_class"] = "voltage"
+    msg["state_class"] = "measurement"
+    return msg
+
+
+def ha_sensor_availibilty_message(unit_of_measurement: str = None, **kwargs):
+    msg = ha_availibilty_message(sensor_type=SENSOR, **kwargs)
+    if not unit_of_measurement:
+        return msg
 
 
 def ha_binary_sensor_availibilty_message(id: str, name: str, topic: str = "boneio"):

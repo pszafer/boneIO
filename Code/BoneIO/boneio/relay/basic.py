@@ -2,31 +2,23 @@
 
 import asyncio
 import logging
-from typing import Callable, Union
+from typing import Callable
 
 from boneio.const import OFF, ON, RELAY, STATE, SWITCH
+from boneio.helper import BasicMqtt
 
 _LOGGER = logging.getLogger(__name__)
 
 
-class BasicRelay:
+class BasicRelay(BasicMqtt):
     """Basic relay class."""
 
     def __init__(
-        self,
-        send_message: Callable[[str, Union[str, dict]], None],
-        callback: Callable,
-        topic_prefix: str,
-        id: str = None,
-        ha_type=SWITCH,
+        self, callback: Callable, id: str = None, ha_type=SWITCH, **kwargs
     ) -> None:
         """Initialize Basic relay."""
-        self._id = id.replace(" ", "")
-        self._name = id
+        super().__init__(id=id, name=id, topic_type=RELAY, **kwargs)
         self._ha_type = ha_type
-        self._send_message = send_message
-        self._relay_topic = f"{topic_prefix}/{RELAY}/"
-        self._send_topic = f"{self._relay_topic}{self.id}"
         self._state = False
         self._callback = callback
         self._loop = asyncio.get_running_loop()

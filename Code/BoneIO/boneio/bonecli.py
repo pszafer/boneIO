@@ -20,6 +20,7 @@ from boneio.const import (
     TOPIC_PREFIX,
     USERNAME,
     LM75,
+    ADC,
 )
 from boneio.helper import CustomValidator, load_yaml_file
 from boneio.manager import Manager
@@ -141,6 +142,7 @@ async def run(ctx, debug: int, config: str, mqttpassword: str = ""):
         mcp23017=_config.get(MCP23017, []),
         lm75=_config.get(LM75),
         oled=_config.get(OLED),
+        adc_list=_config.get(ADC, []),
     )
     tasks = set()
     tasks.update(manager.get_tasks())

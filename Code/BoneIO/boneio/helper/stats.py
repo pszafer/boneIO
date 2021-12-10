@@ -85,9 +85,9 @@ async def get_memory_info(host_data):
         host_data.write(
             MEMORY,
             {
-                "total": f"{floor(vm.total / MEGABYTE)}%",
-                "used": f"{floor(vm.used / MEGABYTE)}%",
-                "free": f"{floor(vm.available / MEGABYTE)}%",
+                "total": f"{floor(vm.total / MEGABYTE)}MB",
+                "used": f"{floor(vm.used / MEGABYTE)}MB",
+                "free": f"{floor(vm.available / MEGABYTE)}MB",
             },
         )
         await asyncio.sleep(10)
@@ -100,9 +100,9 @@ async def get_swap_info(host_data):
         host_data.write(
             SWAP,
             {
-                "total": f"{floor(swap.total / MEGABYTE)}%",
-                "used": f"{floor(swap.used / MEGABYTE)}%",
-                "free": f"{floor(swap.free / MEGABYTE)}%",
+                "total": f"{floor(swap.total / MEGABYTE)}MB",
+                "used": f"{floor(swap.used / MEGABYTE)}MB",
+                "free": f"{floor(swap.free / MEGABYTE)}MB",
             },
         )
         await asyncio.sleep(10)

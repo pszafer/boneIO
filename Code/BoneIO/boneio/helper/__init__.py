@@ -9,15 +9,19 @@ from boneio.helper.gpio import (
     configure_pin,
 )
 from boneio.helper.oled import make_font
+from boneio.helper.mqtt import BasicMqtt
 from boneio.helper.stats import HostData, host_stats
 from boneio.helper.yaml import CustomValidator, load_yaml_file
 from boneio.helper.ha_discovery import (
     ha_relay_availibilty_message,
-    ha_sensor_availibilty_message,
     ha_sensor_temp_availibilty_message,
     ha_binary_sensor_availibilty_message,
+    ha_input_availibilty_message,
+    ha_sensor_availibilty_message,
+    ha_adc_sensor_availibilty_message,
 )
 from boneio.helper.exceptions import GPIOInputException, I2CError
+
 
 __all__ = [
     "CustomValidator",
@@ -32,10 +36,13 @@ __all__ = [
     "make_font",
     "ha_relay_availibilty_message",
     "ha_sensor_availibilty_message",
+    "ha_adc_sensor_availibilty_message",
     "ha_sensor_temp_availibilty_message",
     "ha_binary_sensor_availibilty_message",
+    "ha_input_availibilty_message",
     "GPIOInputException",
     "I2CError",
     "GpioBaseClass",
     "configure_pin",
+    "BasicMqtt",
 ]

@@ -33,11 +33,13 @@ from boneio.const import (
     SHOW_HA,
     BINARY_SENSOR,
     INPUT_SENSOR,
+    UPDATE_INTERVAL,
 )
 from boneio.helper import (
     HostData,
     ha_relay_availibilty_message,
-    ha_sensor_availibilty_message,
+    ha_input_availibilty_message,
+    ha_adc_sensor_availibilty_message,
     ha_sensor_temp_availibilty_message,
     ha_binary_sensor_availibilty_message,
     host_stats,
@@ -66,6 +68,7 @@ class Manager:
         ha_discovery_prefix: str = HOMEASSISTANT,
         mcp23017: Optional[List] = None,
         oled: bool = False,
+        adc_list: Optional[List] = None,
     ) -> None:
         """Initialize the manager."""
         _LOGGER.info("Initializing manager module.")
@@ -126,11 +129,47 @@ class Manager:
                     _LOGGER.error("Can't connect to MCP %s. %s", id, err)
                     pass
 
+        def create_adc():
+            from boneio.sensor import initialize_adc, GpioADCSensor
+
+            initialize_adc()
+
+            ## TODO: find what exception can ADC gpio throw.
+            for gpio in adc_list:
+                name = gpio.get(ID)
+                id = name.replace(" ", "")
+                pin = gpio[PIN]
+                try:
+                    adc = GpioADCSensor(
+                        id=id,
+                        pin=pin,
+                        name=name,
+                        send_message=self.send_message,
+                        topic_prefix=topic_prefix,
+                        update_interval=gpio.get(UPDATE_INTERVAL, 60),
+                    )
+                    self.send_ha_autodiscovery(
+                        id=id,
+                        name=name,
+                        ha_type=SENSOR,
+                        prefix=ha_discovery_prefix,
+                        availibilty_msg_func=ha_adc_sensor_availibilty_message,
+                    )
+                    self._tasks.append(asyncio.create_task(adc.send_state()))
+                except I2CError as err:
+                    _LOGGER.error("Can't configure ADC sensor %s. %s", id, err)
+                    pass
+
+            return True
+
         if lm75:
             create_lm75_sensor()
 
         if mcp23017:
             create_mcp23017()
+
+        if adc_list:
+            create_adc()
 
         def configure_relay(gpio: dict) -> Any:
             """Configure kind of relay. Most common MCP."""
@@ -212,15 +251,9 @@ class Manager:
                         ),
                         rest_pin=gpio,
                     )
-                    availibilty_msg_func = ha_sensor_availibilty_message
+                    availibilty_msg_func = ha_input_availibilty_message
                     ha_type = SENSOR
                 if gpio.get(SHOW_HA, True):
-                    print(
-                        "INPUT sending disco",
-                        ha_type,
-                        ha_discovery_prefix,
-                        availibilty_msg_func,
-                    )
                     self.send_ha_autodiscovery(
                         id=pin,
                         name=gpio.get(ID, pin),
@@ -250,7 +283,7 @@ class Manager:
                 self._oled = Oled(
                     host_data=self._host_data, output_groups=list(self._grouped_outputs)
                 )
-            except GPIOInputException as err:
+            except (GPIOInputException, I2CError) as err:
                 _LOGGER.error("Can't configure OLED display. %s", err)
 
         self.send_message(topic=f"{topic_prefix}/{STATE}", payload=ONLINE)
