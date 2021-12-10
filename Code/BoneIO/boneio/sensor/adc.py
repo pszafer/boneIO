@@ -2,7 +2,7 @@
 import logging
 import asyncio
 
-from boneio.const import STATE, SENSOR
+from boneio.const import SENSOR
 from boneio.helper import BasicMqtt
 import Adafruit_BBIO.ADC as ADC
 

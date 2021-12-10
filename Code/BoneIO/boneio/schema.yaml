@@ -241,6 +241,7 @@ adc:
       pin:
         type: string
         required: True
+        allowed: ['P9_33', 'P9_35', 'P9_36', 'P9_37', 'P9_38', 'P9_39', 'P9_40']
         meta:
           label: PIN to use.
       update_interval:

@@ -21,3 +21,5 @@ mcp23017:
 input: !include input.yaml
 
 output: !include output32x5A.yaml
+
+adc: !include adc.yaml
