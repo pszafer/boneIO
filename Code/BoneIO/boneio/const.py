@@ -22,6 +22,10 @@ SWITCH = "switch"
 CONFIG_PIN = "/usr/bin/config-pin"
 UPDATE_INTERVAL = "update_interval"
 ADC = "adc"
+IP = "ip"
+MASK = "mask"
+MAC = "mac"
+NONE="none"
 
 # TIMINGS FOR BUTTONS
 DEBOUNCE_DURATION = timedelta(seconds=0.2)

@@ -17,6 +17,10 @@ from boneio.const import (
     NETWORK,
     SWAP,
     UPTIME,
+    IP,
+    MASK,
+    MAC,
+    NONE,
 )
 from boneio.sensor import LM75Sensor
 
@@ -39,12 +43,19 @@ def display_time(seconds):
 
 async def get_network_info(host_data):
     """Fetch network info."""
+
+    def retrieve_from_psutil():
+        addrs = psutil.net_if_addrs()["eth0"]
+        out = {IP: NONE, MASK: NONE, MAC: NONE}
+        for addr in addrs:
+            if addr.family == socket.AF_INET:
+                out["ip"] = addr.address
+                out["mask"] = addr.netmask
+            elif addr.family == psutil.AF_LINK:
+                out["mac"] = addr.address
+
     while True:
-        net = psutil.net_if_addrs()["eth0"]
-        host_data.write(
-            NETWORK,
-            {"ip": net[0].address, "mask": net[0].netmask, "mac": net[2].address},
-        )
+        host_data.write(NETWORK, retrieve_from_psutil())
         await asyncio.sleep(60)
 
 
