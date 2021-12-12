@@ -265,6 +265,7 @@ class Manager:
                 _LOGGER.error("This PIN %s can't be configured. %s", pin, err)
                 pass
 
+        _LOGGER.info("Initializing inputs. This will take a while.")
         for gpio in self._input_pins:
             configure_input(gpio=gpio)
 
