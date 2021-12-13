@@ -312,7 +312,7 @@ class Manager:
                 if relay:
                     relay.toggle()
         # This is similar how Z2M is clearing click sensor.
-        # self._loop.call_later(1, self.send_message, topic, "")
+        self._loop.call_soon_threadsafe(self.send_message, topic, "")
 
     def send_ha_autodiscovery(
         self,
