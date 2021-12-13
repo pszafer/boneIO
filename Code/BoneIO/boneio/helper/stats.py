@@ -53,9 +53,11 @@ async def get_network_info(host_data):
                 out["mask"] = addr.netmask
             elif addr.family == psutil.AF_LINK:
                 out["mac"] = addr.address
+        return out
 
     while True:
-        host_data.write(NETWORK, retrieve_from_psutil())
+        data = retrieve_from_psutil()
+        host_data.write(NETWORK, data)
         await asyncio.sleep(60)
 
 

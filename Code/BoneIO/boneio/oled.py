@@ -45,7 +45,7 @@ class Oled:
         self._host_data = host_data
         configure_pin(OLED_PIN)
         setup_input(OLED_PIN)
-        edge_detect(pin=OLED_PIN, callback=self._handle_press, bounce=50)
+        edge_detect(pin=OLED_PIN, callback=self._handle_press, bounce=80)
         try:
             serial = i2c(port=2, address=0x3C)
             self._device = sh1106(serial)

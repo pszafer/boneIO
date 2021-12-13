@@ -13,6 +13,7 @@ from paho.mqtt.properties import Properties
 from paho.mqtt.subscribeoptions import SubscribeOptions
 
 from boneio.const import PAHO
+from boneio.helper import UniqueQueue
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -38,7 +39,7 @@ class MQTTClient:
         self.asyncio_client: AsyncioClient = None
         self.create_client()
         self.reconnect_interval = 1
-        self.publish_queue: asyncio.Queue = asyncio.Queue()
+        self.publish_queue: UniqueQueue = UniqueQueue()
 
     def create_client(self) -> None:
         """Create the asyncio client."""

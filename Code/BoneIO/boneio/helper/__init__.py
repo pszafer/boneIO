@@ -21,6 +21,7 @@ from boneio.helper.ha_discovery import (
     ha_adc_sensor_availibilty_message,
 )
 from boneio.helper.exceptions import GPIOInputException, I2CError
+from boneio.helper.queue import UniqueQueue
 
 
 __all__ = [
@@ -45,4 +46,5 @@ __all__ = [
     "GpioBaseClass",
     "configure_pin",
     "BasicMqtt",
+    "UniqueQueue",
 ]

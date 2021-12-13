@@ -52,7 +52,9 @@ def read_input(pin: str, on_state: Gpio_States = LOW):
     return GPIO.input(pin) is on_state
 
 
-def edge_detect(pin: str, callback: Callable, bounce: int, edge: Gpio_Edges = FALLING):
+def edge_detect(
+    pin: str, callback: Callable, bounce: int = 0, edge: Gpio_Edges = FALLING
+):
     """Add detection for RISING and FALLING events."""
     try:
         GPIO.add_event_detect(gpio=pin, edge=edge, callback=callback, bouncetime=bounce)
