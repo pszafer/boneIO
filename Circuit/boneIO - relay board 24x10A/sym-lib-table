@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MCP9808-E_MS)(type Legacy)(uri ${KIPRJMOD}/3D_model/MCP9808-E_MS.lib)(options "")(descr ""))
+  (lib (name boneIO)(type Legacy)(uri ${KIPRJMOD}/3D_model/boneIO.lib)(options "")(descr ""))
+)
