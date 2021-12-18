@@ -941,24 +941,10 @@ F 3 "" H 5750 5000 50  0001 C CNN
 	1    5750 5000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6750 3400 6750 3700
-Connection ~ 6750 3400
-Wire Wire Line
-	6750 3300 6750 3400
 Text GLabel 6500 3500 2    50   Input ~ 0
 SDA
 Text GLabel 6000 3500 0    50   Input ~ 0
 SCL
-Wire Wire Line
-	6500 3400 6750 3400
-Wire Wire Line
-	6750 3300 6750 3200
-Connection ~ 6750 3300
-Wire Wire Line
-	6500 3300 6750 3300
-Wire Wire Line
-	6750 3200 6500 3200
 Wire Wire Line
 	5150 3400 6000 3400
 Wire Wire Line
@@ -11065,4 +11051,18 @@ Wire Wire Line
 	3400 3100 3400 2800
 Wire Wire Line
 	3200 3100 3400 3100
+Wire Wire Line
+	6750 3200 6500 3200
+Wire Wire Line
+	6500 3300 6750 3300
+Connection ~ 6750 3300
+Wire Wire Line
+	6750 3300 6750 3200
+Wire Wire Line
+	6500 3400 6750 3400
+Wire Wire Line
+	6750 3300 6750 3400
+Connection ~ 6750 3400
+Wire Wire Line
+	6750 3400 6750 3700
 $EndSCHEMATC
