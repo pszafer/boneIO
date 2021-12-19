@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name MP1584EN_module)(type Legacy)(uri ${KIPRJMOD}/Library/MP1584EN_module.lib)(options "")(descr ""))
+  (lib (name ESP32-PoE_Rev_G1)(type Legacy)(uri ${KIPRJMOD}/Library/ESP32-PoE_Rev_G1.lib)(options "")(descr ""))
+  (lib (name MP1584EN)(type Legacy)(uri ${KIPRJMOD}/Library/MP1584EN.lib)(options "")(descr ""))
+  (lib (name HR911105A)(type Legacy)(uri ${KIPRJMOD}/Library/HR911105A.lib)(options "")(descr ""))
+  (lib (name RTL8201F-VB-CG)(type Legacy)(uri ${KIPRJMOD}/Library/RTL8201F-VB-CG.lib)(options "")(descr ""))
+  (lib (name RS485)(type Legacy)(uri "C:/Users/Kamil/OneDrive/Desktop/boneIO_PROJEKTY/boneIO - input board_BBB/RS485.lib")(options "")(descr ""))
+)
