@@ -157,7 +157,7 @@ fp-info-cache
 *.xml
 *.csv
 
-
+.vscode
 
 
 
