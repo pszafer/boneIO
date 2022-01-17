@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "boneIO - relay board 24x16A")(type KiCad)(uri "${KIPRJMOD}/boneIO - relay board 24x16A.pretty")(options "")(descr ""))
-)
