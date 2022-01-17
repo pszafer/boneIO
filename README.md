@@ -1,3 +1,5 @@
+# Case, Circuit and Code was moved into separate repositories. You can find it here: https://github.com/boneIO-eu
+
 # Project description
 
 ![BonePic](.resources/boneIO_v0.2render.png?raw=true)
