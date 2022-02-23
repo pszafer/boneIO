@@ -11,6 +11,6 @@
 - Low price
 - Open HSP (See below)
 
-## Whole documentation you will find here: https://docs.boneio.eu/
+## Whole documentation you will find here: https://boneio.eu/
 
 ## Case, Circuit and Code was moved into separate repositories. You can find it here: https://github.com/boneIO-eu
